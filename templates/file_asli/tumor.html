@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4311c466b89d41cc9f8f65fd870ce9f1</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    /* div.sourceCode
+      {   } */
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    /* code span.ex { } Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="brain-tumor-detection-with-vgg-16-model"
+class="cell markdown" id="8oyI74xEo3-C">
+<h1>BRAIN TUMOR DETECTION with VGG-16 MODEL</h1>
+</section>
+<section id="project-overview" class="cell markdown" id="cDip45PXpQgj">
+<h1>Project Overview</h1>
+</section>
+<div class="cell markdown" id="XdhkLnErpjB4">
+<p>Data citra yang digunakan untuk permasalahan ini adalah Citra MRI
+Otak untuk Deteksi Tumor Otak. Ini berisi pemindaian MRI dari dua
+kelas:</p>
+<ul>
+<li>NO - no tumor, encoded as 0</li>
+<li>YES - tumor, encoded as 1</li>
+</ul>
+<p>Sayangnya, deskripsi kumpulan data tidak menyimpan informasi apa pun
+dari mana pemindaian MRI ini berasal.</p>
+</div>
+<section id="apa-itu-tumor-otak" class="cell markdown"
+id="UswMLCbRp-so">
+<h2>Apa itu Tumor Otak?</h2>
+</section>
+<div class="cell markdown" id="VFfonuN3qDWO">
+<p>Tumor otak terjadi ketika sel-sel abnormal terbentuk di dalam otak.
+Ada dua jenis utama tumor: tumor kanker (ganas) dan tumor jinak. Tumor
+kanker dapat dibagi menjadi tumor primer, yang dimulai di dalam otak,
+dan tumor sekunder, yang telah menyebar dari tempat lain, yang dikenal
+sebagai tumor metastasis otak. Semua jenis tumor otak dapat menimbulkan
+gejala yang bervariasi tergantung pada bagian otak yang terkena.
+Gejala-gejala ini mungkin termasuk sakit kepala, kejang, masalah
+penglihatan, muntah, dan perubahan mental. Sakit kepala biasanya lebih
+buruk di pagi hari dan hilang dengan muntah. Gejala lain mungkin
+termasuk kesulitan berjalan, berbicara atau dengan sensasi. Seiring
+perkembangan penyakit, ketidaksadaran dapat terjadi.</p>
+</div>
+<div class="cell markdown" id="A6XulGKrqVES">
+<p><img
+src="vertopal_46b620e4a91342e8a6ebb883fab67be8/5617ce8f041c41f6ca27ce4d9d76b5ad2d3e7b68.png"
+alt="image.png" /></p>
+</div>
+<section id="import-module" class="cell markdown" id="MxQ0f8_NpaY3">
+<h1>IMPORT MODULE</h1>
+</section>
+<div class="cell code" data-execution_count="1"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:90}"
+id="ZMKzsrmekOKf" data-outputId="8da36438-6435-4e61-b89b-d63294fd3cc5">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># C:\Users\USER\.kaggle</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>files.upload()</span></code></pre></div>
+<div class="output display_data">
+
+     <input type="file" id="files-771a8d66-ab6e-449e-9e71-1f21a512cd6b" name="files[]" multiple disabled
+        style="border:none" />
+     <output id="result-771a8d66-ab6e-449e-9e71-1f21a512cd6b">
+      Upload widget is only available when the cell has been executed in the
+      current browser session. Please rerun this cell to enable.
+      </output>
+      <script>// Copyright 2017 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+/**
+ * @fileoverview Helpers for google.colab Python module.
+ */
+(function(scope) {
+function span(text, styleAttributes = {}) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  for (const key of Object.keys(styleAttributes)) {
+    element.style[key] = styleAttributes[key];
+  }
+  return element;
+}
+
+// Max number of bytes which will be uploaded at a time.
+const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+function _uploadFiles(inputId, outputId) {
+  const steps = uploadFilesStep(inputId, outputId);
+  const outputElement = document.getElementById(outputId);
+  // Cache steps on the outputElement to make it available for the next call
+  // to uploadFilesContinue from Python.
+  outputElement.steps = steps;
+
+  return _uploadFilesContinue(outputId);
+}
+
+// This is roughly an async generator (not supported in the browser yet),
+// where there are multiple asynchronous steps and the Python side is going
+// to poll for completion of each step.
+// This uses a Promise to block the python side on completion of each step,
+// then passes the result of the previous step as the input to the next step.
+function _uploadFilesContinue(outputId) {
+  const outputElement = document.getElementById(outputId);
+  const steps = outputElement.steps;
+
+  const next = steps.next(outputElement.lastPromiseValue);
+  return Promise.resolve(next.value.promise).then((value) => {
+    // Cache the last promise value to make it available to the next
+    // step of the generator.
+    outputElement.lastPromiseValue = value;
+    return next.value.response;
+  });
+}
+
+/**
+ * Generator function which is called between each async step of the upload
+ * process.
+ * @param {string} inputId Element ID of the input file picker element.
+ * @param {string} outputId Element ID of the output display.
+ * @return {!Iterable<!Object>} Iterable of next steps.
+ */
+function* uploadFilesStep(inputId, outputId) {
+  const inputElement = document.getElementById(inputId);
+  inputElement.disabled = false;
+
+  const outputElement = document.getElementById(outputId);
+  outputElement.innerHTML = '';
+
+  const pickedPromise = new Promise((resolve) => {
+    inputElement.addEventListener('change', (e) => {
+      resolve(e.target.files);
+    });
+  });
+
+  const cancel = document.createElement('button');
+  inputElement.parentElement.appendChild(cancel);
+  cancel.textContent = 'Cancel upload';
+  const cancelPromise = new Promise((resolve) => {
+    cancel.onclick = () => {
+      resolve(null);
+    };
+  });
+
+  // Wait for the user to pick the files.
+  const files = yield {
+    promise: Promise.race([pickedPromise, cancelPromise]),
+    response: {
+      action: 'starting',
+    }
+  };
+
+  cancel.remove();
+
+  // Disable the input element since further picks are not allowed.
+  inputElement.disabled = true;
+
+  if (!files) {
+    return {
+      response: {
+        action: 'complete',
+      }
+    };
+  }
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.append(span(file.name, {fontWeight: 'bold'}));
+    li.append(span(
+        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +
+        `last modified: ${
+            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :
+                                    'n/a'} - `));
+    const percent = span('0% done');
+    li.appendChild(percent);
+
+    outputElement.appendChild(li);
+
+    const fileDataPromise = new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        resolve(e.target.result);
+      };
+      reader.readAsArrayBuffer(file);
+    });
+    // Wait for the data to be ready.
+    let fileData = yield {
+      promise: fileDataPromise,
+      response: {
+        action: 'continue',
+      }
+    };
+
+    // Use a chunked sending to avoid message size limits. See b/62115660.
+    let position = 0;
+    do {
+      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);
+      const chunk = new Uint8Array(fileData, position, length);
+      position += length;
+
+      const base64 = btoa(String.fromCharCode.apply(null, chunk));
+      yield {
+        response: {
+          action: 'append',
+          file: file.name,
+          data: base64,
+        },
+      };
+
+      let percentDone = fileData.byteLength === 0 ?
+          100 :
+          Math.round((position / fileData.byteLength) * 100);
+      percent.textContent = `${percentDone}% done`;
+
+    } while (position < fileData.byteLength);
+  }
+
+  // All done.
+  yield {
+    response: {
+      action: 'complete',
+    }
+  };
+}
+
+scope.google = scope.google || {};
+scope.google.colab = scope.google.colab || {};
+scope.google.colab._files = {
+  _uploadFiles,
+  _uploadFilesContinue,
+};
+})(self);
+</script> 
+</div>
+<div class="output stream stdout">
+<pre><code>Saving kaggle.json to kaggle.json
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="1">
+<pre><code>{&#39;kaggle.json&#39;: b&#39;{&quot;username&quot;:&quot;syahmisajid12&quot;,&quot;key&quot;:&quot;a76cee502ebc4268b9b384c1c587dfe1&quot;}&#39;}</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="2" id="G0aJM9UpkdsS">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">~/</span>.kaggle</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cp kaggle.json <span class="op">~/</span>.kaggle<span class="op">/</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="EPWpItewkgGO" data-outputId="5009fec0-388a-4df9-fe34-9df873d09efa">
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle datasets download <span class="op">-</span>d navoneel<span class="op">/</span>brain<span class="op">-</span>mri<span class="op">-</span>images<span class="op">-</span><span class="cf">for</span><span class="op">-</span>brain<span class="op">-</span>tumor<span class="op">-</span>detection</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run &#39;chmod 600 /root/.kaggle/kaggle.json&#39;
+Downloading brain-mri-images-for-brain-tumor-detection.zip to /content
+ 99% 15.0M/15.1M [00:01&lt;00:00, 22.3MB/s]
+100% 15.1M/15.1M [00:01&lt;00:00, 15.1MB/s]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="4"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Im6-cS18knyE" data-outputId="b1ca1a43-02f3-4942-a170-41d5f2eccd46">
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get helper_functions.py script from course GitHub</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>raw.githubusercontent.com<span class="op">/</span>Syahmi33github<span class="op">/</span>Emotion<span class="op">-</span>Classification<span class="op">/</span>main<span class="op">/</span>helper_functions.py</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import helper functions we&#39;re going to use</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> helper_functions <span class="im">import</span> create_tensorboard_callback, plot_loss_curves, unzip_data, walk_through_dir, view_random_images,pred_and_plot, load_and_prep_image</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>--2023-06-13 12:57:39--  https://raw.githubusercontent.com/Syahmi33github/Emotion-Classification/main/helper_functions.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11485 (11K) [text/plain]
+Saving to: ‘helper_functions.py’
+
+
+helper_functions.py   0%[                    ]       0  --.-KB/s               
+helper_functions.py 100%[===================&gt;]  11.22K  --.-KB/s    in 0s      
+
+2023-06-13 12:57:39 (91.9 MB/s) - ‘helper_functions.py’ saved [11485/11485]
+
+</code></pre>
+</div>
+</div>
+<section id="data-pre-processing" class="cell markdown"
+id="zFU2PIr-hCHS">
+<h1>Data Pre-Processing</h1>
+</section>
+<div class="cell code" data-execution_count="5" id="CquP30-yksXp">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>unzip_data(<span class="st">&quot;/content/brain-mri-images-for-brain-tumor-detection.zip&quot;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="zzHBdY01kwmF" data-outputId="75f50533-552e-41ee-d702-d50c377f4add">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>walk_through_dir(<span class="st">&quot;/content/brain_tumor_dataset&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>There are 2 directories and 0 images in &#39;/content/brain_tumor_dataset&#39;.
+There are 0 directories and 98 images in &#39;/content/brain_tumor_dataset/no&#39;.
+There are 0 directories and 155 images in &#39;/content/brain_tumor_dataset/yes&#39;.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="7" id="gt9CTRd0k-5V">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_dataset/&#39;</span></span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:308}"
+id="b1sQAMgYlHm4" data-outputId="6a06b9ca-a032-43a1-ecec-5d27622145fa">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View a random image from the training dataset</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> view_random_images(target_dir<span class="op">=</span>train_dir,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;no&quot;</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_46b620e4a91342e8a6ebb883fab67be8/9e7d9b034a9aa8ec0c090d566c573ed58fa29a5f.png" /></p>
+</div>
+</div>
+<section id="crop-image" class="cell markdown" id="X06cgHr-q5Dr">
+<h2>Crop Image</h2>
+</section>
+<div class="cell code" data-execution_count="9" id="dBmTmpB5sYAG">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> cv2</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> crop_img(img, add_pixels_value<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Finds the extreme points on the image and crops the rectangular out of them</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    gray <span class="op">=</span> cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    gray <span class="op">=</span> cv2.GaussianBlur(gray, (<span class="dv">5</span>, <span class="dv">5</span>), <span class="dv">0</span>)</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># threshold the image, then perform a series of erosions +</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># dilations to remove any small regions of noise</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    thresh <span class="op">=</span> cv2.threshold(gray, <span class="dv">45</span>, <span class="dv">255</span>, cv2.THRESH_BINARY)[<span class="dv">1</span>]</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    thresh <span class="op">=</span> cv2.erode(thresh, <span class="va">None</span>, iterations<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>    thresh <span class="op">=</span> cv2.dilate(thresh, <span class="va">None</span>, iterations<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    <span class="co"># find contours in thresholded image, then grab the largest one</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    cnts, _ <span class="op">=</span> cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    c <span class="op">=</span> <span class="bu">max</span>(cnts, key<span class="op">=</span>cv2.contourArea)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># find the extreme points</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>    extLeft <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">0</span>].argmin()][<span class="dv">0</span>])</span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    extRight <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">0</span>].argmax()][<span class="dv">0</span>])</span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>    extTop <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">1</span>].argmin()][<span class="dv">0</span>])</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>    extBot <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">1</span>].argmax()][<span class="dv">0</span>])</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>    ADD_PIXELS <span class="op">=</span> add_pixels_value</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>    new_img <span class="op">=</span> img[extTop[<span class="dv">1</span>]<span class="op">-</span>ADD_PIXELS:extBot[<span class="dv">1</span>]<span class="op">+</span>ADD_PIXELS, extLeft[<span class="dv">0</span>]<span class="op">-</span>ADD_PIXELS:extRight[<span class="dv">0</span>]<span class="op">+</span>ADD_PIXELS].copy()</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [new_img]</span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> crop_imgs_in_folder(original_folder, target_folder, add_pixels_value<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;&quot;&quot;</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a><span class="co">    Finds the extreme points on the images in the original folder and crops the rectangular out of them,</span></span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a><span class="co">    then saves the cropped images in the target folder.</span></span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a><span class="co">    &quot;&quot;&quot;</span></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Membuat folder target jika belum ada</span></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> os.path.exists(target_folder):</span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>        os.makedirs(target_folder)</span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Mendapatkan daftar file dalam folder asli</span></span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a>    files <span class="op">=</span> os.listdir(original_folder)</span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> files:</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Mengabaikan file yang bukan gambar</span></span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="kw">not</span> <span class="bu">file</span>.lower().endswith((<span class="st">&#39;.png&#39;</span>, <span class="st">&#39;.jpg&#39;</span>, <span class="st">&#39;.jpeg&#39;</span>)):</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a>            <span class="cf">continue</span></span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Baca gambar</span></span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a>        img_path <span class="op">=</span> os.path.join(original_folder, <span class="bu">file</span>)</span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a>        img <span class="op">=</span> cv2.imread(img_path)</span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Proses cropping gambar</span></span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>        cropped_imgs <span class="op">=</span> crop_img(img, add_pixels_value)</span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Simpan hasil cropping</span></span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, cropped_img <span class="kw">in</span> <span class="bu">enumerate</span>(cropped_imgs):</span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>            new_file <span class="op">=</span> os.path.splitext(<span class="bu">file</span>)[<span class="dv">0</span>] <span class="op">+</span> <span class="st">&#39;_cropped_&#39;</span> <span class="op">+</span> <span class="bu">str</span>(i) <span class="op">+</span> os.path.splitext(<span class="bu">file</span>)[<span class="dv">1</span>]</span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a>            new_img_path <span class="op">=</span> os.path.join(target_folder, new_file)</span>
+<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a>            cv2.imwrite(new_img_path, cropped_img)</span>
+<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Proses cropping selesai.&quot;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="13" id="PyTNw1Tq0Sbp">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> shutil</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imutils</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> cv2.imread(<span class="st">&#39;/content/brain_tumor_dataset/no/20 no.jpg&#39;</span>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> cv2.resize(</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>            img,</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>            dsize<span class="op">=</span>(<span class="dv">224</span>,<span class="dv">224</span>),</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>            interpolation<span class="op">=</span>cv2.INTER_CUBIC</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>gray <span class="op">=</span> cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>gray <span class="op">=</span> cv2.GaussianBlur(gray, (<span class="dv">5</span>, <span class="dv">5</span>), <span class="dv">0</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co"># threshold the image, then perform a series of erosions +</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="co"># dilations to remove any small regions of noise</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>thresh <span class="op">=</span> cv2.threshold(gray, <span class="dv">45</span>, <span class="dv">255</span>, cv2.THRESH_BINARY)[<span class="dv">1</span>]</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>thresh <span class="op">=</span> cv2.erode(thresh, <span class="va">None</span>, iterations<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>thresh <span class="op">=</span> cv2.dilate(thresh, <span class="va">None</span>, iterations<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="co"># find contours in thresholded image, then grab the largest one</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>cnts <span class="op">=</span> cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>cnts <span class="op">=</span> imutils.grab_contours(cnts)</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="bu">max</span>(cnts, key<span class="op">=</span>cv2.contourArea)</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a><span class="co"># find the extreme points</span></span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>extLeft <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">0</span>].argmin()][<span class="dv">0</span>])</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>extRight <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">0</span>].argmax()][<span class="dv">0</span>])</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>extTop <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">1</span>].argmin()][<span class="dv">0</span>])</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>extBot <span class="op">=</span> <span class="bu">tuple</span>(c[c[:, :, <span class="dv">1</span>].argmax()][<span class="dv">0</span>])</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a><span class="co"># add contour on the image</span></span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a>img_cnt <span class="op">=</span> cv2.drawContours(img.copy(), [c], <span class="op">-</span><span class="dv">1</span>, (<span class="dv">0</span>, <span class="dv">255</span>, <span class="dv">255</span>), <span class="dv">4</span>)</span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a><span class="co"># add extreme points</span></span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>img_pnt <span class="op">=</span> cv2.circle(img_cnt.copy(), extLeft, <span class="dv">8</span>, (<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">255</span>), <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>img_pnt <span class="op">=</span> cv2.circle(img_pnt, extRight, <span class="dv">8</span>, (<span class="dv">0</span>, <span class="dv">255</span>, <span class="dv">0</span>), <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>img_pnt <span class="op">=</span> cv2.circle(img_pnt, extTop, <span class="dv">8</span>, (<span class="dv">255</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>img_pnt <span class="op">=</span> cv2.circle(img_pnt, extBot, <span class="dv">8</span>, (<span class="dv">255</span>, <span class="dv">255</span>, <span class="dv">0</span>), <span class="op">-</span><span class="dv">1</span>)</span>
+<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a><span class="co"># crop</span></span>
+<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>ADD_PIXELS <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>new_img <span class="op">=</span> img[extTop[<span class="dv">1</span>]<span class="op">-</span>ADD_PIXELS:extBot[<span class="dv">1</span>]<span class="op">+</span>ADD_PIXELS, extLeft[<span class="dv">0</span>]<span class="op">-</span>ADD_PIXELS:extRight[<span class="dv">0</span>]<span class="op">+</span>ADD_PIXELS].copy()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:321}"
+id="Y-C13P1H0Mta" data-outputId="9882eded-87a3-4d3e-ea42-282bd2d881b6">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">6</span>))</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">141</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.xticks([])</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Step 1. Get the original image&#39;</span>)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">142</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>plt.imshow(img_cnt)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>plt.xticks([])</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Step 2. Find the biggest contour&#39;</span>)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">143</span>)</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>plt.imshow(img_pnt)</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>plt.xticks([])</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Step 3. Find the extreme points&#39;</span>)</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">144</span>)</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>plt.imshow(new_img)</span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>plt.xticks([])</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>plt.yticks([])</span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Step 4. Crop the image&#39;</span>)</span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_46b620e4a91342e8a6ebb883fab67be8/20c0436f655b4115d3be2c6d0c3ebb12ac06597f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="15"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="PmnqY-tHy0xd" data-outputId="23e51018-d534-4412-9ca7-360c3119164a">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> shutil</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Path ke folder yang ingin Anda buat</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>folder_path <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop&#39;</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>folder_path_no <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/no&#39;</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>folder_path_yes <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/yes&#39;</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat folder</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>os.makedirs(folder_path, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>os.makedirs(folder_path_no, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>os.makedirs(folder_path_yes, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Folder berhasil dibuat!&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Folder berhasil dibuat!
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="16"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="NXfKbN1DuJh3" data-outputId="0841f8e3-d4be-4f02-ad96-175f33acac34">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>original_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_dataset/no/&#39;</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>target_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/no/&#39;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>add_pixels_value <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>crop_imgs_in_folder(original_folder, target_folder)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Proses cropping selesai.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="17"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="CUCGkwd-z4GS" data-outputId="4333a6f4-0824-4404-c7de-89bbc2961c5d">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>original_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_dataset/yes/&#39;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>target_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/yes/&#39;</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>add_pixels_value <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>crop_imgs_in_folder(original_folder, target_folder)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Proses cropping selesai.
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="18"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:319}"
+id="lz6GG-epsngn" data-outputId="66828cce-8282-4b2a-9483-9e2e79833d63">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View a random crop_image from the training dataset</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> view_random_images(target_dir<span class="op">=</span><span class="st">&#39;/content/brain_tumor_crop/&#39;</span>,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;no&quot;</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_46b620e4a91342e8a6ebb883fab67be8/acbc729cc454e7dcadca7e827becee5ce0cf4c5e.png" /></p>
+</div>
+</div>
+<section id="split-data" class="cell markdown" id="UO2l-68qeIaJ">
+<h2>SPLIT DATA</h2>
+</section>
+<div class="cell code" data-execution_count="55"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="JD2w0ic7fKFH" data-outputId="66f063ad-317e-4a3b-87a0-940e835b3bbc">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> shutil</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Path ke folder yang ingin Anda buat</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>folder_path <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split&#39;</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat folder</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>os.makedirs(folder_path, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Folder berhasil dibuat!&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Folder berhasil dibuat!
+</code></pre>
+</div>
+</div>
+<section id="data-no" class="cell markdown" id="Pg39YnSsf4NR">
+<h3>DATA NO</h3>
+</section>
+<div class="cell code" data-execution_count="19"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="1p_zFrLieHAR" data-outputId="6ca936e9-22cd-4cd5-af3e-ab18cbc2b853">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Path ke folder data</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>data_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/no&#39;</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>train_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/train_data/no&#39;</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>test_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/test_data/no&#39;</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>validation_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/validation_data/no&#39;</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Pembagian persentase (train, test, validation)</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>train_percentage <span class="op">=</span> <span class="fl">0.7</span></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>test_percentage <span class="op">=</span> <span class="fl">0.03</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>validation_percentage <span class="op">=</span> <span class="fl">0.17</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat folder untuk set data</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>os.makedirs(train_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>os.makedirs(test_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>os.makedirs(validation_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil daftar file dalam folder data</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>file_list <span class="op">=</span> os.listdir(data_folder)</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengacak urutan file</span></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>random.shuffle(file_list)</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung jumlah file untuk masing-masing set data</span></span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>total_files <span class="op">=</span> <span class="bu">len</span>(file_list)</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>train_size <span class="op">=</span> <span class="bu">int</span>(total_files <span class="op">*</span> train_percentage)</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a>test_size <span class="op">=</span> <span class="bu">int</span>(total_files <span class="op">*</span> test_percentage)</span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a>validation_size <span class="op">=</span> total_files <span class="op">-</span> train_size <span class="op">-</span> test_size</span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Memindahkan file ke set data masing-masing</span></span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, file_name <span class="kw">in</span> <span class="bu">enumerate</span>(file_list):</span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>    file_path <span class="op">=</span> os.path.join(data_folder, file_name)</span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">&lt;</span> train_size:</span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> train_folder</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> i <span class="op">&lt;</span> train_size <span class="op">+</span> test_size:</span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> test_folder</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> validation_folder</span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a>    shutil.copy(file_path, destination_folder)</span>
+<span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Pembagian data selesai!&quot;</span>)</span>
+<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;train = </span><span class="sc">{</span>train_size<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;test = </span><span class="sc">{</span>test_size<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;validation = </span><span class="sc">{</span>validation_size<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Pembagian data selesai!
+train = 68
+test = 2
+validation = 28
+</code></pre>
+</div>
+</div>
+<section id="data-yes" class="cell markdown" id="zlLE_00jf9Mo">
+<h3>DATA YES</h3>
+</section>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="EKrYN8rIf8hB" data-outputId="94298f43-eb49-4c7d-ca6e-f31897584532">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> shutil</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Path ke folder data</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>data_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_crop/yes&#39;</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>train_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/train_data/yes&#39;</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>test_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/test_data/yes&#39;</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>validation_folder <span class="op">=</span> <span class="st">&#39;/content/brain_tumor_split/validation_data/yes&#39;</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Pembagian persentase (train, test, validation)</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>train_percentage <span class="op">=</span> <span class="fl">0.8</span></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>test_percentage <span class="op">=</span> <span class="fl">0.03</span></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>validation_percentage <span class="op">=</span> <span class="fl">0.17</span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat folder untuk set data</span></span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>os.makedirs(train_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>os.makedirs(test_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>os.makedirs(validation_folder, exist_ok<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengambil daftar file dalam folder data</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>file_list <span class="op">=</span> os.listdir(data_folder)</span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengacak urutan file</span></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a>random.shuffle(file_list)</span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-27"><a href="#cb28-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Menghitung jumlah file untuk masing-masing set data</span></span>
+<span id="cb28-28"><a href="#cb28-28" aria-hidden="true" tabindex="-1"></a>total_files <span class="op">=</span> <span class="bu">len</span>(file_list)</span>
+<span id="cb28-29"><a href="#cb28-29" aria-hidden="true" tabindex="-1"></a>train_size <span class="op">=</span> <span class="bu">int</span>(total_files <span class="op">*</span> train_percentage)</span>
+<span id="cb28-30"><a href="#cb28-30" aria-hidden="true" tabindex="-1"></a>test_size <span class="op">=</span> <span class="bu">int</span>(total_files <span class="op">*</span> test_percentage)</span>
+<span id="cb28-31"><a href="#cb28-31" aria-hidden="true" tabindex="-1"></a>validation_size <span class="op">=</span> total_files <span class="op">-</span> train_size <span class="op">-</span> test_size</span>
+<span id="cb28-32"><a href="#cb28-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-33"><a href="#cb28-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Memindahkan file ke set data masing-masing</span></span>
+<span id="cb28-34"><a href="#cb28-34" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i, file_name <span class="kw">in</span> <span class="bu">enumerate</span>(file_list):</span>
+<span id="cb28-35"><a href="#cb28-35" aria-hidden="true" tabindex="-1"></a>    file_path <span class="op">=</span> os.path.join(data_folder, file_name)</span>
+<span id="cb28-36"><a href="#cb28-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-37"><a href="#cb28-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">&lt;</span> train_size:</span>
+<span id="cb28-38"><a href="#cb28-38" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> train_folder</span>
+<span id="cb28-39"><a href="#cb28-39" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> i <span class="op">&lt;</span> train_size <span class="op">+</span> test_size:</span>
+<span id="cb28-40"><a href="#cb28-40" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> test_folder</span>
+<span id="cb28-41"><a href="#cb28-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb28-42"><a href="#cb28-42" aria-hidden="true" tabindex="-1"></a>        destination_folder <span class="op">=</span> validation_folder</span>
+<span id="cb28-43"><a href="#cb28-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-44"><a href="#cb28-44" aria-hidden="true" tabindex="-1"></a>    shutil.copy(file_path, destination_folder)</span>
+<span id="cb28-45"><a href="#cb28-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-46"><a href="#cb28-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Pembagian data selesai!&quot;</span>)</span>
+<span id="cb28-47"><a href="#cb28-47" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;train = </span><span class="sc">{</span>train_size<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb28-48"><a href="#cb28-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;test = </span><span class="sc">{</span>test_size<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb28-49"><a href="#cb28-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;validation = </span><span class="sc">{</span>validation_size<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Pembagian data selesai!
+train = 124
+test = 4
+validation = 27
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="dsa1oPw-gMqF" data-outputId="9fdb7b1e-5a28-4318-d088-a680de0d22ef">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>walk_through_dir(<span class="st">&quot;/content/brain_tumor_split&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>There are 3 directories and 0 images in &#39;/content/brain_tumor_split&#39;.
+There are 2 directories and 0 images in &#39;/content/brain_tumor_split/validation_data&#39;.
+There are 0 directories and 28 images in &#39;/content/brain_tumor_split/validation_data/no&#39;.
+There are 0 directories and 27 images in &#39;/content/brain_tumor_split/validation_data/yes&#39;.
+There are 2 directories and 0 images in &#39;/content/brain_tumor_split/test_data&#39;.
+There are 0 directories and 2 images in &#39;/content/brain_tumor_split/test_data/no&#39;.
+There are 0 directories and 4 images in &#39;/content/brain_tumor_split/test_data/yes&#39;.
+There are 2 directories and 0 images in &#39;/content/brain_tumor_split/train_data&#39;.
+There are 0 directories and 68 images in &#39;/content/brain_tumor_split/train_data/no&#39;.
+There are 0 directories and 124 images in &#39;/content/brain_tumor_split/train_data/yes&#39;.
+</code></pre>
+</div>
+</div>
+<section id="data-augmentasi" class="cell markdown" id="u_wmDLsvhzt3">
+<h2>Data Augmentasi</h2>
+</section>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="nzHWBUeWhypY" data-outputId="67e336cc-59cd-4b4d-ccfa-106a08d3d101">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setup data inputs</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.preprocessing.image <span class="im">import</span> ImageDataGenerator</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>IMAGE_SHAPE <span class="op">=</span> (<span class="dv">224</span>, <span class="dv">224</span>)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>BATCH_SIZE <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> <span class="st">&quot;/content/brain_tumor_split/train_data&quot;</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>test_dir <span class="op">=</span> <span class="st">&quot;/content/brain_tumor_split/test_data&quot;</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>validation_dir <span class="op">=</span> <span class="st">&quot;/content/brain_tumor_split/validation_data&quot;</span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>train_datagen <span class="op">=</span> ImageDataGenerator(rescale<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="fl">255.</span>)</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>test_datagen <span class="op">=</span> ImageDataGenerator(rescale<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="fl">255.</span>)</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>validation_datagen <span class="op">=</span> ImageDataGenerator(rescale<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="fl">255.</span>)</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Training images:&quot;</span>)</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>train_data <span class="op">=</span> train_datagen.flow_from_directory(train_dir,</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>                                               target_size<span class="op">=</span>IMAGE_SHAPE,</span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>                                               batch_size<span class="op">=</span>BATCH_SIZE,</span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>                                               class_mode<span class="op">=</span><span class="st">&quot;categorical&quot;</span>)</span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Training images:&quot;</span>)</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>test_data <span class="op">=</span> test_datagen.flow_from_directory(test_dir,</span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>                                             target_size<span class="op">=</span>IMAGE_SHAPE,</span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>                                             batch_size<span class="op">=</span>BATCH_SIZE,</span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a>                                             class_mode<span class="op">=</span><span class="st">&quot;categorical&quot;</span>)</span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Testing images:&quot;</span>)</span>
+<span id="cb32-28"><a href="#cb32-28" aria-hidden="true" tabindex="-1"></a>validation_data <span class="op">=</span> validation_datagen.flow_from_directory(validation_dir,</span>
+<span id="cb32-29"><a href="#cb32-29" aria-hidden="true" tabindex="-1"></a>                                              target_size<span class="op">=</span>IMAGE_SHAPE,</span>
+<span id="cb32-30"><a href="#cb32-30" aria-hidden="true" tabindex="-1"></a>                                              batch_size<span class="op">=</span>BATCH_SIZE,</span>
+<span id="cb32-31"><a href="#cb32-31" aria-hidden="true" tabindex="-1"></a>                                              class_mode<span class="op">=</span><span class="st">&quot;categorical&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Training images:
+Found 192 images belonging to 2 classes.
+Training images:
+Found 6 images belonging to 2 classes.
+Testing images:
+Found 55 images belonging to 2 classes.
+</code></pre>
+</div>
+</div>
+<section id="model" class="cell markdown" id="PIBq1NgWjqVR">
+<h1>Model</h1>
+</section>
+<section id="model-0" class="cell markdown" id="otac6S-bkEqh">
+<h2>Model 0</h2>
+</section>
+<div class="cell code" data-execution_count="23"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="7p_Hkjx9kKc8" data-outputId="ff65d2d9-39e7-461e-d9e0-523270527e48">
+<div class="sourceCode" id="cb34"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Input, Conv2D, MaxPool2D, Flatten, Dense, BatchNormalization, Dropout</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Model</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> Input(shape<span class="op">=</span>(<span class="dv">224</span>, <span class="dv">224</span>, <span class="dv">3</span>))</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(inputs)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(inputs)</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Flatten()(x)</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Dropout(<span class="fl">0.5</span>)(x)</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>outputs <span class="op">=</span> Dense(<span class="dv">1</span>, activation<span class="op">=</span><span class="st">&#39;sigmoid&#39;</span>)(x)</span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a>model_0 <span class="op">=</span> Model(inputs<span class="op">=</span>inputs, outputs<span class="op">=</span>outputs)</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a>model_0.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&quot;binary_crossentropy&quot;</span>,</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>                optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>                metrics<span class="op">=</span>[<span class="st">&quot;accuracy&quot;</span>])</span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a>history_0 <span class="op">=</span> model_0.fit(train_data,</span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>                        epochs<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># steps_per_epoch=len(train_data),</span></span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a>                        validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># validation_steps=len(validation_data)</span></span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a>                        )</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/5
+6/6 [==============================] - 13s 297ms/step - loss: 1.3139 - accuracy: 0.5000 - val_loss: 0.8217 - val_accuracy: 0.5000
+Epoch 2/5
+6/6 [==============================] - 1s 260ms/step - loss: 0.7250 - accuracy: 0.5000 - val_loss: 0.6932 - val_accuracy: 0.5000
+Epoch 3/5
+6/6 [==============================] - 1s 240ms/step - loss: 0.6932 - accuracy: 0.5000 - val_loss: 0.6932 - val_accuracy: 0.5000
+Epoch 4/5
+6/6 [==============================] - 1s 239ms/step - loss: 0.6932 - accuracy: 0.5000 - val_loss: 0.6931 - val_accuracy: 0.5000
+Epoch 5/5
+6/6 [==============================] - 1s 165ms/step - loss: 0.6932 - accuracy: 0.5000 - val_loss: 0.6931 - val_accuracy: 0.5000
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="35"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="Vls4EJuPskLu" data-outputId="26ccf9f1-4e24-4d1e-b972-094fd90a6372">
+<div class="sourceCode" id="cb36"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>baseModel_result <span class="op">=</span> model_0.evaluate(test_data)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1/1 [==============================] - 0s 335ms/step - loss: 0.6932 - accuracy: 0.5000
+</code></pre>
+</div>
+</div>
+<section id="model-1-transfer-learning" class="cell markdown"
+id="Hu60t3HbmBET">
+<h2>Model 1 (Transfer Learning)</h2>
+</section>
+<div class="cell code" data-execution_count="24" id="1-k_tVz6l_kM">
+<div class="sourceCode" id="cb38"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow_hub <span class="im">as</span> hub</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras <span class="im">import</span> layers</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="25" id="lw96_zQdm7o0">
+<div class="sourceCode" id="cb39"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_model(model_url, num_classes<span class="op">=</span><span class="dv">10</span>):</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">&quot;&quot;&quot;Takes a TensorFlow Hub URL and creates a Keras Sequential model with it.</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="co">  Args:</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="co">    model_url (str): A TensorFlow Hub feature extraction URL.</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="co">    num_classes (int): Number of output neurons in output layer,</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="co">      should be equal to number of target classes, default 10.</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="co">  Returns:</span></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a><span class="co">    An uncompiled Keras Sequential model with model_url as feature</span></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="co">    extractor layer and Dense output layer with num_classes outputs.</span></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="co">  &quot;&quot;&quot;</span></span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the pretrained model and save it as a Keras layer</span></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a>  feature_extractor_layer <span class="op">=</span> hub.KerasLayer(model_url,</span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>                                           trainable<span class="op">=</span><span class="va">False</span>, <span class="co"># freeze the underlying patterns</span></span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>                                           name<span class="op">=</span><span class="st">&#39;feature_extraction_layer&#39;</span>,</span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a>                                           input_shape<span class="op">=</span>IMAGE_SHAPE<span class="op">+</span>(<span class="dv">3</span>,)) <span class="co"># define the input image shape</span></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-19"><a href="#cb39-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create our own model</span></span>
+<span id="cb39-20"><a href="#cb39-20" aria-hidden="true" tabindex="-1"></a>  model <span class="op">=</span> tf.keras.Sequential([</span>
+<span id="cb39-21"><a href="#cb39-21" aria-hidden="true" tabindex="-1"></a>    feature_extractor_layer, <span class="co"># use the feature extraction layer as the base</span></span>
+<span id="cb39-22"><a href="#cb39-22" aria-hidden="true" tabindex="-1"></a>    layers.Dense(num_classes, activation<span class="op">=</span><span class="st">&#39;softmax&#39;</span>, name<span class="op">=</span><span class="st">&#39;output_layer&#39;</span>) <span class="co"># create our own output layer</span></span>
+<span id="cb39-23"><a href="#cb39-23" aria-hidden="true" tabindex="-1"></a>  ])</span>
+<span id="cb39-24"><a href="#cb39-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-25"><a href="#cb39-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> model</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="26" id="nE-CjX6Gm4ce">
+<div class="sourceCode" id="cb40"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Resnet 50 V2 feature vector</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>resnet_url <span class="op">=</span> <span class="st">&quot;https://tfhub.dev/google/imagenet/resnet_v2_50/feature_vector/4&quot;</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Original: EfficientNetB0 feature vector (version 1)</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>efficientnet_url <span class="op">=</span> <span class="st">&quot;https://tfhub.dev/tensorflow/efficientnet/b0/feature-vector/1&quot;</span></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="co"># # New: EfficientNetB0 feature vector (version 2)</span></span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="co"># efficientnet_url = &quot;https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2&quot;</span></span></code></pre></div>
+</div>
+<section id="resnet" class="cell markdown" id="pK2thTgbn2aO">
+<h3>Resnet</h3>
+</section>
+<div class="cell code" data-execution_count="27" id="a5_sC56nnLsu">
+<div class="sourceCode" id="cb41"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create model</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>resnet_model <span class="op">=</span> create_model(resnet_url, num_classes<span class="op">=</span>train_data.num_classes)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>resnet_model.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&#39;categorical_crossentropy&#39;</span>,</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>                     optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>                     metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="28"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="FYGcliVsna9g" data-outputId="d93e38fb-dde4-460a-d306-0dd3f8ce064d">
+<div class="sourceCode" id="cb42"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>early_stopping <span class="op">=</span> tf.keras.callbacks.EarlyStopping(min_delta<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>                          patience<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>                          verbose<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>                          restore_best_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>resnet_history <span class="op">=</span> resnet_model.fit(train_data,</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>                                  epochs<span class="op">=</span><span class="dv">50</span>,</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>                                  steps_per_epoch<span class="op">=</span><span class="bu">len</span>(train_data),</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>                                  validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>                                  validation_steps<span class="op">=</span><span class="bu">len</span>(validation_data),</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>                                  callbacks<span class="op">=</span>[early_stopping]</span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>                                  )</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/50
+6/6 [==============================] - 10s 979ms/step - loss: 0.8404 - accuracy: 0.5469 - val_loss: 0.6797 - val_accuracy: 0.5818
+Epoch 2/50
+6/6 [==============================] - 1s 206ms/step - loss: 0.5435 - accuracy: 0.6823 - val_loss: 0.5640 - val_accuracy: 0.7091
+Epoch 3/50
+6/6 [==============================] - 1s 213ms/step - loss: 0.4238 - accuracy: 0.7604 - val_loss: 0.4266 - val_accuracy: 0.8364
+Epoch 4/50
+6/6 [==============================] - 1s 201ms/step - loss: 0.3388 - accuracy: 0.8542 - val_loss: 0.3555 - val_accuracy: 0.8727
+Epoch 5/50
+6/6 [==============================] - 1s 209ms/step - loss: 0.2947 - accuracy: 0.8906 - val_loss: 0.3142 - val_accuracy: 0.9273
+Epoch 6/50
+6/6 [==============================] - 1s 179ms/step - loss: 0.2610 - accuracy: 0.8906 - val_loss: 0.3171 - val_accuracy: 0.8727
+Epoch 7/50
+6/6 [==============================] - 2s 269ms/step - loss: 0.2291 - accuracy: 0.9167 - val_loss: 0.2699 - val_accuracy: 0.9273
+Epoch 8/50
+6/6 [==============================] - 1s 201ms/step - loss: 0.2072 - accuracy: 0.9323 - val_loss: 0.2698 - val_accuracy: 0.9091
+Epoch 9/50
+6/6 [==============================] - 1s 177ms/step - loss: 0.1923 - accuracy: 0.9271 - val_loss: 0.2743 - val_accuracy: 0.9091
+Epoch 10/50
+6/6 [==============================] - 1s 213ms/step - loss: 0.1736 - accuracy: 0.9375 - val_loss: 0.2539 - val_accuracy: 0.9091
+Epoch 11/50
+6/6 [==============================] - 1s 209ms/step - loss: 0.1642 - accuracy: 0.9531 - val_loss: 0.2405 - val_accuracy: 0.8909
+Epoch 12/50
+6/6 [==============================] - 1s 179ms/step - loss: 0.1522 - accuracy: 0.9531 - val_loss: 0.2651 - val_accuracy: 0.8909
+Epoch 13/50
+6/6 [==============================] - 1s 214ms/step - loss: 0.1432 - accuracy: 0.9688 - val_loss: 0.2377 - val_accuracy: 0.8909
+Epoch 14/50
+6/6 [==============================] - 1s 192ms/step - loss: 0.1308 - accuracy: 0.9792 - val_loss: 0.2582 - val_accuracy: 0.8909
+Epoch 15/50
+6/6 [==============================] - 1s 217ms/step - loss: 0.1226 - accuracy: 0.9792 - val_loss: 0.2319 - val_accuracy: 0.8909
+Epoch 16/50
+6/6 [==============================] - 1s 188ms/step - loss: 0.1141 - accuracy: 0.9844 - val_loss: 0.2467 - val_accuracy: 0.8909
+Epoch 17/50
+6/6 [==============================] - 1s 210ms/step - loss: 0.1068 - accuracy: 0.9792 - val_loss: 0.2310 - val_accuracy: 0.8909
+Epoch 18/50
+6/6 [==============================] - 1s 187ms/step - loss: 0.1019 - accuracy: 0.9844 - val_loss: 0.2427 - val_accuracy: 0.8727
+Epoch 19/50
+6/6 [==============================] - 1s 204ms/step - loss: 0.0953 - accuracy: 0.9896 - val_loss: 0.2250 - val_accuracy: 0.8909
+Epoch 20/50
+6/6 [==============================] - 1s 179ms/step - loss: 0.0895 - accuracy: 0.9896 - val_loss: 0.2343 - val_accuracy: 0.8727
+Epoch 21/50
+6/6 [==============================] - 1s 185ms/step - loss: 0.0845 - accuracy: 0.9896 - val_loss: 0.2477 - val_accuracy: 0.8727
+Epoch 22/50
+6/6 [==============================] - 1s 207ms/step - loss: 0.0810 - accuracy: 0.9896 - val_loss: 0.2219 - val_accuracy: 0.9091
+Epoch 23/50
+6/6 [==============================] - 1s 207ms/step - loss: 0.0767 - accuracy: 0.9896 - val_loss: 0.2211 - val_accuracy: 0.9091
+Epoch 24/50
+6/6 [==============================] - 2s 286ms/step - loss: 0.0719 - accuracy: 0.9896 - val_loss: 0.2378 - val_accuracy: 0.8727
+Epoch 25/50
+6/6 [==============================] - 1s 176ms/step - loss: 0.0704 - accuracy: 0.9948 - val_loss: 0.2291 - val_accuracy: 0.8909
+Epoch 26/50
+6/6 [==============================] - ETA: 0s - loss: 0.0655 - accuracy: 0.9948Restoring model weights from the end of the best epoch: 23.
+6/6 [==============================] - 1s 213ms/step - loss: 0.0655 - accuracy: 0.9948 - val_loss: 0.2224 - val_accuracy: 0.8909
+Epoch 26: early stopping
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="29"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="RNhJKv_Ysx4B" data-outputId="037d1677-1a38-48d6-f0c6-a74be5671184">
+<div class="sourceCode" id="cb44"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>resnet_result <span class="op">=</span> resnet_model.evaluate(validation_data)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>2/2 [==============================] - 0s 76ms/step - loss: 0.2211 - accuracy: 0.9091
+</code></pre>
+</div>
+</div>
+<section id="efficientnet" class="cell markdown" id="lZnj6DVrn7rC">
+<h3>efficientnet</h3>
+</section>
+<div class="cell code" data-execution_count="30" id="WyMrD8FLoCzw">
+<div class="sourceCode" id="cb46"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create model</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>efficientnet_model <span class="op">=</span> create_model(efficientnet_url, num_classes<span class="op">=</span>train_data.num_classes)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>efficientnet_model.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&#39;categorical_crossentropy&#39;</span>,</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>                     optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>                     metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="31"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="2Z7tbIV7oIpV" data-outputId="db6826e8-6a7f-4857-89c1-80a3fa4866cc">
+<div class="sourceCode" id="cb47"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>early_stopping <span class="op">=</span> tf.keras.callbacks.EarlyStopping(min_delta<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>                          patience<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>                          verbose<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>                          restore_best_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>efficientnet_history <span class="op">=</span> efficientnet_model.fit(train_data,</span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a>                                  epochs<span class="op">=</span><span class="dv">50</span>,</span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a>                                  steps_per_epoch<span class="op">=</span><span class="bu">len</span>(train_data),</span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a>                                  validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a>                                  validation_steps<span class="op">=</span><span class="bu">len</span>(validation_data),</span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a>                                  callbacks<span class="op">=</span>[early_stopping]</span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a>                                  )</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Epoch 1/50
+6/6 [==============================] - 15s 550ms/step - loss: 0.6954 - accuracy: 0.6406 - val_loss: 0.6267 - val_accuracy: 0.6727
+Epoch 2/50
+6/6 [==============================] - 1s 177ms/step - loss: 0.5544 - accuracy: 0.7448 - val_loss: 0.6237 - val_accuracy: 0.6182
+Epoch 3/50
+6/6 [==============================] - 1s 181ms/step - loss: 0.4813 - accuracy: 0.7760 - val_loss: 0.5924 - val_accuracy: 0.6364
+Epoch 4/50
+6/6 [==============================] - 1s 191ms/step - loss: 0.4335 - accuracy: 0.8229 - val_loss: 0.5141 - val_accuracy: 0.7818
+Epoch 5/50
+6/6 [==============================] - 1s 187ms/step - loss: 0.3949 - accuracy: 0.8594 - val_loss: 0.4850 - val_accuracy: 0.8000
+Epoch 6/50
+6/6 [==============================] - 1s 201ms/step - loss: 0.3643 - accuracy: 0.8698 - val_loss: 0.4612 - val_accuracy: 0.8364
+Epoch 7/50
+6/6 [==============================] - 2s 252ms/step - loss: 0.3409 - accuracy: 0.8698 - val_loss: 0.4368 - val_accuracy: 0.8364
+Epoch 8/50
+6/6 [==============================] - 1s 205ms/step - loss: 0.3191 - accuracy: 0.8854 - val_loss: 0.4333 - val_accuracy: 0.8364
+Epoch 9/50
+6/6 [==============================] - 1s 202ms/step - loss: 0.3014 - accuracy: 0.8958 - val_loss: 0.4037 - val_accuracy: 0.8545
+Epoch 10/50
+6/6 [==============================] - 1s 186ms/step - loss: 0.2859 - accuracy: 0.8958 - val_loss: 0.3880 - val_accuracy: 0.8909
+Epoch 11/50
+6/6 [==============================] - 1s 194ms/step - loss: 0.2705 - accuracy: 0.9115 - val_loss: 0.3801 - val_accuracy: 0.8727
+Epoch 12/50
+6/6 [==============================] - 1s 193ms/step - loss: 0.2588 - accuracy: 0.9115 - val_loss: 0.3760 - val_accuracy: 0.8545
+Epoch 13/50
+6/6 [==============================] - 1s 191ms/step - loss: 0.2490 - accuracy: 0.9167 - val_loss: 0.3662 - val_accuracy: 0.8727
+Epoch 14/50
+6/6 [==============================] - 1s 190ms/step - loss: 0.2390 - accuracy: 0.9219 - val_loss: 0.3522 - val_accuracy: 0.8727
+Epoch 15/50
+6/6 [==============================] - 1s 169ms/step - loss: 0.2305 - accuracy: 0.9167 - val_loss: 0.3523 - val_accuracy: 0.8364
+Epoch 16/50
+6/6 [==============================] - 2s 261ms/step - loss: 0.2198 - accuracy: 0.9271 - val_loss: 0.3456 - val_accuracy: 0.8545
+Epoch 17/50
+6/6 [==============================] - 1s 220ms/step - loss: 0.2144 - accuracy: 0.9219 - val_loss: 0.3449 - val_accuracy: 0.8364
+Epoch 18/50
+6/6 [==============================] - 1s 183ms/step - loss: 0.2051 - accuracy: 0.9375 - val_loss: 0.3354 - val_accuracy: 0.8545
+Epoch 19/50
+6/6 [==============================] - 1s 185ms/step - loss: 0.2005 - accuracy: 0.9375 - val_loss: 0.3318 - val_accuracy: 0.8545
+Epoch 20/50
+6/6 [==============================] - 1s 184ms/step - loss: 0.1915 - accuracy: 0.9427 - val_loss: 0.3392 - val_accuracy: 0.8364
+Epoch 21/50
+6/6 [==============================] - 1s 170ms/step - loss: 0.1877 - accuracy: 0.9375 - val_loss: 0.3342 - val_accuracy: 0.8364
+Epoch 22/50
+6/6 [==============================] - 1s 211ms/step - loss: 0.1823 - accuracy: 0.9375 - val_loss: 0.3235 - val_accuracy: 0.8545
+Epoch 23/50
+6/6 [==============================] - 1s 199ms/step - loss: 0.1772 - accuracy: 0.9479 - val_loss: 0.3232 - val_accuracy: 0.8545
+Epoch 24/50
+6/6 [==============================] - 1s 178ms/step - loss: 0.1725 - accuracy: 0.9479 - val_loss: 0.3349 - val_accuracy: 0.8182
+Epoch 25/50
+6/6 [==============================] - 1s 191ms/step - loss: 0.1667 - accuracy: 0.9531 - val_loss: 0.3230 - val_accuracy: 0.8545
+Epoch 26/50
+6/6 [==============================] - 2s 313ms/step - loss: 0.1612 - accuracy: 0.9531 - val_loss: 0.3164 - val_accuracy: 0.8545
+Epoch 27/50
+6/6 [==============================] - 1s 222ms/step - loss: 0.1575 - accuracy: 0.9583 - val_loss: 0.3193 - val_accuracy: 0.8545
+Epoch 28/50
+6/6 [==============================] - 1s 171ms/step - loss: 0.1529 - accuracy: 0.9635 - val_loss: 0.3205 - val_accuracy: 0.8545
+Epoch 29/50
+6/6 [==============================] - ETA: 0s - loss: 0.1487 - accuracy: 0.9635Restoring model weights from the end of the best epoch: 26.
+6/6 [==============================] - 1s 222ms/step - loss: 0.1487 - accuracy: 0.9635 - val_loss: 0.3185 - val_accuracy: 0.8545
+Epoch 29: early stopping
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="32"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="BS2CRk5Fs8pS" data-outputId="b161ec71-f88c-427f-e56b-c569c08be87e">
+<div class="sourceCode" id="cb49"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>efficientnet_result <span class="op">=</span> efficientnet_model.evaluate(validation_data)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>2/2 [==============================] - 0s 58ms/step - loss: 0.3164 - accuracy: 0.8545
+</code></pre>
+</div>
+</div>
+<section id="evaluation" class="cell markdown" id="ijx09Ikqwf6i">
+<h1>Evaluation</h1>
+</section>
+<div class="cell code" data-execution_count="33"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="7rF5uM9rttC_" data-outputId="41c09e4c-e760-425e-8b19-9cdc66200915">
+<div class="sourceCode" id="cb51"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pathlib</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> pathlib.Path(<span class="st">&quot;/content/brain_tumor_split/train_data&quot;</span>) <span class="co"># turn our training path into a Python path</span></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="co"># class_names = np.array([item.name for item in data_dir.glob(&#39;*&#39;)]) # created a list of class_names from the subdirectories</span></span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>class_names <span class="op">=</span> np.array([item.name <span class="cf">for</span> item <span class="kw">in</span> <span class="bu">sorted</span>(data_dir.glob(<span class="st">&#39;*&#39;</span>))]) <span class="co"># created a list of class_names from the subdirectories</span></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>class_names</span></code></pre></div>
+<div class="output execute_result" data-execution_count="33">
+<pre><code>array([&#39;no&#39;, &#39;yes&#39;], dtype=&#39;&lt;U3&#39;)</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="36"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="RxbJhrs0t_CY" data-outputId="64238a28-138b-499f-a292-b72d6da438dd">
+<div class="sourceCode" id="cb53"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Base Model = </span><span class="sc">{</span>baseModel_result[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Resnet = </span><span class="sc">{</span><span class="bu">round</span>(resnet_result[<span class="dv">1</span>],<span class="dv">2</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Efficientnet =</span><span class="sc">{</span><span class="bu">round</span>(efficientnet_result[<span class="dv">1</span>],<span class="dv">2</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Akurasi Base Model = 0.5
+Akurasi Resnet = 0.91
+Akurasi Efficientnet =0.85
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="41"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:445}"
+id="-onakxVltXB9" data-outputId="f3c8a282-0490-44aa-c57b-8122ea058c6c">
+<div class="sourceCode" id="cb55"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>pred_and_plot(model<span class="op">=</span>resnet_model,</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>              filename<span class="op">=</span><span class="st">&quot;/content/brain_tumor_split/test_data/yes/Y155_cropped_0.JPG&quot;</span>,</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>              class_names<span class="op">=</span>class_names)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>1/1 [==============================] - 0s 24ms/step
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img
+src="vertopal_46b620e4a91342e8a6ebb883fab67be8/61f0abd2a1cf8987d14bf9652ba3ef11ee43b64c.png" /></p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>f3787472d6064474863e50544cbbd4e2</title>
+    <style>
+      html {
+        line-height: 1.5;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: #1a1a1a;
+        background-color: #fdfdfd;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 36em;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.9em;
+          padding: 1em;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+      }
+      @media print {
+        body {
+          background-color: transparent;
+          color: black;
+          font-size: 12pt;
+        }
+        p,
+        h2,
+        h3 {
+          orphans: 3;
+          widows: 3;
+        }
+        h2,
+        h3,
+        h4 {
+          page-break-after: avoid;
+        }
+      }
+      p {
+        margin: 1em 0;
+      }
+      a {
+        color: #1a1a1a;
+      }
+      a:visited {
+        color: #1a1a1a;
+      }
+      img {
+        max-width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 1.4em;
+      }
+      h5,
+      h6 {
+        font-size: 1em;
+        font-style: italic;
+      }
+      h6 {
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        padding-left: 1.7em;
+        margin-top: 1em;
+      }
+      li > ol,
+      li > ul {
+        margin-top: 0;
+      }
+      blockquote {
+        margin: 1em 0 1em 1.7em;
+        padding-left: 1em;
+        border-left: 2px solid #e6e6e6;
+        color: #606060;
+      }
+      code {
+        font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace;
+        font-size: 85%;
+        margin: 0;
+      }
+      pre {
+        margin: 1em 0;
+        overflow: auto;
+      }
+      pre code {
+        padding: 0;
+        overflow: visible;
+        overflow-wrap: normal;
+      }
+      .sourceCode {
+        background-color: transparent;
+        overflow: visible;
+      }
+      hr {
+        background-color: #1a1a1a;
+        border: none;
+        height: 1px;
+        margin: 1em 0;
+      }
+      table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        font-variant-numeric: lining-nums tabular-nums;
+      }
+      table caption {
+        margin-bottom: 0.75em;
+      }
+      tbody {
+        margin-top: 0.5em;
+        border-top: 1px solid #1a1a1a;
+        border-bottom: 1px solid #1a1a1a;
+      }
+      th {
+        border-top: 1px solid #1a1a1a;
+        padding: 0.25em 0.5em 0.25em 0.5em;
+      }
+      td {
+        padding: 0.125em 0.5em 0.25em 0.5em;
+      }
+      header {
+        margin-bottom: 4em;
+        text-align: center;
+      }
+      #TOC li {
+        list-style: none;
+      }
+      #TOC ul {
+        padding-left: 1.3em;
+      }
+      #TOC > ul {
+        padding-left: 0;
+      }
+      #TOC a:not(:hover) {
+        text-decoration: none;
+      }
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      div.columns {
+        display: flex;
+        gap: min(4vw, 1.5em);
+      }
+      div.column {
+        flex: auto;
+        overflow-x: auto;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+      ul.task-list {
+        list-style: none;
+      }
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      pre > code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      pre > code.sourceCode > span {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      pre > code.sourceCode > span:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode > span {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        pre > code.sourceCode {
+          white-space: pre-wrap;
+        }
+        pre > code.sourceCode > span {
+          text-indent: -5em;
+          padding-left: 5em;
+        }
+      }
+      pre.numberSource code {
+        counter-reset: source-line 0;
+      }
+      pre.numberSource code > span {
+        position: relative;
+        left: -4em;
+        counter-increment: source-line;
+      }
+      pre.numberSource code > span > a:first-child::before {
+        content: counter(source-line);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      /* div.sourceCode
+      {   } */
+      @media screen {
+        pre > code.sourceCode > span > a:first-child::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+        color: #008000;
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      /* code span.ex { } Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+        color: #008000;
+        font-weight: bold;
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+      .display.math {
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section
+      id="pinguin-vs-turtle---deep-learning"
+      class="cell markdown"
+      id="X8MFx4HnvqiC"
+    >
+      <h1>Pinguin VS Turtle - Deep Learning</h1>
+    </section>
+    <section id="project-overview" class="cell markdown" id="Kc6s-MY6vlr-">
+      <h2>Project Overview</h2>
+    </section>
+    <div class="cell markdown" id="QjC8UAbmvNYV">
+      <p>
+        572 gambar unik yang berisi pinguin dan kura kura, dibagi menjadi folder
+        pelatihan berisi 500 gambar dan folder validasi berisi 72 gambar. Set
+        data dibagi 50:50 antara gambar kura-kura dan penguin. Setiap gambar
+        berisi tepat satu contoh objek.
+      </p>
+    </div>
+    <div class="cell markdown" id="NPwlbwRcvWFP">
+      <p>
+        Tujuannya untuk dapat membuat model yang dapat mengklasifikasi pinguin
+        dan kura kura secara tepat menggunakan deep learning &amp; transfer
+        learning
+      </p>
+    </div>
+    <section id="import-data--module" class="cell markdown" id="SpKMytDJ4Zv-">
+      <h2>IMPORT DATA &amp; MODULE</h2>
+    </section>
+    <section
+      id="load-data-menggunakan-api-kaggle"
+      class="cell markdown"
+      id="NSqZlgwH5Okh"
+    >
+      <h3>Load data menggunakan API KAGGLE</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="1"
+      data-colab='{"base_uri":"https://localhost:8080/","height":88}'
+      id="N-qXVfqL1oys"
+      data-outputId="ccc29505-80d8-4077-aa7d-3a1790bbfea2"
+    >
+      <div class="sourceCode" id="cb1">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># C:\Users\USER\.kaggle</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>files.upload()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <input
+          type="file"
+          id="files-9fee18cc-d141-4600-ad05-5b80aae11cb6"
+          name="files[]"
+          multiple
+          disabled
+          style="border: none"
+        />
+        <output id="result-9fee18cc-d141-4600-ad05-5b80aae11cb6">
+          Upload widget is only available when the cell has been executed in the
+          current browser session. Please rerun this cell to enable.
+        </output>
+        <script>
+          // Copyright 2017 Google LLC
+          //
+          // Licensed under the Apache License, Version 2.0 (the "License");
+          // you may not use this file except in compliance with the License.
+          // You may obtain a copy of the License at
+          //
+          //      http://www.apache.org/licenses/LICENSE-2.0
+          //
+          // Unless required by applicable law or agreed to in writing, software
+          // distributed under the License is distributed on an "AS IS" BASIS,
+          // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          // See the License for the specific language governing permissions and
+          // limitations under the License.
+
+          /**
+           * @fileoverview Helpers for google.colab Python module.
+           */
+          (function (scope) {
+            function span(text, styleAttributes = {}) {
+              const element = document.createElement("span");
+              element.textContent = text;
+              for (const key of Object.keys(styleAttributes)) {
+                element.style[key] = styleAttributes[key];
+              }
+              return element;
+            }
+
+            // Max number of bytes which will be uploaded at a time.
+            const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+            function _uploadFiles(inputId, outputId) {
+              const steps = uploadFilesStep(inputId, outputId);
+              const outputElement = document.getElementById(outputId);
+              // Cache steps on the outputElement to make it available for the next call
+              // to uploadFilesContinue from Python.
+              outputElement.steps = steps;
+
+              return _uploadFilesContinue(outputId);
+            }
+
+            // This is roughly an async generator (not supported in the browser yet),
+            // where there are multiple asynchronous steps and the Python side is going
+            // to poll for completion of each step.
+            // This uses a Promise to block the python side on completion of each step,
+            // then passes the result of the previous step as the input to the next step.
+            function _uploadFilesContinue(outputId) {
+              const outputElement = document.getElementById(outputId);
+              const steps = outputElement.steps;
+
+              const next = steps.next(outputElement.lastPromiseValue);
+              return Promise.resolve(next.value.promise).then((value) => {
+                // Cache the last promise value to make it available to the next
+                // step of the generator.
+                outputElement.lastPromiseValue = value;
+                return next.value.response;
+              });
+            }
+
+            /**
+             * Generator function which is called between each async step of the upload
+             * process.
+             * @param {string} inputId Element ID of the input file picker element.
+             * @param {string} outputId Element ID of the output display.
+             * @return {!Iterable<!Object>} Iterable of next steps.
+             */
+            function* uploadFilesStep(inputId, outputId) {
+              const inputElement = document.getElementById(inputId);
+              inputElement.disabled = false;
+
+              const outputElement = document.getElementById(outputId);
+              outputElement.innerHTML = "";
+
+              const pickedPromise = new Promise((resolve) => {
+                inputElement.addEventListener("change", (e) => {
+                  resolve(e.target.files);
+                });
+              });
+
+              const cancel = document.createElement("button");
+              inputElement.parentElement.appendChild(cancel);
+              cancel.textContent = "Cancel upload";
+              const cancelPromise = new Promise((resolve) => {
+                cancel.onclick = () => {
+                  resolve(null);
+                };
+              });
+
+              // Wait for the user to pick the files.
+              const files = yield {
+                promise: Promise.race([pickedPromise, cancelPromise]),
+                response: {
+                  action: "starting",
+                },
+              };
+
+              cancel.remove();
+
+              // Disable the input element since further picks are not allowed.
+              inputElement.disabled = true;
+
+              if (!files) {
+                return {
+                  response: {
+                    action: "complete",
+                  },
+                };
+              }
+
+              for (const file of files) {
+                const li = document.createElement("li");
+                li.append(span(file.name, { fontWeight: "bold" }));
+                li.append(
+                  span(
+                    `(${file.type || "n/a"}) - ${file.size} bytes, ` +
+                      `last modified: ${
+                        file.lastModifiedDate
+                          ? file.lastModifiedDate.toLocaleDateString()
+                          : "n/a"
+                      } - `
+                  )
+                );
+                const percent = span("0% done");
+                li.appendChild(percent);
+
+                outputElement.appendChild(li);
+
+                const fileDataPromise = new Promise((resolve) => {
+                  const reader = new FileReader();
+                  reader.onload = (e) => {
+                    resolve(e.target.result);
+                  };
+                  reader.readAsArrayBuffer(file);
+                });
+                // Wait for the data to be ready.
+                let fileData = yield {
+                  promise: fileDataPromise,
+                  response: {
+                    action: "continue",
+                  },
+                };
+
+                // Use a chunked sending to avoid message size limits. See b/62115660.
+                let position = 0;
+                do {
+                  const length = Math.min(
+                    fileData.byteLength - position,
+                    MAX_PAYLOAD_SIZE
+                  );
+                  const chunk = new Uint8Array(fileData, position, length);
+                  position += length;
+
+                  const base64 = btoa(String.fromCharCode.apply(null, chunk));
+                  yield {
+                    response: {
+                      action: "append",
+                      file: file.name,
+                      data: base64,
+                    },
+                  };
+
+                  let percentDone =
+                    fileData.byteLength === 0
+                      ? 100
+                      : Math.round((position / fileData.byteLength) * 100);
+                  percent.textContent = `${percentDone}% done`;
+                } while (position < fileData.byteLength);
+              }
+
+              // All done.
+              yield {
+                response: {
+                  action: "complete",
+                },
+              };
+            }
+
+            scope.google = scope.google || {};
+            scope.google.colab = scope.google.colab || {};
+            scope.google.colab._files = {
+              _uploadFiles,
+              _uploadFilesContinue,
+            };
+          })(self);
+        </script>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Saving kaggle.json to kaggle.json
+</code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="1">
+        <pre><code>{&#39;kaggle.json&#39;: b&#39;{&quot;username&quot;:&quot;syahmisajid12&quot;,&quot;key&quot;:&quot;a76cee502ebc4268b9b384c1c587dfe1&quot;}&#39;}</code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="2" id="hZ4c9mSX5LuW">
+      <div class="sourceCode" id="cb4">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">~/</span>.kaggle</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cp kaggle.json <span class="op">~/</span>.kaggle<span class="op">/</span></span></code></pre>
+      </div>
+    </div>
+    <section id="load-data-dari-kaggle" class="cell markdown" id="sD6IGqR07JO4">
+      <h4>Load Data dari Kaggle</h4>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="3"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="A4KJjvQL7DbM"
+      data-outputId="0e680dfb-3f66-497f-b120-27e358aabfb3"
+    >
+      <div class="sourceCode" id="cb5">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle datasets download <span class="op">-</span>d abbymorgan<span class="op">/</span>penguins<span class="op">-</span>vs<span class="op">-</span>turtles</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run &#39;chmod 600 /root/.kaggle/kaggle.json&#39;
+Downloading penguins-vs-turtles.zip to /content
+ 24% 5.00M/20.7M [00:00&lt;00:00, 30.1MB/s]
+100% 20.7M/20.7M [00:00&lt;00:00, 90.2MB/s]
+</code></pre>
+      </div>
+    </div>
+    <section id="import-module" class="cell markdown" id="VHSpJgR1Wkng">
+      <h4>Import Module</h4>
+    </section>
+    <div class="cell code" data-execution_count="4" id="SXf3mJc37LvO">
+      <div class="sourceCode" id="cb7">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre>
+      </div>
+    </div>
+    <section id="import-function" class="cell markdown" id="EKsxikumWnVL">
+      <h4>Import Function</h4>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="8"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="-D6ZGvMT7ORk"
+      data-outputId="3c60d88f-b94d-4177-b0fe-51259a7d14e7"
+    >
+      <div class="sourceCode" id="cb8">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get helper_functions.py script from course GitHub</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>raw.githubusercontent.com<span class="op">/</span>Syahmi33github<span class="op">/</span>Emotion<span class="op">-</span>Classification<span class="op">/</span>main<span class="op">/</span>helper_functions.py</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import helper functions we&#39;re going to use</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> helper_functions <span class="im">import</span> create_tensorboard_callback, plot_loss_curves, unzip_data, walk_through_dir, view_random_images,pred_and_plot, load_and_prep_image</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>--2023-06-25 13:32:23--  https://raw.githubusercontent.com/Syahmi33github/Emotion-Classification/main/helper_functions.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11485 (11K) [text/plain]
+Saving to: ‘helper_functions.py.1’
+
+
+helper_functions.py   0%[                    ]       0  --.-KB/s               
+helper_functions.py 100%[===================&gt;]  11.22K  --.-KB/s    in 0.001s  
+
+2023-06-25 13:32:23 (10.8 MB/s) - ‘helper_functions.py.1’ saved [11485/11485]
+
+</code></pre>
+      </div>
+    </div>
+    <section id="data-pre-processing" class="cell markdown" id="zFU2PIr-hCHS">
+      <h2>Data Pre-Processing</h2>
+    </section>
+    <section id="explore-data" class="cell markdown" id="KBnAuJX_xw8S">
+      <h3>Explore Data</h3>
+    </section>
+    <div class="cell code" data-execution_count="6" id="CquP30-yksXp">
+      <div class="sourceCode" id="cb10">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>unzip_data(<span class="st">&quot;/content/penguins-vs-turtles.zip&quot;</span>)</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="11"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="zzHBdY01kwmF"
+      data-outputId="8e869f67-12e4-40a4-ea20-6b32522bc7b6"
+    >
+      <div class="sourceCode" id="cb11">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>walk_through_dir(<span class="st">&quot;/content/train&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>There are 1 directories and 0 images in &#39;/content/train&#39;.
+There are 0 directories and 500 images in &#39;/content/train/train&#39;.
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="BVpD8zIFwf_X">
+      <p>Data train berjumlah 500</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="12"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="t9xRjW7twbNw"
+      data-outputId="0d8c3648-ad38-4e5b-94c9-527878616dbe"
+    >
+      <div class="sourceCode" id="cb13">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>walk_through_dir(<span class="st">&quot;/content/valid&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>There are 1 directories and 0 images in &#39;/content/valid&#39;.
+There are 0 directories and 72 images in &#39;/content/valid/valid&#39;.
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="FcAlEiuNwoRi">
+      <p>Data train berjumlah 72</p>
+    </div>
+    <div class="cell code" data-execution_count="64" id="gt9CTRd0k-5V">
+      <div class="sourceCode" id="cb15">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> <span class="st">&#39;/content/train/&#39;</span></span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="14"
+      data-colab='{"base_uri":"https://localhost:8080/","height":296}'
+      id="b1sQAMgYlHm4"
+      data-outputId="a0c05954-2fbc-43a9-90a8-77f5e90cf894"
+    >
+      <div class="sourceCode" id="cb16">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View a random image from the training dataset</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> view_random_images(target_dir<span class="op">=</span>train_dir,</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;train&quot;</span>,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/fac476c14ae008c385112d2673c639036446a9d5.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="preparation-data" class="cell markdown" id="uNnivz5Nx1sm">
+      <h3>Preparation Data</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="15"
+      data-colab='{"base_uri":"https://localhost:8080/","height":206}'
+      id="llDOo2KQNikQ"
+      data-outputId="353c63b5-72a6-4e27-8e77-de4d8026936f"
+    >
+      <div class="sourceCode" id="cb17">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>train_anno<span class="op">=</span>pd.read_json(<span class="st">&#39;/content/train_annotations&#39;</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>train_anno.head()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="15">
+        <div id="df-363bfb46-f82b-403e-9a26-2f96abcf91ea">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>id</th>
+                    <th>image_id</th>
+                    <th>category_id</th>
+                    <th>bbox</th>
+                    <th>area</th>
+                    <th>segmentation</th>
+                    <th>iscrowd</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>[119, 25, 205, 606]</td>
+                    <td>124230</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>[131, 82, 327, 440]</td>
+                    <td>143880</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>[225, 298, 198, 185]</td>
+                    <td>36630</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>[468, 109, 172, 193]</td>
+                    <td>33196</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>[14, 242, 611, 154]</td>
+                    <td>94094</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-363bfb46-f82b-403e-9a26-2f96abcf91ea')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-363bfb46-f82b-403e-9a26-2f96abcf91ea button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-363bfb46-f82b-403e-9a26-2f96abcf91ea"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="16"
+      data-colab='{"base_uri":"https://localhost:8080/","height":206}'
+      id="NVgkDveaN5Lb"
+      data-outputId="8eb0d7c1-bd06-4aa0-82d9-5875f47a498e"
+    >
+      <div class="sourceCode" id="cb18">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>val_anno<span class="op">=</span>pd.read_json(<span class="st">&#39;/content/valid_annotations&#39;</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>val_anno.head()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="16">
+        <div id="df-4c06da7b-8707-404e-8c16-f2f53262715e">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>id</th>
+                    <th>image_id</th>
+                    <th>category_id</th>
+                    <th>bbox</th>
+                    <th>area</th>
+                    <th>segmentation</th>
+                    <th>iscrowd</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>[227, 93, 298, 525]</td>
+                    <td>156450</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>[211, 198, 428, 259]</td>
+                    <td>110852</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>[0, 243, 512, 267]</td>
+                    <td>136704</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>[128, 178, 457, 354]</td>
+                    <td>161778</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>[168, 131, 296, 469]</td>
+                    <td>138824</td>
+                    <td>[]</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-4c06da7b-8707-404e-8c16-f2f53262715e')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-4c06da7b-8707-404e-8c16-f2f53262715e button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-4c06da7b-8707-404e-8c16-f2f53262715e"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cell markdown" id="QFaa_HKYxLtp">
+      <p>Lihat variabel target</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="17"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="IqH0Y5N-OBcb"
+      data-outputId="92282e74-0e33-4a2e-9596-ae8c0f60bd62"
+    >
+      <div class="sourceCode" id="cb19">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Classes of train_anno: &#39;</span>, train_anno[<span class="st">&#39;category_id&#39;</span>].unique())</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Classes of val_anno: &#39;</span>, val_anno[<span class="st">&#39;category_id&#39;</span>].unique())</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Classes of train_anno:  [1 2]
+Classes of val_anno:  [1 2]
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="oORjMHI-xXBk">
+      <p>Drop feature yang tidak diperlukan</p>
+    </div>
+    <div class="cell code" data-execution_count="18" id="PhtypIK8OGid">
+      <div class="sourceCode" id="cb21">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>train_anno.drop([<span class="st">&#39;id&#39;</span>, <span class="st">&#39;bbox&#39;</span>, <span class="st">&#39;area&#39;</span>, <span class="st">&#39;segmentation&#39;</span>, <span class="st">&#39;iscrowd&#39;</span>], axis <span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>val_anno.drop([<span class="st">&#39;id&#39;</span>, <span class="st">&#39;bbox&#39;</span>, <span class="st">&#39;area&#39;</span>, <span class="st">&#39;segmentation&#39;</span>, <span class="st">&#39;iscrowd&#39;</span>], axis <span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="DZe9h5_Rxcl0">
+      <p>Menggubah nama variabel target</p>
+    </div>
+    <div class="cell code" data-execution_count="19" id="rW07rtRROREN">
+      <div class="sourceCode" id="cb22">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>train_anno[<span class="st">&#39;category_id&#39;</span>]<span class="op">=</span>train_anno[<span class="st">&#39;category_id&#39;</span>].replace({<span class="dv">1</span>:<span class="st">&#39;Penguin&#39;</span>,<span class="dv">2</span>:<span class="st">&#39;Turtle&#39;</span>})</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>val_anno[<span class="st">&#39;category_id&#39;</span>]<span class="op">=</span>val_anno[<span class="st">&#39;category_id&#39;</span>].replace({<span class="dv">1</span>:<span class="st">&#39;Penguin&#39;</span>,<span class="dv">2</span>:<span class="st">&#39;Turtle&#39;</span>})</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="20" id="IvRPoAl-OUoV">
+      <div class="sourceCode" id="cb23">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>train_anno.columns<span class="op">=</span>[<span class="st">&#39;filepaths&#39;</span>, <span class="st">&#39;labels&#39;</span>]</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>val_anno.columns<span class="op">=</span>[<span class="st">&#39;filepaths&#39;</span>, <span class="st">&#39;labels&#39;</span>]</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="137"
+      data-colab='{"base_uri":"https://localhost:8080/","height":676}'
+      id="mCTqUfZcOIbk"
+      data-outputId="55dbf79d-2325-4e59-e1a0-d3717372a7dd"
+    >
+      <div class="sourceCode" id="cb24">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>val_anno.head(<span class="dv">20</span>)</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="137">
+        <div id="df-0494fb0d-ec25-4686-8268-f8fbd62df918">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>filepaths</th>
+                    <th>labels</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>/content/valid/valid/image_id_000.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>/content/valid/valid/image_id_001.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>/content/valid/valid/image_id_002.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>/content/valid/valid/image_id_003.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>/content/valid/valid/image_id_004.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>/content/valid/valid/image_id_005.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>/content/valid/valid/image_id_006.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>/content/valid/valid/image_id_007.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>/content/valid/valid/image_id_008.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td>/content/valid/valid/image_id_009.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>/content/valid/valid/image_id_010.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                    <td>/content/valid/valid/image_id_011.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>/content/valid/valid/image_id_012.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                    <td>/content/valid/valid/image_id_013.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                    <td>/content/valid/valid/image_id_014.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                    <td>/content/valid/valid/image_id_015.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                    <td>/content/valid/valid/image_id_016.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>/content/valid/valid/image_id_017.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                    <td>/content/valid/valid/image_id_018.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>19</th>
+                    <td>/content/valid/valid/image_id_019.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-0494fb0d-ec25-4686-8268-f8fbd62df918')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-0494fb0d-ec25-4686-8268-f8fbd62df918 button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-0494fb0d-ec25-4686-8268-f8fbd62df918"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="22"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="mT1VgMKaPjQT"
+      data-outputId="ee891f75-5271-45ce-838a-4a00a2f34daf"
+    >
+      <div class="sourceCode" id="cb25">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># now in the filepaths column create the full path to the image file</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>train_image_dir<span class="op">=</span><span class="vs">r&#39;/content/train/train&#39;</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>train_imglist<span class="op">=</span><span class="bu">sorted</span>(os.listdir(train_image_dir))</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>train_paths<span class="op">=</span>[]</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span> (<span class="bu">len</span>(train_imglist)):</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    train_paths.append(os.path.join(train_image_dir, train_imglist[i]))</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (train_paths[<span class="dv">0</span>])</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>/content/train/train/image_id_000.jpg
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="23"
+      data-colab='{"base_uri":"https://localhost:8080/","height":424}'
+      id="dG45ChgMPxyY"
+      data-outputId="fa5416b2-027f-485c-9b44-3fd734dc049e"
+    >
+      <div class="sourceCode" id="cb27">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now in the train_anno filepaths column insert the full filepath</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>train_anno[<span class="st">&#39;filepaths&#39;</span>]<span class="op">=</span>train_paths</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>train_anno</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="23">
+        <div id="df-97b36709-9ab2-4ef7-89de-f7f8cb8e3a51">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>filepaths</th>
+                    <th>labels</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>/content/train/train/image_id_000.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>/content/train/train/image_id_001.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>/content/train/train/image_id_002.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>/content/train/train/image_id_003.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>/content/train/train/image_id_004.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <th>495</th>
+                    <td>/content/train/train/image_id_495.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>496</th>
+                    <td>/content/train/train/image_id_496.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>497</th>
+                    <td>/content/train/train/image_id_497.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>498</th>
+                    <td>/content/train/train/image_id_498.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>499</th>
+                    <td>/content/train/train/image_id_499.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>500 rows × 2 columns</p>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-97b36709-9ab2-4ef7-89de-f7f8cb8e3a51')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-97b36709-9ab2-4ef7-89de-f7f8cb8e3a51 button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-97b36709-9ab2-4ef7-89de-f7f8cb8e3a51"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="24"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="bEEujIHpPrlb"
+      data-outputId="0ef3f901-4afb-4fa5-9ba5-7a0c3dd1079a"
+    >
+      <div class="sourceCode" id="cb28">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now in the filepaths column create the full path to the image file</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>val_image_dir<span class="op">=</span><span class="vs">r&#39;/content/valid/valid&#39;</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>val_imglist<span class="op">=</span><span class="bu">sorted</span>(os.listdir(val_image_dir))</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>val_paths<span class="op">=</span>[]</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span> (<span class="bu">len</span>(val_imglist)):</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    val_paths.append(os.path.join(val_image_dir, val_imglist[i]))</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (val_paths[<span class="dv">0</span>])</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>/content/valid/valid/image_id_000.jpg
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="25"
+      data-colab='{"base_uri":"https://localhost:8080/","height":424}'
+      id="WQnNHGi2P2fx"
+      data-outputId="c7ed4b97-7c13-4972-d283-67d1654385db"
+    >
+      <div class="sourceCode" id="cb30">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now in the train_anno filepaths column insert the full filepath</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>val_anno[<span class="st">&#39;filepaths&#39;</span>]<span class="op">=</span>val_paths</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>val_df <span class="op">=</span> val_anno</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>val_df</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="25">
+        <div id="df-ffbe950f-d0e1-4667-ad94-8d39970e0183">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>filepaths</th>
+                    <th>labels</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>/content/valid/valid/image_id_000.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>/content/valid/valid/image_id_001.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>/content/valid/valid/image_id_002.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>/content/valid/valid/image_id_003.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>/content/valid/valid/image_id_004.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>...</th>
+                    <td>...</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <th>67</th>
+                    <td>/content/valid/valid/image_id_067.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>68</th>
+                    <td>/content/valid/valid/image_id_068.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>69</th>
+                    <td>/content/valid/valid/image_id_069.jpg</td>
+                    <td>Penguin</td>
+                  </tr>
+                  <tr>
+                    <th>70</th>
+                    <td>/content/valid/valid/image_id_070.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                  <tr>
+                    <th>71</th>
+                    <td>/content/valid/valid/image_id_071.jpg</td>
+                    <td>Turtle</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>72 rows × 2 columns</p>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-ffbe950f-d0e1-4667-ad94-8d39970e0183')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-ffbe950f-d0e1-4667-ad94-8d39970e0183 button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-ffbe950f-d0e1-4667-ad94-8d39970e0183"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="split-data" class="cell markdown" id="P6XItz-uxpcN">
+      <h3>Split Data</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="26"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="2t7tfDPHaUt0"
+      data-outputId="183acba5-bbf1-481a-ed5a-1181b828576a"
+    >
+      <div class="sourceCode" id="cb31">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># lets create a test data frame by splitting the train_anno dataframe into a train dataframe and a test data frame</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>train_df, test_df<span class="op">=</span>train_test_split(train_anno, train_size<span class="op">=</span><span class="fl">.8</span>, shuffle<span class="op">=</span><span class="va">True</span>, random_state<span class="op">=</span><span class="dv">123</span>,</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>                                   stratify<span class="op">=</span>train_anno[<span class="st">&#39;labels&#39;</span>])</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (<span class="st">&#39;train_df length: &#39;</span>, <span class="bu">len</span>(train_df), <span class="st">&#39;  test_df length: &#39;</span>, <span class="bu">len</span>(test_df), <span class="st">&#39;  val_df length: &#39;</span>, <span class="bu">len</span>(val_df))</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>train_df length:  400   test_df length:  100   val_df length:  72
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="27"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="wPqq0eT7acTf"
+      data-outputId="a95ce7c9-dbaa-4170-e432-e30bb7431fa8"
+    >
+      <div class="sourceCode" id="cb33">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># lets check the balance of labels in the dataset</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>balance<span class="op">=</span> <span class="bu">list</span>(train_df[<span class="st">&#39;labels&#39;</span>].value_counts())</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>balance</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="27">
+        <pre><code>[200, 200]</code></pre>
+      </div>
+    </div>
+    <section id="generate-data" class="cell markdown" id="RHv6r2tRyGEH">
+      <h3>Generate Data</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="28"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="TY9xVj1VamfT"
+      data-outputId="07c89fde-03f7-4e6d-912e-80eefea04481"
+    >
+      <div class="sourceCode" id="cb35">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.preprocessing.image <span class="im">import</span> ImageDataGenerator</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a><span class="co"># the train set is balance and has an adequate number of images for classification</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co"># lets create generators for the three dataframes</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>img_size<span class="op">=</span>(<span class="dv">224</span>,<span class="dv">224</span>) <span class="co"># image size</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>bs<span class="op">=</span><span class="dv">40</span> <span class="co"># batch size</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>t_gen<span class="op">=</span>ImageDataGenerator(horizontal_flip<span class="op">=</span><span class="va">True</span>) <span class="co"># generator for training</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>gen<span class="op">=</span>ImageDataGenerator() <span class="co"># generator for validation and test</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>train_gen<span class="op">=</span>t_gen.flow_from_dataframe(train_df, x_col<span class="op">=</span><span class="st">&#39;filepaths&#39;</span>, y_col<span class="op">=</span><span class="st">&#39;labels&#39;</span>, target_size<span class="op">=</span>img_size,</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>                                   color_mode<span class="op">=</span><span class="st">&#39;rgb&#39;</span>,batch_size<span class="op">=</span>bs, shuffle<span class="op">=</span><span class="va">True</span>, seed<span class="op">=</span><span class="dv">123</span>,</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>                                   class_mode<span class="op">=</span> <span class="st">&#39;categorical&#39;</span>)</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>val_gen<span class="op">=</span>gen.flow_from_dataframe(val_df, x_col<span class="op">=</span><span class="st">&#39;filepaths&#39;</span>, y_col<span class="op">=</span><span class="st">&#39;labels&#39;</span>, target_size<span class="op">=</span>img_size,</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>                                   color_mode<span class="op">=</span><span class="st">&#39;rgb&#39;</span>,batch_size<span class="op">=</span>bs, shuffle<span class="op">=</span><span class="va">False</span>, seed<span class="op">=</span><span class="dv">123</span>,</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>                                   class_mode<span class="op">=</span> <span class="st">&#39;categorical&#39;</span>)</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>test_gen<span class="op">=</span>gen.flow_from_dataframe(test_df, x_col<span class="op">=</span><span class="st">&#39;filepaths&#39;</span>, y_col<span class="op">=</span><span class="st">&#39;labels&#39;</span>, target_size<span class="op">=</span>img_size,</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>                                   color_mode<span class="op">=</span><span class="st">&#39;rgb&#39;</span>,batch_size<span class="op">=</span>bs, shuffle<span class="op">=</span><span class="va">False</span>, seed<span class="op">=</span><span class="dv">123</span>,</span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>                                   class_mode<span class="op">=</span> <span class="st">&#39;categorical&#39;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Found 400 validated image filenames belonging to 2 classes.
+Found 72 validated image filenames belonging to 2 classes.
+Found 100 validated image filenames belonging to 2 classes.
+</code></pre>
+      </div>
+    </div>
+    <section id="modelling" class="cell markdown" id="QhwAIRz3yLOF">
+      <h2>Modelling</h2>
+    </section>
+    <section id="model-1" class="cell markdown" id="5az6zT_nyTIF">
+      <h3>Model 1</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="59"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="ezwfFnU-flqq"
+      data-outputId="c8929df0-624b-45f8-a950-5384ef700da6"
+    >
+      <div class="sourceCode" id="cb37">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Input, Conv2D, MaxPool2D, Flatten, Dense, BatchNormalization, Dropout</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Model</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.optimizers <span class="im">import</span> Adam, Adamax</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> Input(shape<span class="op">=</span>(<span class="dv">224</span>, <span class="dv">224</span>, <span class="dv">3</span>))</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(inputs)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Dropout(<span class="fl">0.5</span>)(x)</span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Dropout(<span class="fl">0.5</span>)(x)</span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Flatten()(x)</span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a>outputs <span class="op">=</span> Dense(<span class="dv">1</span>, activation<span class="op">=</span><span class="st">&#39;sigmoid&#39;</span>)(x)</span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a>model_1 <span class="op">=</span> Model(inputs<span class="op">=</span>inputs, outputs<span class="op">=</span>outputs)</span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a>model_1.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&quot;binary_crossentropy&quot;</span>,</span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a>                optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a>                metrics<span class="op">=</span>[<span class="st">&quot;accuracy&quot;</span>])</span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a><span class="co"># model_1.compile(optimizer=Adamax(learning_rate=.001),</span></span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a><span class="co">#                 loss=&#39;binary_crossentropy&#39;,</span></span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a><span class="co">#                 metrics=[&#39;accuracy&#39;])</span></span>
+<span id="cb37-30"><a href="#cb37-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-31"><a href="#cb37-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a>history_1 <span class="op">=</span> model_1.fit(train_gen,</span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a>                        epochs<span class="op">=</span><span class="dv">20</span>,</span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># steps_per_epoch=len(train_data),</span></span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a>                        validation_data<span class="op">=</span>val_gen,</span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a>                        <span class="co"># validation_steps=len(validation_data)</span></span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>                        )</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Epoch 1/20
+10/10 [==============================] - 5s 345ms/step - loss: 144.5090 - accuracy: 0.5000 - val_loss: 6.8024 - val_accuracy: 0.5000
+Epoch 2/20
+10/10 [==============================] - 4s 384ms/step - loss: 4.9738 - accuracy: 0.5000 - val_loss: 0.7158 - val_accuracy: 0.5000
+Epoch 3/20
+10/10 [==============================] - 3s 316ms/step - loss: 0.7885 - accuracy: 0.5000 - val_loss: 0.6998 - val_accuracy: 0.5000
+Epoch 4/20
+10/10 [==============================] - 3s 321ms/step - loss: 0.7167 - accuracy: 0.5000 - val_loss: 0.6979 - val_accuracy: 0.5000
+Epoch 5/20
+10/10 [==============================] - 6s 606ms/step - loss: 0.7063 - accuracy: 0.5000 - val_loss: 0.6962 - val_accuracy: 0.5000
+Epoch 6/20
+10/10 [==============================] - 5s 468ms/step - loss: 0.6995 - accuracy: 0.5000 - val_loss: 0.6953 - val_accuracy: 0.5000
+Epoch 7/20
+10/10 [==============================] - 4s 405ms/step - loss: 0.6985 - accuracy: 0.5000 - val_loss: 0.6947 - val_accuracy: 0.5000
+Epoch 8/20
+10/10 [==============================] - 3s 319ms/step - loss: 0.6975 - accuracy: 0.5000 - val_loss: 0.6944 - val_accuracy: 0.5000
+Epoch 9/20
+10/10 [==============================] - 4s 399ms/step - loss: 0.6981 - accuracy: 0.5000 - val_loss: 0.6942 - val_accuracy: 0.5000
+Epoch 10/20
+10/10 [==============================] - 4s 403ms/step - loss: 0.6956 - accuracy: 0.5000 - val_loss: 0.6942 - val_accuracy: 0.5000
+Epoch 11/20
+10/10 [==============================] - 3s 329ms/step - loss: 0.6960 - accuracy: 0.5000 - val_loss: 0.6941 - val_accuracy: 0.5000
+Epoch 12/20
+10/10 [==============================] - 3s 340ms/step - loss: 0.6955 - accuracy: 0.5000 - val_loss: 0.6940 - val_accuracy: 0.5000
+Epoch 13/20
+10/10 [==============================] - 4s 390ms/step - loss: 0.6948 - accuracy: 0.5000 - val_loss: 0.6940 - val_accuracy: 0.5000
+Epoch 14/20
+10/10 [==============================] - 3s 316ms/step - loss: 0.6953 - accuracy: 0.5000 - val_loss: 0.6939 - val_accuracy: 0.5000
+Epoch 15/20
+10/10 [==============================] - 3s 317ms/step - loss: 0.6947 - accuracy: 0.5000 - val_loss: 0.6939 - val_accuracy: 0.5000
+Epoch 16/20
+10/10 [==============================] - 4s 416ms/step - loss: 0.6953 - accuracy: 0.5000 - val_loss: 0.6938 - val_accuracy: 0.5000
+Epoch 17/20
+10/10 [==============================] - 3s 317ms/step - loss: 0.6946 - accuracy: 0.5000 - val_loss: 0.6938 - val_accuracy: 0.5000
+Epoch 18/20
+10/10 [==============================] - 3s 315ms/step - loss: 0.6946 - accuracy: 0.5000 - val_loss: 0.6938 - val_accuracy: 0.5000
+Epoch 19/20
+10/10 [==============================] - 5s 471ms/step - loss: 0.6945 - accuracy: 0.5000 - val_loss: 0.6937 - val_accuracy: 0.5000
+Epoch 20/20
+10/10 [==============================] - 3s 309ms/step - loss: 0.6947 - accuracy: 0.5000 - val_loss: 0.6937 - val_accuracy: 0.5000
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="40"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="j2krOpRV1i10"
+      data-outputId="c7955fb7-7bdc-4f5d-eea3-0380cd66ea33"
+    >
+      <div class="sourceCode" id="cb39">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluate on the test data</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>result_1 <span class="op">=</span> model_1.evaluate(val_gen)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>2/2 [==============================] - 1s 205ms/step - loss: 0.6934 - accuracy: 0.5000
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="41"
+      data-colab='{"base_uri":"https://localhost:8080/","height":927}'
+      id="KnSVsRor1zB9"
+      data-outputId="ec6a9c88-49e8-48a5-c7fa-ef430b423afa"
+    >
+      <div class="sourceCode" id="cb41">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the model&#39;s loss curves on the 10 classes of data (note: this function comes from above in the notebook)</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>plot_loss_curves(history_1)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/602a93f7b11aa19c4ad2ae45bc24be3b8c4e0a58.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/749f99a160d42c570810f8e7ae1a782e30e14b7a.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="model-2" class="cell markdown" id="5sVoG14Qeizj">
+      <h3>Model 2</h3>
+    </section>
+    <div class="cell code" data-execution_count="138" id="OnI-Tl7QekgC">
+      <div class="sourceCode" id="cb42">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Dense, Activation,Dropout,Conv2D, MaxPooling2D,BatchNormalization</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras <span class="im">import</span> regularizers</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.optimizers <span class="im">import</span> Adam, Adamax</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Model</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co"># I will use transfer learning using the EfficientNetB0 model</span></span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>class_count<span class="op">=</span><span class="dv">2</span> <span class="co"># number of classes</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>lr<span class="op">=</span> <span class="fl">.001</span> <span class="co"># learning rate</span></span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>img_shape<span class="op">=</span>(<span class="dv">224</span>,<span class="dv">224</span>,<span class="dv">3</span>) <span class="co"># shape of color images</span></span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a>base_model<span class="op">=</span>tf.keras.applications.EfficientNetV2B0(include_top<span class="op">=</span><span class="va">False</span>, weights<span class="op">=</span><span class="st">&quot;imagenet&quot;</span>,</span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a>                                                   input_shape<span class="op">=</span>img_shape, pooling<span class="op">=</span><span class="st">&#39;max&#39;</span>)</span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a>base_model.trainable<span class="op">=</span><span class="va">True</span></span>
+<span id="cb42-13"><a href="#cb42-13" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>base_model.output</span>
+<span id="cb42-14"><a href="#cb42-14" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>BatchNormalization(axis<span class="op">=-</span><span class="dv">1</span>, momentum<span class="op">=</span><span class="fl">0.99</span>, epsilon<span class="op">=</span><span class="fl">0.001</span> )(x)</span>
+<span id="cb42-15"><a href="#cb42-15" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Dense(<span class="dv">256</span>, kernel_regularizer <span class="op">=</span> regularizers.l2(l <span class="op">=</span> <span class="fl">0.016</span>),activity_regularizer<span class="op">=</span>regularizers.l1(<span class="fl">0.006</span>),</span>
+<span id="cb42-16"><a href="#cb42-16" aria-hidden="true" tabindex="-1"></a>                bias_regularizer<span class="op">=</span>regularizers.l1(<span class="fl">0.006</span>) ,activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb42-17"><a href="#cb42-17" aria-hidden="true" tabindex="-1"></a>x<span class="op">=</span>Dropout(rate<span class="op">=</span><span class="fl">.4</span>, seed<span class="op">=</span><span class="dv">123</span>)(x)</span>
+<span id="cb42-18"><a href="#cb42-18" aria-hidden="true" tabindex="-1"></a>output<span class="op">=</span>Dense(class_count, activation<span class="op">=</span><span class="st">&#39;sigmoid&#39;</span>)(x)</span>
+<span id="cb42-19"><a href="#cb42-19" aria-hidden="true" tabindex="-1"></a>model2<span class="op">=</span>Model(inputs<span class="op">=</span>base_model.<span class="bu">input</span>, outputs<span class="op">=</span>output)</span>
+<span id="cb42-20"><a href="#cb42-20" aria-hidden="true" tabindex="-1"></a>model2.<span class="bu">compile</span>(Adamax(learning_rate<span class="op">=</span>lr), loss<span class="op">=</span><span class="st">&#39;binary_crossentropy&#39;</span>, metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="139" id="0h7Z-VKae1NO">
+      <div class="sourceCode" id="cb43">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># lets define 2 callbacks , reduce learning rate on plateau and early stopping</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>rlronp<span class="op">=</span>tf.keras.callbacks.ReduceLROnPlateau( monitor<span class="op">=</span><span class="st">&quot;val_loss&quot;</span>, factor<span class="op">=</span><span class="fl">0.4</span>,  patience<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>                                            verbose<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>estop<span class="op">=</span>tf.keras.callbacks.EarlyStopping(monitor<span class="op">=</span><span class="st">&quot;val_loss&quot;</span>, patience<span class="op">=</span><span class="dv">4</span>,restore_best_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>callbacks<span class="op">=</span>[rlronp, estop]</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="140"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="Uhe2N2_5e7-C"
+      data-outputId="4e9a6ca9-1468-4dd5-ae1d-7987efdda232"
+    >
+      <div class="sourceCode" id="cb44">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># now lets train the model</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>epochs<span class="op">=</span><span class="dv">20</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>history_2<span class="op">=</span>model2.fit(x<span class="op">=</span>train_gen,   epochs<span class="op">=</span>epochs, verbose<span class="op">=</span><span class="dv">1</span>, callbacks<span class="op">=</span>callbacks,  validation_data<span class="op">=</span>val_gen,</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>                   validation_steps<span class="op">=</span><span class="va">None</span>,  shuffle<span class="op">=</span><span class="va">True</span>,  initial_epoch<span class="op">=</span><span class="dv">0</span>) <span class="co"># train the model</span></span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Epoch 1/20
+10/10 [==============================] - 50s 676ms/step - loss: 7.5205 - accuracy: 0.8825 - val_loss: 8.3830 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 2/20
+10/10 [==============================] - 5s 477ms/step - loss: 6.4009 - accuracy: 0.9875 - val_loss: 6.9216 - val_accuracy: 0.8750 - lr: 0.0010
+Epoch 3/20
+10/10 [==============================] - 4s 384ms/step - loss: 5.5468 - accuracy: 0.9950 - val_loss: 5.7233 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 4/20
+10/10 [==============================] - 5s 472ms/step - loss: 4.8136 - accuracy: 0.9975 - val_loss: 4.8594 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 5/20
+10/10 [==============================] - 4s 381ms/step - loss: 4.2035 - accuracy: 0.9900 - val_loss: 4.2155 - val_accuracy: 0.9028 - lr: 0.0010
+Epoch 6/20
+10/10 [==============================] - 4s 394ms/step - loss: 3.6871 - accuracy: 1.0000 - val_loss: 3.6901 - val_accuracy: 0.9028 - lr: 0.0010
+Epoch 7/20
+10/10 [==============================] - 5s 490ms/step - loss: 3.2662 - accuracy: 0.9975 - val_loss: 3.2444 - val_accuracy: 0.9028 - lr: 0.0010
+Epoch 8/20
+10/10 [==============================] - 4s 385ms/step - loss: 2.9188 - accuracy: 0.9975 - val_loss: 2.8857 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 9/20
+10/10 [==============================] - 4s 390ms/step - loss: 2.6058 - accuracy: 1.0000 - val_loss: 2.5847 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 10/20
+10/10 [==============================] - 5s 491ms/step - loss: 2.3676 - accuracy: 0.9925 - val_loss: 2.3329 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 11/20
+10/10 [==============================] - 4s 392ms/step - loss: 2.1267 - accuracy: 1.0000 - val_loss: 2.1169 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 12/20
+10/10 [==============================] - 4s 390ms/step - loss: 1.9235 - accuracy: 1.0000 - val_loss: 1.9270 - val_accuracy: 0.9444 - lr: 0.0010
+Epoch 13/20
+10/10 [==============================] - 5s 485ms/step - loss: 1.7453 - accuracy: 1.0000 - val_loss: 1.7495 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 14/20
+10/10 [==============================] - 4s 395ms/step - loss: 1.5924 - accuracy: 1.0000 - val_loss: 1.6146 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 15/20
+10/10 [==============================] - 4s 425ms/step - loss: 1.4604 - accuracy: 0.9975 - val_loss: 1.4764 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 16/20
+10/10 [==============================] - 5s 454ms/step - loss: 1.3320 - accuracy: 1.0000 - val_loss: 1.3680 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 17/20
+10/10 [==============================] - 4s 397ms/step - loss: 1.2257 - accuracy: 0.9975 - val_loss: 1.2660 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 18/20
+10/10 [==============================] - 6s 563ms/step - loss: 1.1221 - accuracy: 0.9975 - val_loss: 1.1669 - val_accuracy: 0.9583 - lr: 0.0010
+Epoch 19/20
+10/10 [==============================] - 4s 399ms/step - loss: 1.0316 - accuracy: 1.0000 - val_loss: 1.0889 - val_accuracy: 0.9306 - lr: 0.0010
+Epoch 20/20
+10/10 [==============================] - 4s 395ms/step - loss: 0.9554 - accuracy: 0.9975 - val_loss: 1.0167 - val_accuracy: 0.9167 - lr: 0.0010
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="141"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="hQY70Pk1p3F7"
+      data-outputId="b8f8269f-3cfc-412c-990e-7eb2671088a6"
+    >
+      <div class="sourceCode" id="cb46">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluate on the test data</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>result_2 <span class="op">=</span> model2.evaluate(val_gen)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>2/2 [==============================] - 1s 297ms/step - loss: 1.0167 - accuracy: 0.9167
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="142"
+      data-colab='{"base_uri":"https://localhost:8080/","height":999}'
+      id="3Jv7HRe0nCta"
+      data-outputId="d5c8e075-d315-4172-8fa6-702103d1808e"
+    >
+      <div class="sourceCode" id="cb48">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the model&#39;s loss curves on the 10 classes of data (note: this function comes from above in the notebook)</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>plot_loss_curves(history_2)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/abbfc95047d9892c80eb7cb3e99f15620a5288e8.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/94b80fa70131b7eb811cd8d95e21ffc2165372a8.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="143"
+      data-colab='{"base_uri":"https://localhost:8080/","height":1000}'
+      id="avx-2-drqHF8"
+      data-outputId="340cdf64-362a-4a5a-dc2e-5ea621cbd05b"
+    >
+      <div class="sourceCode" id="cb49">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> confusion_matrix, classification_report</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> f1_score</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="co"># we ended up with a validation accuracy of 97.2 % so the model is performing well</span></span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="co"># lets make predictions on the test set and produce a confusion matrix and a classification report</span></span>
+<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> predictor(model,test_gen):</span>
+<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>    classes<span class="op">=</span><span class="bu">list</span>(test_gen.class_indices.keys())</span>
+<span id="cb49-8"><a href="#cb49-8" aria-hidden="true" tabindex="-1"></a>    class_count<span class="op">=</span><span class="bu">len</span>(classes)</span>
+<span id="cb49-9"><a href="#cb49-9" aria-hidden="true" tabindex="-1"></a>    preds<span class="op">=</span>model.predict(test_gen, verbose<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a>    errors<span class="op">=</span><span class="dv">0</span></span>
+<span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>    test_count <span class="op">=</span><span class="bu">len</span>(preds)</span>
+<span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a>    misclassified_classes<span class="op">=</span>[]</span>
+<span id="cb49-13"><a href="#cb49-13" aria-hidden="true" tabindex="-1"></a>    misclassified_files<span class="op">=</span>[]</span>
+<span id="cb49-14"><a href="#cb49-14" aria-hidden="true" tabindex="-1"></a>    misclassified_as <span class="op">=</span> []</span>
+<span id="cb49-15"><a href="#cb49-15" aria-hidden="true" tabindex="-1"></a>    pred_indices<span class="op">=</span>[]</span>
+<span id="cb49-16"><a href="#cb49-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i, p <span class="kw">in</span> <span class="bu">enumerate</span> (preds):</span>
+<span id="cb49-17"><a href="#cb49-17" aria-hidden="true" tabindex="-1"></a>        pred_index<span class="op">=</span>np.argmax(p)</span>
+<span id="cb49-18"><a href="#cb49-18" aria-hidden="true" tabindex="-1"></a>        pred_indices.append(pred_index)</span>
+<span id="cb49-19"><a href="#cb49-19" aria-hidden="true" tabindex="-1"></a>        true_index<span class="op">=</span> test_gen.labels[i]</span>
+<span id="cb49-20"><a href="#cb49-20" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>  pred_index <span class="op">!=</span> true_index:</span>
+<span id="cb49-21"><a href="#cb49-21" aria-hidden="true" tabindex="-1"></a>            errors <span class="op">+=</span><span class="dv">1</span></span>
+<span id="cb49-22"><a href="#cb49-22" aria-hidden="true" tabindex="-1"></a>            misclassified_classes.append(classes[true_index])</span>
+<span id="cb49-23"><a href="#cb49-23" aria-hidden="true" tabindex="-1"></a>            misclassified_as.append(classes[pred_index])</span>
+<span id="cb49-24"><a href="#cb49-24" aria-hidden="true" tabindex="-1"></a>            <span class="bu">file</span><span class="op">=</span>test_gen.filenames[i]</span>
+<span id="cb49-25"><a href="#cb49-25" aria-hidden="true" tabindex="-1"></a>            split<span class="op">=</span><span class="bu">file</span>.split(<span class="st">&#39;/&#39;</span>)</span>
+<span id="cb49-26"><a href="#cb49-26" aria-hidden="true" tabindex="-1"></a>            L<span class="op">=</span><span class="bu">len</span>(split)</span>
+<span id="cb49-27"><a href="#cb49-27" aria-hidden="true" tabindex="-1"></a>            f<span class="op">=</span>split[L<span class="op">-</span><span class="dv">2</span>] <span class="op">+</span><span class="st">&#39; &#39;</span><span class="op">+</span> split[L<span class="op">-</span><span class="dv">1</span>]</span>
+<span id="cb49-28"><a href="#cb49-28" aria-hidden="true" tabindex="-1"></a>            misclassified_files.append(f)</span>
+<span id="cb49-29"><a href="#cb49-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-30"><a href="#cb49-30" aria-hidden="true" tabindex="-1"></a>    accuracy <span class="op">=</span> (test_count<span class="op">-</span>errors)<span class="op">*</span><span class="dv">100</span><span class="op">/</span>test_count</span>
+<span id="cb49-31"><a href="#cb49-31" aria-hidden="true" tabindex="-1"></a>    ytrue<span class="op">=</span>np.array(test_gen.labels)</span>
+<span id="cb49-32"><a href="#cb49-32" aria-hidden="true" tabindex="-1"></a>    ypred<span class="op">=</span>np.array(pred_indices)</span>
+<span id="cb49-33"><a href="#cb49-33" aria-hidden="true" tabindex="-1"></a>    f1score<span class="op">=</span>f1_score(ytrue, ypred, average<span class="op">=</span><span class="st">&#39;weighted&#39;</span>)<span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb49-34"><a href="#cb49-34" aria-hidden="true" tabindex="-1"></a>    msg<span class="op">=</span><span class="ss">f&#39;There were </span><span class="sc">{</span>errors<span class="sc">}</span><span class="ss"> errors in </span><span class="sc">{</span>test_count<span class="sc">}</span><span class="ss"> tests for an accuracy of </span><span class="sc">{</span>accuracy<span class="sc">:6.2f}</span><span class="ss"> and an F1 score of </span><span class="sc">{</span>f1score<span class="sc">:6.2f}</span><span class="ss">&#39;</span></span>
+<span id="cb49-35"><a href="#cb49-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (msg)</span>
+<span id="cb49-36"><a href="#cb49-36" aria-hidden="true" tabindex="-1"></a>    misclassified_classes<span class="op">=</span><span class="bu">sorted</span>(misclassified_classes)</span>
+<span id="cb49-37"><a href="#cb49-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(misclassified_classes) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb49-38"><a href="#cb49-38" aria-hidden="true" tabindex="-1"></a>        misclassifications<span class="op">=</span>[]</span>
+<span id="cb49-39"><a href="#cb49-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> klass <span class="kw">in</span> misclassified_classes:</span>
+<span id="cb49-40"><a href="#cb49-40" aria-hidden="true" tabindex="-1"></a>            mis_count<span class="op">=</span>misclassified_classes.count(klass)</span>
+<span id="cb49-41"><a href="#cb49-41" aria-hidden="true" tabindex="-1"></a>            misclassifications.append(mis_count)</span>
+<span id="cb49-42"><a href="#cb49-42" aria-hidden="true" tabindex="-1"></a>        unique<span class="op">=</span><span class="bu">len</span>(np.unique(misclassified_classes))</span>
+<span id="cb49-43"><a href="#cb49-43" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> unique<span class="op">==</span><span class="dv">1</span>:</span>
+<span id="cb49-44"><a href="#cb49-44" aria-hidden="true" tabindex="-1"></a>            height<span class="op">=</span><span class="bu">int</span>(unique)</span>
+<span id="cb49-45"><a href="#cb49-45" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
+<span id="cb49-46"><a href="#cb49-46" aria-hidden="true" tabindex="-1"></a>            height <span class="op">=</span><span class="bu">int</span>(unique<span class="op">/</span><span class="dv">2</span>)</span>
+<span id="cb49-47"><a href="#cb49-47" aria-hidden="true" tabindex="-1"></a>        plt.figure(figsize<span class="op">=</span>(<span class="dv">6</span>, height))</span>
+<span id="cb49-48"><a href="#cb49-48" aria-hidden="true" tabindex="-1"></a>        plt.style.use(<span class="st">&#39;fivethirtyeight&#39;</span>)</span>
+<span id="cb49-49"><a href="#cb49-49" aria-hidden="true" tabindex="-1"></a>        plt.barh(misclassified_classes, misclassifications )</span>
+<span id="cb49-50"><a href="#cb49-50" aria-hidden="true" tabindex="-1"></a>        plt.title( <span class="st">&#39;Classification Errors on Test Set by Class&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb49-51"><a href="#cb49-51" aria-hidden="true" tabindex="-1"></a>        plt.xlabel(<span class="st">&#39;NUMBER OF MISCLASSIFICATIONS&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb49-52"><a href="#cb49-52" aria-hidden="true" tabindex="-1"></a>        plt.ylabel(<span class="st">&#39;CLASS&#39;</span>, fontsize<span class="op">=</span><span class="dv">20</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>)</span>
+<span id="cb49-53"><a href="#cb49-53" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
+<span id="cb49-54"><a href="#cb49-54" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> class_count <span class="op">&lt;=</span><span class="dv">30</span>:</span>
+<span id="cb49-55"><a href="#cb49-55" aria-hidden="true" tabindex="-1"></a>        cm <span class="op">=</span> confusion_matrix(ytrue, ypred )</span>
+<span id="cb49-56"><a href="#cb49-56" aria-hidden="true" tabindex="-1"></a>        <span class="co"># plot the confusion matrix</span></span>
+<span id="cb49-57"><a href="#cb49-57" aria-hidden="true" tabindex="-1"></a>        plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
+<span id="cb49-58"><a href="#cb49-58" aria-hidden="true" tabindex="-1"></a>        sns.heatmap(cm, annot<span class="op">=</span><span class="va">True</span>, vmin<span class="op">=</span><span class="dv">0</span>, fmt<span class="op">=</span><span class="st">&#39;g&#39;</span>, cmap<span class="op">=</span><span class="st">&#39;Blues&#39;</span>, cbar<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb49-59"><a href="#cb49-59" aria-hidden="true" tabindex="-1"></a>        plt.xticks(np.arange(class_count)<span class="op">+</span><span class="fl">.5</span>, classes, rotation<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb49-60"><a href="#cb49-60" aria-hidden="true" tabindex="-1"></a>        plt.yticks(np.arange(class_count)<span class="op">+</span><span class="fl">.5</span>, classes, rotation<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb49-61"><a href="#cb49-61" aria-hidden="true" tabindex="-1"></a>        plt.xlabel(<span class="st">&quot;Predicted&quot;</span>)</span>
+<span id="cb49-62"><a href="#cb49-62" aria-hidden="true" tabindex="-1"></a>        plt.ylabel(<span class="st">&quot;Actual&quot;</span>)</span>
+<span id="cb49-63"><a href="#cb49-63" aria-hidden="true" tabindex="-1"></a>        plt.title(<span class="st">&quot;Confusion Matrix&quot;</span>)</span>
+<span id="cb49-64"><a href="#cb49-64" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
+<span id="cb49-65"><a href="#cb49-65" aria-hidden="true" tabindex="-1"></a>        clr <span class="op">=</span> classification_report(ytrue, ypred, target_names<span class="op">=</span>classes, digits<span class="op">=</span> <span class="dv">4</span>) <span class="co"># create classification report</span></span>
+<span id="cb49-66"><a href="#cb49-66" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Classification Report:</span><span class="ch">\n</span><span class="st">----------------------</span><span class="ch">\n</span><span class="st">&quot;</span>, clr)</span>
+<span id="cb49-67"><a href="#cb49-67" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> f1score, misclassified_files</span>
+<span id="cb49-68"><a href="#cb49-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-69"><a href="#cb49-69" aria-hidden="true" tabindex="-1"></a>f1score, misclassified_files<span class="op">=</span> predictor(model2,val_gen)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>2/2 [==============================] - 2s 197ms/step
+There were 6 errors in 72 tests for an accuracy of  91.67 and an F1 score of  91.61
+</code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/f1bbbc372ea0efbfcf39a3e79cb79c69e3a42a8f.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/0c4d215a4a4f95a69e58fda730a46beb93b42394.png"
+          />
+        </p>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Classification Report:
+----------------------
+               precision    recall  f1-score   support
+
+     Penguin     1.0000    0.8333    0.9091        36
+      Turtle     0.8571    1.0000    0.9231        36
+
+    accuracy                         0.9167        72
+   macro avg     0.9286    0.9167    0.9161        72
+weighted avg     0.9286    0.9167    0.9161        72
+
+</code></pre>
+      </div>
+    </div>
+    <section id="evaluation" class="cell markdown" id="maPZnv2R2E_J">
+      <h2>Evaluation</h2>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="144"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="7rF5uM9rttC_"
+      data-outputId="add813eb-7014-4986-f79b-bd52f360247e"
+    >
+      <div class="sourceCode" id="cb52">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>class_names <span class="op">=</span> train_anno[<span class="st">&#39;labels&#39;</span>].unique() <span class="co"># created a list of class_names from the subdirectories</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>class_names</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="144">
+        <pre><code>array([&#39;Penguin&#39;, &#39;Turtle&#39;], dtype=object)</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="145"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="RxbJhrs0t_CY"
+      data-outputId="5dac21b5-a18c-4786-9c8f-fc30c08336f7"
+    >
+      <div class="sourceCode" id="cb54">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Base Model = </span><span class="sc">{</span>result_1[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Efficientnet = </span><span class="sc">{</span>result_2[<span class="dv">1</span>]<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Akurasi Base Model = 0.5
+Akurasi Efficientnet = 0.9166666865348816
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="148"
+      data-colab='{"base_uri":"https://localhost:8080/","height":473}'
+      id="-onakxVltXB9"
+      data-outputId="b543a615-659d-48aa-9ef8-528cf90c4579"
+    >
+      <div class="sourceCode" id="cb56">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>pred_and_plot(model<span class="op">=</span>model2,</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>              filename<span class="op">=</span><span class="st">&quot;/content/valid/valid/image_id_012.jpg&quot;</span>,</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>              class_names<span class="op">=</span>class_names)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>1/1 [==============================] - 0s 120ms/step
+</code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_ce3fbb3179b34a4ba0a978bdf46cf251/efa1099a178571d17cf3b5b0e177c0bde580850a.png"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

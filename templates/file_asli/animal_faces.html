@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>c264a21c7c194272bc309ceca4c36131</title>
+    <style>
+      html {
+        line-height: 1.5;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: #1a1a1a;
+        background-color: #fdfdfd;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 36em;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.9em;
+          padding: 1em;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+      }
+      @media print {
+        body {
+          background-color: transparent;
+          color: black;
+          font-size: 12pt;
+        }
+        p,
+        h2,
+        h3 {
+          orphans: 3;
+          widows: 3;
+        }
+        h2,
+        h3,
+        h4 {
+          page-break-after: avoid;
+        }
+      }
+      p {
+        margin: 1em 0;
+      }
+      a {
+        color: #1a1a1a;
+      }
+      a:visited {
+        color: #1a1a1a;
+      }
+      img {
+        max-width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 1.4em;
+      }
+      h5,
+      h6 {
+        font-size: 1em;
+        font-style: italic;
+      }
+      h6 {
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        padding-left: 1.7em;
+        margin-top: 1em;
+      }
+      li > ol,
+      li > ul {
+        margin-top: 0;
+      }
+      blockquote {
+        margin: 1em 0 1em 1.7em;
+        padding-left: 1em;
+        border-left: 2px solid #e6e6e6;
+        color: #606060;
+      }
+      code {
+        font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace;
+        font-size: 85%;
+        margin: 0;
+      }
+      pre {
+        margin: 1em 0;
+        overflow: auto;
+      }
+      pre code {
+        padding: 0;
+        overflow: visible;
+        overflow-wrap: normal;
+      }
+      .sourceCode {
+        background-color: transparent;
+        overflow: visible;
+      }
+      hr {
+        background-color: #1a1a1a;
+        border: none;
+        height: 1px;
+        margin: 1em 0;
+      }
+      table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        font-variant-numeric: lining-nums tabular-nums;
+      }
+      table caption {
+        margin-bottom: 0.75em;
+      }
+      tbody {
+        margin-top: 0.5em;
+        border-top: 1px solid #1a1a1a;
+        border-bottom: 1px solid #1a1a1a;
+      }
+      th {
+        border-top: 1px solid #1a1a1a;
+        padding: 0.25em 0.5em 0.25em 0.5em;
+      }
+      td {
+        padding: 0.125em 0.5em 0.25em 0.5em;
+      }
+      header {
+        margin-bottom: 4em;
+        text-align: center;
+      }
+      #TOC li {
+        list-style: none;
+      }
+      #TOC ul {
+        padding-left: 1.3em;
+      }
+      #TOC > ul {
+        padding-left: 0;
+      }
+      #TOC a:not(:hover) {
+        text-decoration: none;
+      }
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      div.columns {
+        display: flex;
+        gap: min(4vw, 1.5em);
+      }
+      div.column {
+        flex: auto;
+        overflow-x: auto;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+      ul.task-list {
+        list-style: none;
+      }
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      pre > code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      pre > code.sourceCode > span {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      pre > code.sourceCode > span:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode > span {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        pre > code.sourceCode {
+          white-space: pre-wrap;
+        }
+        pre > code.sourceCode > span {
+          text-indent: -5em;
+          padding-left: 5em;
+        }
+      }
+      pre.numberSource code {
+        counter-reset: source-line 0;
+      }
+      pre.numberSource code > span {
+        position: relative;
+        left: -4em;
+        counter-increment: source-line;
+      }
+      pre.numberSource code > span > a:first-child::before {
+        content: counter(source-line);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      /* div.sourceCode
+      {   } */
+      @media screen {
+        pre > code.sourceCode > span > a:first-child::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+        color: #008000;
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      /* code span.ex { } Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+        color: #008000;
+        font-weight: bold;
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+      .display.math {
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section
+      id="animal-faces-classifier"
+      class="cell markdown"
+      id="ycLj3XXAnxy2"
+    >
+      <h1>Animal Faces Classifier</h1>
+    </section>
+    <section id="project-overview" class="cell markdown" id="bL9ePjlKn-ad">
+      <h2>Project Overview</h2>
+    </section>
+    <div class="cell markdown" id="4_IiPk-rohsw">
+      <p>
+        Proyek ini bertujuan untuk mengembangkan sebuah sistem klasifikasi muka
+        hewan menggunakan deep learning dan transfer learning. Sistem ini akan
+        mampu membedakan antara tiga jenis hewan yaitu kucing, anjing, dan
+        binatang buas berdasarkan gambar muka mereka. Dengan menggunakan teknik
+        deep learning dan transfer learning, proyek ini akan mencapai tingkat
+        akurasi yang tinggi dalam mengenali dan mengklasifikasikan hewan-hewan
+        tersebut.
+      </p>
+    </div>
+    <div class="cell markdown" id="f_kzm00col6m">
+      <p>Tujuan dari proyek ini adalah sebagai berikut:</p>
+      <ul>
+        <li>
+          Membangun model klasifikasi yang mampu mengenali dan membedakan gambar
+          muka kucing, anjing, dan binatang buas dengan tingkat akurasi tinggi.
+        </li>
+        <li>
+          Menerapkan teknik deep learning dan transfer learning untuk
+          memanfaatkan pengetahuan yang sudah ada dari model-model yang telah
+          dilatih sebelumnya.
+        </li>
+        <li>
+          Mengembangkan sebuah sistem yang dapat diintegrasikan ke dalam
+          aplikasi atau platform lain untuk penggunaan praktis.
+        </li>
+      </ul>
+    </div>
+    <div class="cell markdown" id="tCw80v5yKaeH">
+      <p>
+        Kumpulan data ini, juga dikenal sebagai Animal Faces-HQ (AFHQ), terdiri
+        dari 16.130 gambar berkualitas tinggi dengan resolusi 512×512. Ada tiga
+        domain kelas, masing-masing menyediakan sekitar 5000 gambar. Dengan
+        memiliki beberapa (tiga) domain dan beragam gambar dari berbagai
+        keturunan per setiap domain, AFHQ menetapkan masalah terjemahan
+        gambar-ke-gambar yang menantang. Kelas-kelas tersebut adalah:
+      </p>
+      <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Wildlife</li>
+      </ul>
+    </div>
+    <section id="import-data--module" class="cell markdown" id="SpKMytDJ4Zv-">
+      <h2>IMPORT DATA &amp; MODULE</h2>
+    </section>
+    <section
+      id="load-data-menggunakan-api-kaggle"
+      class="cell markdown"
+      id="NSqZlgwH5Okh"
+    >
+      <h3>Load data menggunakan API KAGGLE</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="1"
+      data-colab='{"base_uri":"https://localhost:8080/","height":88}'
+      id="N-qXVfqL1oys"
+      data-outputId="b97bcf70-3d4e-4320-c92a-b879c465459f"
+    >
+      <div class="sourceCode" id="cb1">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># C:\Users\USER\.kaggle</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>files.upload()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <input
+          type="file"
+          id="files-db4f1f55-78df-4152-a903-2dee2d8d7d10"
+          name="files[]"
+          multiple
+          disabled
+          style="border: none"
+        />
+        <output id="result-db4f1f55-78df-4152-a903-2dee2d8d7d10">
+          Upload widget is only available when the cell has been executed in the
+          current browser session. Please rerun this cell to enable.
+        </output>
+        <script>
+          // Copyright 2017 Google LLC
+          //
+          // Licensed under the Apache License, Version 2.0 (the "License");
+          // you may not use this file except in compliance with the License.
+          // You may obtain a copy of the License at
+          //
+          //      http://www.apache.org/licenses/LICENSE-2.0
+          //
+          // Unless required by applicable law or agreed to in writing, software
+          // distributed under the License is distributed on an "AS IS" BASIS,
+          // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          // See the License for the specific language governing permissions and
+          // limitations under the License.
+
+          /**
+           * @fileoverview Helpers for google.colab Python module.
+           */
+          (function (scope) {
+            function span(text, styleAttributes = {}) {
+              const element = document.createElement("span");
+              element.textContent = text;
+              for (const key of Object.keys(styleAttributes)) {
+                element.style[key] = styleAttributes[key];
+              }
+              return element;
+            }
+
+            // Max number of bytes which will be uploaded at a time.
+            const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+            function _uploadFiles(inputId, outputId) {
+              const steps = uploadFilesStep(inputId, outputId);
+              const outputElement = document.getElementById(outputId);
+              // Cache steps on the outputElement to make it available for the next call
+              // to uploadFilesContinue from Python.
+              outputElement.steps = steps;
+
+              return _uploadFilesContinue(outputId);
+            }
+
+            // This is roughly an async generator (not supported in the browser yet),
+            // where there are multiple asynchronous steps and the Python side is going
+            // to poll for completion of each step.
+            // This uses a Promise to block the python side on completion of each step,
+            // then passes the result of the previous step as the input to the next step.
+            function _uploadFilesContinue(outputId) {
+              const outputElement = document.getElementById(outputId);
+              const steps = outputElement.steps;
+
+              const next = steps.next(outputElement.lastPromiseValue);
+              return Promise.resolve(next.value.promise).then((value) => {
+                // Cache the last promise value to make it available to the next
+                // step of the generator.
+                outputElement.lastPromiseValue = value;
+                return next.value.response;
+              });
+            }
+
+            /**
+             * Generator function which is called between each async step of the upload
+             * process.
+             * @param {string} inputId Element ID of the input file picker element.
+             * @param {string} outputId Element ID of the output display.
+             * @return {!Iterable<!Object>} Iterable of next steps.
+             */
+            function* uploadFilesStep(inputId, outputId) {
+              const inputElement = document.getElementById(inputId);
+              inputElement.disabled = false;
+
+              const outputElement = document.getElementById(outputId);
+              outputElement.innerHTML = "";
+
+              const pickedPromise = new Promise((resolve) => {
+                inputElement.addEventListener("change", (e) => {
+                  resolve(e.target.files);
+                });
+              });
+
+              const cancel = document.createElement("button");
+              inputElement.parentElement.appendChild(cancel);
+              cancel.textContent = "Cancel upload";
+              const cancelPromise = new Promise((resolve) => {
+                cancel.onclick = () => {
+                  resolve(null);
+                };
+              });
+
+              // Wait for the user to pick the files.
+              const files = yield {
+                promise: Promise.race([pickedPromise, cancelPromise]),
+                response: {
+                  action: "starting",
+                },
+              };
+
+              cancel.remove();
+
+              // Disable the input element since further picks are not allowed.
+              inputElement.disabled = true;
+
+              if (!files) {
+                return {
+                  response: {
+                    action: "complete",
+                  },
+                };
+              }
+
+              for (const file of files) {
+                const li = document.createElement("li");
+                li.append(span(file.name, { fontWeight: "bold" }));
+                li.append(
+                  span(
+                    `(${file.type || "n/a"}) - ${file.size} bytes, ` +
+                      `last modified: ${
+                        file.lastModifiedDate
+                          ? file.lastModifiedDate.toLocaleDateString()
+                          : "n/a"
+                      } - `
+                  )
+                );
+                const percent = span("0% done");
+                li.appendChild(percent);
+
+                outputElement.appendChild(li);
+
+                const fileDataPromise = new Promise((resolve) => {
+                  const reader = new FileReader();
+                  reader.onload = (e) => {
+                    resolve(e.target.result);
+                  };
+                  reader.readAsArrayBuffer(file);
+                });
+                // Wait for the data to be ready.
+                let fileData = yield {
+                  promise: fileDataPromise,
+                  response: {
+                    action: "continue",
+                  },
+                };
+
+                // Use a chunked sending to avoid message size limits. See b/62115660.
+                let position = 0;
+                do {
+                  const length = Math.min(
+                    fileData.byteLength - position,
+                    MAX_PAYLOAD_SIZE
+                  );
+                  const chunk = new Uint8Array(fileData, position, length);
+                  position += length;
+
+                  const base64 = btoa(String.fromCharCode.apply(null, chunk));
+                  yield {
+                    response: {
+                      action: "append",
+                      file: file.name,
+                      data: base64,
+                    },
+                  };
+
+                  let percentDone =
+                    fileData.byteLength === 0
+                      ? 100
+                      : Math.round((position / fileData.byteLength) * 100);
+                  percent.textContent = `${percentDone}% done`;
+                } while (position < fileData.byteLength);
+              }
+
+              // All done.
+              yield {
+                response: {
+                  action: "complete",
+                },
+              };
+            }
+
+            scope.google = scope.google || {};
+            scope.google.colab = scope.google.colab || {};
+            scope.google.colab._files = {
+              _uploadFiles,
+              _uploadFilesContinue,
+            };
+          })(self);
+        </script>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Saving kaggle.json to kaggle.json
+</code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="1">
+        <pre><code>{&#39;kaggle.json&#39;: b&#39;{&quot;username&quot;:&quot;syahmisajid12&quot;,&quot;key&quot;:&quot;a76cee502ebc4268b9b384c1c587dfe1&quot;}&#39;}</code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="2" id="hZ4c9mSX5LuW">
+      <div class="sourceCode" id="cb4">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">~/</span>.kaggle</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cp kaggle.json <span class="op">~/</span>.kaggle<span class="op">/</span></span></code></pre>
+      </div>
+    </div>
+    <section id="load-data-dari-kaggle" class="cell markdown" id="sD6IGqR07JO4">
+      <h4>Load Data dari Kaggle</h4>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="7"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="A4KJjvQL7DbM"
+      data-outputId="3e4b46fc-625e-4398-dcf4-8bb6e6d7ec61"
+    >
+      <div class="sourceCode" id="cb5">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle datasets download <span class="op">-</span>d andrewmvd<span class="op">/</span>animal<span class="op">-</span>faces</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run &#39;chmod 600 /root/.kaggle/kaggle.json&#39;
+Downloading animal-faces.zip to /content
+ 99% 686M/696M [00:08&lt;00:00, 101MB/s] 
+100% 696M/696M [00:08&lt;00:00, 89.0MB/s]
+</code></pre>
+      </div>
+    </div>
+    <section id="import-module" class="cell markdown" id="VHSpJgR1Wkng">
+      <h4>Import Module</h4>
+    </section>
+    <div class="cell code" data-execution_count="3" id="SXf3mJc37LvO">
+      <div class="sourceCode" id="cb7">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre>
+      </div>
+    </div>
+    <section id="import-function" class="cell markdown" id="EKsxikumWnVL">
+      <h4>Import Function</h4>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="4"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="-D6ZGvMT7ORk"
+      data-outputId="e8dd315d-dab3-47d0-a25a-63dfd3de6658"
+    >
+      <div class="sourceCode" id="cb8">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get helper_functions.py script from course GitHub</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>raw.githubusercontent.com<span class="op">/</span>Syahmi33github<span class="op">/</span>Emotion<span class="op">-</span>Classification<span class="op">/</span>main<span class="op">/</span>helper_functions.py</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import helper functions we&#39;re going to use</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> helper_functions <span class="im">import</span> create_tensorboard_callback, plot_loss_curves, unzip_data, walk_through_dir, view_random_images,pred_and_plot, load_and_prep_image</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>--2023-06-30 14:09:13--  https://raw.githubusercontent.com/Syahmi33github/Emotion-Classification/main/helper_functions.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11485 (11K) [text/plain]
+Saving to: ‘helper_functions.py’
+
+
+helper_functions.py   0%[                    ]       0  --.-KB/s               
+helper_functions.py 100%[===================&gt;]  11.22K  --.-KB/s    in 0s      
+
+2023-06-30 14:09:13 (123 MB/s) - ‘helper_functions.py’ saved [11485/11485]
+
+</code></pre>
+      </div>
+    </div>
+    <section
+      id="exploratory-data-analysis"
+      class="cell markdown"
+      id="MErTIDeupG8X"
+    >
+      <h2>EXPLORATORY DATA ANALYSIS</h2>
+    </section>
+    <div class="cell code" data-execution_count="8" id="CquP30-yksXp">
+      <div class="sourceCode" id="cb10">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>unzip_data(<span class="st">&quot;/content/animal-faces.zip&quot;</span>)</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="9"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="zzHBdY01kwmF"
+      data-outputId="5232b7de-2e08-4099-8f1f-ca6d9b95c4c7"
+    >
+      <div class="sourceCode" id="cb11">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>walk_through_dir(<span class="st">&quot;/content/afhq&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>There are 2 directories and 0 images in &#39;/content/afhq&#39;.
+There are 3 directories and 0 images in &#39;/content/afhq/val&#39;.
+There are 0 directories and 500 images in &#39;/content/afhq/val/cat&#39;.
+There are 0 directories and 500 images in &#39;/content/afhq/val/dog&#39;.
+There are 0 directories and 500 images in &#39;/content/afhq/val/wild&#39;.
+There are 3 directories and 0 images in &#39;/content/afhq/train&#39;.
+There are 0 directories and 5153 images in &#39;/content/afhq/train/cat&#39;.
+There are 0 directories and 4739 images in &#39;/content/afhq/train/dog&#39;.
+There are 0 directories and 4738 images in &#39;/content/afhq/train/wild&#39;.
+</code></pre>
+      </div>
+    </div>
+    <section
+      id="proportion-of-number-of-each-class"
+      class="cell markdown"
+      id="6uylXGXjwBUv"
+    >
+      <h3>Proportion of Number of Each Class</h3>
+    </section>
+    <div class="cell code" data-execution_count="29" id="OwAsfsNPr6RX">
+      <div class="sourceCode" id="cb13">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_images_in_folder(folder_path):</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    image_extensions <span class="op">=</span> [<span class="st">&#39;.jpg&#39;</span>, <span class="st">&#39;.jpeg&#39;</span>, <span class="st">&#39;.png&#39;</span>, <span class="st">&#39;.gif&#39;</span>]  <span class="co"># Ekstensi file gambar yang akan dihitung</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> file_name <span class="kw">in</span> os.listdir(folder_path):</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">any</span>(ext <span class="kw">in</span> file_name.lower() <span class="cf">for</span> ext <span class="kw">in</span> image_extensions):</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>            file_path <span class="op">=</span> os.path.join(folder_path, file_name)</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>            <span class="cf">try</span>:</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>                Image.<span class="bu">open</span>(file_path)</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>                count <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>            <span class="cf">except</span>:</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>                <span class="cf">pass</span>  <span class="co"># Skip file yang tidak dapat dibuka sebagai gambar</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> count</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="56"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="4MUpL7zgsJJK"
+      data-outputId="cda73177-8c03-4699-d770-1ffbe09727f9"
+    >
+      <div class="sourceCode" id="cb14">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>cat_path <span class="op">=</span> <span class="st">&quot;/content/afhq/train/cat&quot;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>cat_count <span class="op">=</span> count_images_in_folder(cat_path)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(cat_path, cat_count))</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>dog_path <span class="op">=</span> <span class="st">&quot;/content/afhq/train/dog&quot;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>dog_count <span class="op">=</span> count_images_in_folder(dog_path)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(dog_path, dog_count))</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>wild_path <span class="op">=</span> <span class="st">&quot;/content/afhq/train/wild&quot;</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>wild_count <span class="op">=</span> count_images_in_folder(wild_path)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(wild_path, wild_count))</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>Jumlah_train <span class="op">=</span> [cat_count, dog_count, wild_count]</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Jumlah_train)</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>label <span class="op">=</span> [<span class="st">&quot;cat&quot;</span>, <span class="st">&quot;dog&quot;</span>, <span class="st">&quot;wild&quot;</span>]</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Jumlah gambar di folder /content/afhq/train/cat: 5153
+Jumlah gambar di folder /content/afhq/train/dog: 4739
+Jumlah gambar di folder /content/afhq/train/wild: 4738
+[5153, 4739, 4738]
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="57"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="PRmukVA9uC1R"
+      data-outputId="ac9528e9-16fb-45be-d78d-83c065ddf359"
+    >
+      <div class="sourceCode" id="cb16">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cat_path_test <span class="op">=</span> <span class="st">&quot;/content/afhq/val/cat&quot;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>cat_count_test <span class="op">=</span> count_images_in_folder(cat_path_test)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(cat_path_test, cat_count_test))</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>dog_path_test <span class="op">=</span> <span class="st">&quot;/content/afhq/val/dog&quot;</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>dog_count_test <span class="op">=</span> count_images_in_folder(dog_path_test)</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(dog_path_test, dog_count_test))</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>wild_path_test <span class="op">=</span> <span class="st">&quot;/content/afhq/val/wild&quot;</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>wild_count_test <span class="op">=</span> count_images_in_folder(wild_path_test)</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Jumlah gambar di folder </span><span class="sc">{}</span><span class="st">: </span><span class="sc">{}</span><span class="st">&quot;</span>.<span class="bu">format</span>(wild_path_test, wild_count_test))</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>Jumlah_test <span class="op">=</span> [cat_count_test, dog_count_test, wild_count_test]</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Jumlah_test)</span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>label <span class="op">=</span> [<span class="st">&quot;cat&quot;</span>, <span class="st">&quot;dog&quot;</span>, <span class="st">&quot;wild&quot;</span>]</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Jumlah gambar di folder /content/afhq/val/cat: 500
+Jumlah gambar di folder /content/afhq/val/dog: 500
+Jumlah gambar di folder /content/afhq/val/wild: 500
+[500, 500, 500]
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="50"
+      data-colab='{"base_uri":"https://localhost:8080/","height":601}'
+      id="0EwGorLeu0mX"
+      data-outputId="18642bb2-6818-45b6-a5c2-2d22d53317bf"
+    >
+      <div class="sourceCode" id="cb18">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>width <span class="op">=</span> <span class="fl">0.35</span>  <span class="co"># Lebar batang</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot menggunakan seaborn</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(style<span class="op">=</span><span class="st">&quot;whitegrid&quot;</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot untuk Jumlah_train</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>train_bar <span class="op">=</span> np.arange(<span class="bu">len</span>(label))</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>train_plot <span class="op">=</span> plt.bar(train_bar, Jumlah_train, width, label<span class="op">=</span><span class="st">&#39;Jumlah Train&#39;</span>)</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot untuk Jumlah_test</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a>test_bar <span class="op">=</span> train_bar <span class="op">+</span> width</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a>test_plot <span class="op">=</span> plt.bar(test_bar, Jumlah_test, width, label<span class="op">=</span><span class="st">&#39;Jumlah Test&#39;</span>)</span>
+<span id="cb18-18"><a href="#cb18-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-19"><a href="#cb18-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Menambahkan label pada sumbu x dan sumbu y</span></span>
+<span id="cb18-20"><a href="#cb18-20" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Kelas&#39;</span>)</span>
+<span id="cb18-21"><a href="#cb18-21" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Jumlah Data&#39;</span>)</span>
+<span id="cb18-22"><a href="#cb18-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-23"><a href="#cb18-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Menambahkan label pada setiap batang</span></span>
+<span id="cb18-24"><a href="#cb18-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(label)):</span>
+<span id="cb18-25"><a href="#cb18-25" aria-hidden="true" tabindex="-1"></a>    plt.text(train_bar[i], Jumlah_train[i] <span class="op">+</span> <span class="dv">50</span>, <span class="bu">str</span>(Jumlah_train[i]), ha<span class="op">=</span><span class="st">&#39;center&#39;</span>)</span>
+<span id="cb18-26"><a href="#cb18-26" aria-hidden="true" tabindex="-1"></a>    plt.text(test_bar[i], Jumlah_test[i] <span class="op">+</span> <span class="dv">50</span>, <span class="bu">str</span>(Jumlah_test[i]), ha<span class="op">=</span><span class="st">&#39;center&#39;</span>)</span>
+<span id="cb18-27"><a href="#cb18-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-28"><a href="#cb18-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Menambahkan judul dan legend</span></span>
+<span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Jumlah Data Training dan Testing per Kelas&#39;</span>)</span>
+<span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Menandai posisi kelas pada sumbu x</span></span>
+<span id="cb18-33"><a href="#cb18-33" aria-hidden="true" tabindex="-1"></a>plt.xticks(train_bar <span class="op">+</span> width<span class="op">/</span><span class="dv">2</span>, label)</span>
+<span id="cb18-34"><a href="#cb18-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-35"><a href="#cb18-35" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb18-36"><a href="#cb18-36" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/a0c72ce077c71ada33fa65a2d90a0c45619c1348.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="EyqYPpZBwYF6">
+      <p>Perbandingan Data Train dan Data Test = 90% / 10%</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="54"
+      data-colab='{"base_uri":"https://localhost:8080/","height":452}'
+      id="XEAd6PXjvrFc"
+      data-outputId="1a2fe0aa-0fbb-43c6-fb38-ec9674b44a40"
+    >
+      <div class="sourceCode" id="cb19">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">5</span>, <span class="dv">5</span>))</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>plt.pie(Jumlah_train, labels<span class="op">=</span>label, autopct<span class="op">=</span><span class="st">&#39;</span><span class="sc">%1.1f%%</span><span class="st">&#39;</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>        colors<span class="op">=</span>sns.color_palette(<span class="st">&#39;viridis&#39;</span>), startangle<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Work Year Distribution&#39;</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">&#39;equal&#39;</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/1ecb9463a0e24de54f3ad0181139ca20e0c4e8f3.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="K7k_0WCdwg6v">
+      <p>Proporsi Masing masing class cukup seimbang</p>
+    </div>
+    <section
+      id="visualization-image-data"
+      class="cell markdown"
+      id="31eO0fGlw2WI"
+    >
+      <h3>Visualization Image Data</h3>
+    </section>
+    <div class="cell code" data-execution_count="10" id="gt9CTRd0k-5V">
+      <div class="sourceCode" id="cb20">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> <span class="st">&#39;/content/afhq/train/&#39;</span></span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="60"
+      data-colab='{"base_uri":"https://localhost:8080/","height":854}'
+      id="b1sQAMgYlHm4"
+      data-outputId="03849358-bd66-498f-be9d-e1945a1f7755"
+    >
+      <div class="sourceCode" id="cb21">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># View a random image from the training dataset</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>cat <span class="op">=</span> view_random_images(target_dir<span class="op">=</span>train_dir,</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;cat&quot;</span>,</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>dog <span class="op">=</span> view_random_images(target_dir<span class="op">=</span>train_dir,</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;dog&quot;</span>,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>wild <span class="op">=</span> view_random_images(target_dir<span class="op">=</span>train_dir,</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>                        target_class<span class="op">=</span><span class="st">&quot;wild&quot;</span>,</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>                        num_images <span class="op">=</span> <span class="dv">8</span>)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/3ac1d83f6bdc64acaeec4b4b302df543042c9474.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/d5ca59e419e87735fec4a570c8bf2459599ef9ea.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/4e8d5475da08302d9bd14d976ceffdc3d79ebd1b.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="data-pre-processing" class="cell markdown" id="I8S1bxlRyxiF">
+      <h2>Data Pre Processing</h2>
+    </section>
+    <section id="data-augmentation" class="cell markdown" id="c5caPv8VyzKI">
+      <h3>Data Augmentation</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="61"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="RfUy9kuyyyjg"
+      data-outputId="3286b458-a067-406d-d4ef-7b2abc95132d"
+    >
+      <div class="sourceCode" id="cb22">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Setup data inputs</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.preprocessing.image <span class="im">import</span> ImageDataGenerator</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>IMAGE_SHAPE <span class="op">=</span> (<span class="dv">224</span>, <span class="dv">224</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>BATCH_SIZE <span class="op">=</span> <span class="dv">32</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>train_dir <span class="op">=</span> <span class="st">&quot;/content/afhq/train&quot;</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>validation_dir <span class="op">=</span> <span class="st">&quot;/content/afhq/val&quot;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>train_datagen <span class="op">=</span> ImageDataGenerator(rescale<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="fl">255.</span>)</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>validation_datagen <span class="op">=</span> ImageDataGenerator(rescale<span class="op">=</span><span class="dv">1</span><span class="op">/</span><span class="fl">255.</span>)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Training images:&quot;</span>)</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>train_data <span class="op">=</span> train_datagen.flow_from_directory(train_dir,</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>                                               target_size<span class="op">=</span>IMAGE_SHAPE,</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>                                               batch_size<span class="op">=</span>BATCH_SIZE,</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>                                               class_mode<span class="op">=</span><span class="st">&quot;categorical&quot;</span>)</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Testing images:&quot;</span>)</span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>validation_data <span class="op">=</span> validation_datagen.flow_from_directory(validation_dir,</span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>                                              target_size<span class="op">=</span>IMAGE_SHAPE,</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>                                              batch_size<span class="op">=</span>BATCH_SIZE,</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>                                              class_mode<span class="op">=</span><span class="st">&quot;categorical&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Training images:
+Found 14630 images belonging to 3 classes.
+Testing images:
+Found 1500 images belonging to 3 classes.
+</code></pre>
+      </div>
+    </div>
+    <section id="modelling" class="cell markdown" id="PIBq1NgWjqVR">
+      <h1>Modelling</h1>
+    </section>
+    <section id="model-0" class="cell markdown" id="otac6S-bkEqh">
+      <h2>Model 0</h2>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="65"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="7p_Hkjx9kKc8"
+      data-outputId="e60a63c5-5f3c-4f29-dbc9-9310cad3e517"
+    >
+      <div class="sourceCode" id="cb24">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.layers <span class="im">import</span> Input, Conv2D, MaxPool2D, Flatten, Dense, BatchNormalization, Dropout</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras.models <span class="im">import</span> Model</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> Input(shape<span class="op">=</span>(<span class="dv">224</span>, <span class="dv">224</span>, <span class="dv">3</span>))</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(inputs)</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">16</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(inputs)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Conv2D(<span class="dv">32</span>, <span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;relu&#39;</span>)(x)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> MaxPool2D()(x)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Flatten()(x)</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> Dropout(<span class="fl">0.5</span>)(x)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>outputs <span class="op">=</span> Dense(<span class="dv">3</span>, activation<span class="op">=</span><span class="st">&#39;softmax&#39;</span>)(x)</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>model_0 <span class="op">=</span> Model(inputs<span class="op">=</span>inputs, outputs<span class="op">=</span>outputs)</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>model_0.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&quot;categorical_crossentropy&quot;</span>,</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>                optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>                metrics<span class="op">=</span>[<span class="st">&quot;accuracy&quot;</span>])</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>history_0 <span class="op">=</span> model_0.fit(train_data,</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>                        epochs<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>                        steps_per_epoch<span class="op">=</span><span class="bu">len</span>(train_data),</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>                        validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>                        validation_steps<span class="op">=</span><span class="bu">len</span>(validation_data)</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>                        )</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Epoch 1/5
+458/458 [==============================] - 95s 204ms/step - loss: 0.5278 - accuracy: 0.8272 - val_loss: 0.2386 - val_accuracy: 0.9120
+Epoch 2/5
+458/458 [==============================] - 92s 201ms/step - loss: 0.1469 - accuracy: 0.9484 - val_loss: 0.1992 - val_accuracy: 0.9267
+Epoch 3/5
+458/458 [==============================] - 91s 199ms/step - loss: 0.0633 - accuracy: 0.9786 - val_loss: 0.2507 - val_accuracy: 0.9173
+Epoch 4/5
+458/458 [==============================] - 91s 199ms/step - loss: 0.0406 - accuracy: 0.9859 - val_loss: 0.2600 - val_accuracy: 0.9167
+Epoch 5/5
+458/458 [==============================] - 93s 203ms/step - loss: 0.0209 - accuracy: 0.9935 - val_loss: 0.3260 - val_accuracy: 0.9067
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="66"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="Vls4EJuPskLu"
+      data-outputId="cf679a47-f4b2-4ae9-e5ec-1efbfd2d9e27"
+    >
+      <div class="sourceCode" id="cb26">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>baseModel_result <span class="op">=</span> model_0.evaluate(validation_data)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>47/47 [==============================] - 7s 158ms/step - loss: 0.3260 - accuracy: 0.9067
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="79"
+      data-colab='{"base_uri":"https://localhost:8080/","height":943}'
+      id="-jhK2oGgCGEJ"
+      data-outputId="e490dd7d-84fc-4cef-89f6-939144082902"
+    >
+      <div class="sourceCode" id="cb28">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the model&#39;s loss curves on the 10 classes of data (note: this function comes from above in the notebook)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>plot_loss_curves(history_0)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/c4293aa62ca975868ef607bcaf86cfc9e6a129f2.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/934afed23ae73b11d4b9fb82b6d36dc67553a491.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section
+      id="model-1-transfer-learning"
+      class="cell markdown"
+      id="Hu60t3HbmBET"
+    >
+      <h2>Model 1 (Transfer Learning)</h2>
+    </section>
+    <div class="cell code" data-execution_count="67" id="1-k_tVz6l_kM">
+      <div class="sourceCode" id="cb29">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow <span class="im">as</span> tf</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tensorflow_hub <span class="im">as</span> hub</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tensorflow.keras <span class="im">import</span> layers</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="68" id="lw96_zQdm7o0">
+      <div class="sourceCode" id="cb30">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_model(model_url, num_classes<span class="op">=</span><span class="dv">10</span>):</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">&quot;&quot;&quot;Takes a TensorFlow Hub URL and creates a Keras Sequential model with it.</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="co">  Args:</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="co">    model_url (str): A TensorFlow Hub feature extraction URL.</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="co">    num_classes (int): Number of output neurons in output layer,</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co">      should be equal to number of target classes, default 10.</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a><span class="co">  Returns:</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="co">    An uncompiled Keras Sequential model with model_url as feature</span></span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co">    extractor layer and Dense output layer with num_classes outputs.</span></span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="co">  &quot;&quot;&quot;</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the pretrained model and save it as a Keras layer</span></span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>  feature_extractor_layer <span class="op">=</span> hub.KerasLayer(model_url,</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>                                           trainable<span class="op">=</span><span class="va">False</span>, <span class="co"># freeze the underlying patterns</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>                                           name<span class="op">=</span><span class="st">&#39;feature_extraction_layer&#39;</span>,</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>                                           input_shape<span class="op">=</span>IMAGE_SHAPE<span class="op">+</span>(<span class="dv">3</span>,)) <span class="co"># define the input image shape</span></span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create our own model</span></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>  model <span class="op">=</span> tf.keras.Sequential([</span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>    feature_extractor_layer, <span class="co"># use the feature extraction layer as the base</span></span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>    layers.Dense(num_classes, activation<span class="op">=</span><span class="st">&#39;softmax&#39;</span>, name<span class="op">=</span><span class="st">&#39;output_layer&#39;</span>) <span class="co"># create our own output layer</span></span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>  ])</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> model</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="69" id="nE-CjX6Gm4ce">
+      <div class="sourceCode" id="cb31">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Resnet 50 V2 feature vector</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>resnet_url <span class="op">=</span> <span class="st">&quot;https://tfhub.dev/google/imagenet/resnet_v2_50/feature_vector/4&quot;</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Original: EfficientNetB0 feature vector (version 1)</span></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>efficientnet_url <span class="op">=</span> <span class="st">&quot;https://tfhub.dev/tensorflow/efficientnet/b0/feature-vector/1&quot;</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># # New: EfficientNetB0 feature vector (version 2)</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co"># efficientnet_url = &quot;https://tfhub.dev/google/imagenet/efficientnet_v2_imagenet1k_b0/feature_vector/2&quot;</span></span></code></pre>
+      </div>
+    </div>
+    <section id="resnet" class="cell markdown" id="pK2thTgbn2aO">
+      <h3>Resnet</h3>
+    </section>
+    <div class="cell code" data-execution_count="72" id="a5_sC56nnLsu">
+      <div class="sourceCode" id="cb32">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create model</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>resnet_model <span class="op">=</span> create_model(resnet_url, num_classes<span class="op">=</span>train_data.num_classes)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>resnet_model.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&#39;categorical_crossentropy&#39;</span>,</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>                     optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>                     metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="73"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="FYGcliVsna9g"
+      data-outputId="ee2b88da-d7e1-4b02-d1b3-3164c023cb86"
+    >
+      <div class="sourceCode" id="cb33">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>early_stopping <span class="op">=</span> tf.keras.callbacks.EarlyStopping(min_delta<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>                          patience<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>                          verbose<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                          restore_best_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>resnet_history <span class="op">=</span> resnet_model.fit(train_data,</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>                                  epochs<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>                                  steps_per_epoch<span class="op">=</span><span class="bu">len</span>(train_data),</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>                                  validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>                                  validation_steps<span class="op">=</span><span class="bu">len</span>(validation_data),</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>                                  callbacks<span class="op">=</span>[early_stopping]</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>                                  )</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Epoch 1/10
+458/458 [==============================] - 104s 219ms/step - loss: 0.0349 - accuracy: 0.9891 - val_loss: 0.0112 - val_accuracy: 0.9967
+Epoch 2/10
+458/458 [==============================] - 97s 212ms/step - loss: 0.0078 - accuracy: 0.9980 - val_loss: 0.0154 - val_accuracy: 0.9933
+Epoch 3/10
+458/458 [==============================] - 94s 206ms/step - loss: 0.0062 - accuracy: 0.9983 - val_loss: 0.0092 - val_accuracy: 0.9980
+Epoch 4/10
+458/458 [==============================] - 96s 210ms/step - loss: 0.0046 - accuracy: 0.9985 - val_loss: 0.0082 - val_accuracy: 0.9987
+Epoch 5/10
+458/458 [==============================] - 95s 207ms/step - loss: 0.0032 - accuracy: 0.9990 - val_loss: 0.0081 - val_accuracy: 0.9987
+Epoch 6/10
+458/458 [==============================] - 93s 204ms/step - loss: 0.0028 - accuracy: 0.9990 - val_loss: 0.0095 - val_accuracy: 0.9973
+Epoch 7/10
+458/458 [==============================] - 94s 206ms/step - loss: 0.0023 - accuracy: 0.9992 - val_loss: 0.0100 - val_accuracy: 0.9987
+Epoch 8/10
+458/458 [==============================] - ETA: 0s - loss: 0.0016 - accuracy: 0.9995Restoring model weights from the end of the best epoch: 5.
+458/458 [==============================] - 96s 209ms/step - loss: 0.0016 - accuracy: 0.9995 - val_loss: 0.0127 - val_accuracy: 0.9967
+Epoch 8: early stopping
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="74"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="RNhJKv_Ysx4B"
+      data-outputId="3c068459-dbf9-4700-ad67-661c885fa9b0"
+    >
+      <div class="sourceCode" id="cb35">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>resnet_result <span class="op">=</span> resnet_model.evaluate(validation_data)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>47/47 [==============================] - 9s 190ms/step - loss: 0.0081 - accuracy: 0.9987
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="78"
+      data-colab='{"base_uri":"https://localhost:8080/","height":943}'
+      id="NW2KeIrpCIcP"
+      data-outputId="fb0043b9-fdb9-4889-e51b-61bf80393ddb"
+    >
+      <div class="sourceCode" id="cb37">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the model&#39;s loss curves on the 10 classes of data (note: this function comes from above in the notebook)</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>plot_loss_curves(resnet_history)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/d6a3d08d1fb8c511d7b58d68815f8daa9ead21c4.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/f4641ed64f9172de947855ecfa4121ca98bac613.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="efficientnet" class="cell markdown" id="lZnj6DVrn7rC">
+      <h3>efficientnet</h3>
+    </section>
+    <div class="cell code" data-execution_count="75" id="WyMrD8FLoCzw">
+      <div class="sourceCode" id="cb38">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create model</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>efficientnet_model <span class="op">=</span> create_model(efficientnet_url, num_classes<span class="op">=</span>train_data.num_classes)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Compile</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>efficientnet_model.<span class="bu">compile</span>(loss<span class="op">=</span><span class="st">&#39;categorical_crossentropy&#39;</span>,</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>                     optimizer<span class="op">=</span>tf.keras.optimizers.Adam(),</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>                     metrics<span class="op">=</span>[<span class="st">&#39;accuracy&#39;</span>])</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="76"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="2Z7tbIV7oIpV"
+      data-outputId="ecd25678-2e48-49a0-e224-85b0dd33e74b"
+    >
+      <div class="sourceCode" id="cb39">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>early_stopping <span class="op">=</span> tf.keras.callbacks.EarlyStopping(min_delta<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>                          patience<span class="op">=</span><span class="dv">3</span>,</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>                          verbose<span class="op">=</span><span class="dv">1</span>,</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>                          restore_best_weights<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the model</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>efficientnet_history <span class="op">=</span> efficientnet_model.fit(train_data,</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>                                  epochs<span class="op">=</span><span class="dv">10</span>,</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>                                  steps_per_epoch<span class="op">=</span><span class="bu">len</span>(train_data),</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>                                  validation_data<span class="op">=</span>validation_data,</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a>                                  validation_steps<span class="op">=</span><span class="bu">len</span>(validation_data),</span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>                                  callbacks<span class="op">=</span>[early_stopping]</span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>                                  )</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Epoch 1/10
+458/458 [==============================] - 103s 204ms/step - loss: 0.0596 - accuracy: 0.9883 - val_loss: 0.0140 - val_accuracy: 0.9980
+Epoch 2/10
+458/458 [==============================] - 93s 203ms/step - loss: 0.0096 - accuracy: 0.9977 - val_loss: 0.0091 - val_accuracy: 0.9993
+Epoch 3/10
+458/458 [==============================] - 91s 200ms/step - loss: 0.0063 - accuracy: 0.9988 - val_loss: 0.0074 - val_accuracy: 0.9993
+Epoch 4/10
+458/458 [==============================] - 92s 200ms/step - loss: 0.0051 - accuracy: 0.9985 - val_loss: 0.0077 - val_accuracy: 0.9993
+Epoch 5/10
+458/458 [==============================] - 91s 199ms/step - loss: 0.0041 - accuracy: 0.9990 - val_loss: 0.0071 - val_accuracy: 0.9993
+Epoch 6/10
+458/458 [==============================] - 93s 202ms/step - loss: 0.0035 - accuracy: 0.9988 - val_loss: 0.0071 - val_accuracy: 0.9993
+Epoch 7/10
+458/458 [==============================] - 92s 201ms/step - loss: 0.0030 - accuracy: 0.9991 - val_loss: 0.0066 - val_accuracy: 0.9993
+Epoch 8/10
+458/458 [==============================] - 99s 216ms/step - loss: 0.0025 - accuracy: 0.9993 - val_loss: 0.0069 - val_accuracy: 0.9993
+Epoch 9/10
+458/458 [==============================] - 96s 211ms/step - loss: 0.0021 - accuracy: 0.9994 - val_loss: 0.0066 - val_accuracy: 0.9993
+Epoch 10/10
+458/458 [==============================] - ETA: 0s - loss: 0.0022 - accuracy: 0.9993Restoring model weights from the end of the best epoch: 7.
+458/458 [==============================] - 117s 255ms/step - loss: 0.0022 - accuracy: 0.9993 - val_loss: 0.0070 - val_accuracy: 0.9993
+Epoch 10: early stopping
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="77"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="BS2CRk5Fs8pS"
+      data-outputId="add78dd3-ecf0-4e23-d1c6-d88ad62f870d"
+    >
+      <div class="sourceCode" id="cb41">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>efficientnet_result <span class="op">=</span> efficientnet_model.evaluate(validation_data)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>47/47 [==============================] - 9s 189ms/step - loss: 0.0066 - accuracy: 0.9993
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="80"
+      data-colab='{"base_uri":"https://localhost:8080/","height":943}'
+      id="MbWKy_9dCL51"
+      data-outputId="4acb8aa1-5ce7-443f-d16a-7a2db63dfe68"
+    >
+      <div class="sourceCode" id="cb43">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the model&#39;s loss curves on the 10 classes of data (note: this function comes from above in the notebook)</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>plot_loss_curves(efficientnet_history)</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/3faae90856ac9608ce93ef0ddfaead8ca5a683d4.png"
+          />
+        </p>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/15b98740f17b502d679e6f15fa8a139261f7b2f6.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="evaluation" class="cell markdown" id="ijx09Ikqwf6i">
+      <h1>Evaluation</h1>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="81"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="7rF5uM9rttC_"
+      data-outputId="f9cd2e5b-09d4-4a58-8d7f-4aecaadc161b"
+    >
+      <div class="sourceCode" id="cb44">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pathlib</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> pathlib.Path(<span class="st">&quot;/content/afhq/train&quot;</span>) <span class="co"># turn our training path into a Python path</span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="co"># class_names = np.array([item.name for item in data_dir.glob(&#39;*&#39;)]) # created a list of class_names from the subdirectories</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>class_names <span class="op">=</span> np.array([item.name <span class="cf">for</span> item <span class="kw">in</span> <span class="bu">sorted</span>(data_dir.glob(<span class="st">&#39;*&#39;</span>))]) <span class="co"># created a list of class_names from the subdirectories</span></span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>class_names</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="81">
+        <pre><code>array([&#39;cat&#39;, &#39;dog&#39;, &#39;wild&#39;], dtype=&#39;&lt;U4&#39;)</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="88"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="RxbJhrs0t_CY"
+      data-outputId="161c8e6e-4042-41ec-965c-3ea3f7e3d9bb"
+    >
+      <div class="sourceCode" id="cb46">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Base Model = </span><span class="sc">{</span><span class="bu">round</span>(baseModel_result[<span class="dv">1</span>],<span class="dv">4</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Resnet = </span><span class="sc">{</span><span class="bu">round</span>(resnet_result[<span class="dv">1</span>],<span class="dv">4</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Akurasi Efficientnet =</span><span class="sc">{</span><span class="bu">round</span>(efficientnet_result[<span class="dv">1</span>],<span class="dv">4</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Akurasi Base Model = 0.9067
+Akurasi Resnet = 0.9987
+Akurasi Efficientnet =0.9993
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="92"
+      data-colab='{"base_uri":"https://localhost:8080/","height":573}'
+      id="DgGDT14OCgov"
+      data-outputId="8125fdf4-5999-4901-fd60-3cbad33b1495"
+    >
+      <div class="sourceCode" id="cb48">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>akurasi <span class="op">=</span> [<span class="bu">round</span>(baseModel_result[<span class="dv">1</span>],<span class="dv">4</span>), <span class="bu">round</span>(resnet_result[<span class="dv">1</span>],<span class="dv">4</span>), <span class="bu">round</span>(efficientnet_result[<span class="dv">1</span>],<span class="dv">4</span>)]</span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> [<span class="st">&quot;Base Model&quot;</span>, <span class="st">&quot;Resnet&quot;</span>, <span class="st">&quot;Efficientnet&quot;</span>]</span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Membuat plot menggunakan seaborn</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>sns.<span class="bu">set</span>(style<span class="op">=</span><span class="st">&quot;whitegrid&quot;</span>)</span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span>model, y<span class="op">=</span>akurasi)</span>
+<span id="cb48-11"><a href="#cb48-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Jumlah Data Training per Kelas&#39;</span>)</span>
+<span id="cb48-12"><a href="#cb48-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Model&#39;</span>)</span>
+<span id="cb48-13"><a href="#cb48-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Akurasi&#39;</span>)</span>
+<span id="cb48-14"><a href="#cb48-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-15"><a href="#cb48-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Menambahkan keterangan nilai akurasi pada setiap batang</span></span>
+<span id="cb48-16"><a href="#cb48-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(akurasi)):</span>
+<span id="cb48-17"><a href="#cb48-17" aria-hidden="true" tabindex="-1"></a>    plt.text(i, akurasi[i] <span class="op">+</span> <span class="fl">0.01</span>, <span class="bu">str</span>(akurasi[i]), ha<span class="op">=</span><span class="st">&#39;center&#39;</span>)</span>
+<span id="cb48-18"><a href="#cb48-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-19"><a href="#cb48-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/159fe463e59cfedec9ceb38a5200ef53896bd040.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="115"
+      data-colab='{"base_uri":"https://localhost:8080/","height":445}'
+      id="-onakxVltXB9"
+      data-outputId="2e3a71b2-c10f-4e48-c4a5-55778f6239ee"
+    >
+      <div class="sourceCode" id="cb49">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>pred_and_plot(model<span class="op">=</span>resnet_model,</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>              filename<span class="op">=</span><span class="st">&quot;/content/afhq/val/cat/flickr_cat_000016.jpg&quot;</span>,</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>              class_names<span class="op">=</span>class_names)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>1/1 [==============================] - 0s 36ms/step
+</code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_e273a4cd0ba9408798161854142c436d/9db05ad5065c79832e4acf9839c48825914b9f42.png"
+          />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

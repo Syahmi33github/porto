@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block Title %}
+	{{Judul}}
+{% endblock Title %}
+
+{% block pageTitle %}
+	{{Judul}}
+{% endblock pageTitle %}
+
+{% block contents %}
+	<div class="container bg-light shadow mt-5">
+		<h1>sa</h1>
+		<h1>sa</h1>
+		<!-- <img src="templates\man.png" alt=""> -->
+		<!-- <img src="{% static 'img\man.png' %}" alt=""> -->
+		<img src="/man.png" alt="">
+	</div>
+
+	{{Content}}
+{% endblock contents %}

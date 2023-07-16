@@ -1,0 +1,498 @@
+{% extends "base_secProject.html" %}
+<!-- sss -->
+{% load static %}
+<!-- sss -->
+
+{% block Title %}
+<!-- sss -->
+{{Judul}}
+<!-- sss -->
+{% endblock Title %}
+<!-- sss -->
+{% block style %}
+<!-- sss -->
+{% endblock style %}
+<!-- sss -->
+{% block pageTitle %}
+<!-- sss -->
+{% endblock pageTitle %}
+<!-- sss -->
+{% block contents %}
+<!-- sss -->
+{{Content}}
+
+<!-- portfolio section -->
+<section class="section" id="portfolio">
+  <div class="container text-center">
+    <br />
+    <p class="section-subtitle">What I Did ?</p>
+    <h6 class="section-title mb-4">Portfolio</h6>
+    <!-- DropDown Menu -->
+    <input
+      class="dark-light"
+      type="checkbox"
+      id="dark-light"
+      name="dark-light"
+    />
+    <label for="dark-light"></label>
+
+    <div class="sec-center">
+      <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+      <label class="for-dropdown" for="dropdown"
+        >Domain <i class="uil uil-arrow-down"></i
+      ></label>
+      <div class="section-dropdown">
+        <input
+          class="dropdown-sub"
+          type="checkbox"
+          id="dropdown-sub"
+          name="dropdown-sub"
+        />
+        <div class="container-dropdown-a">
+          <a href="/project" style="border: 4px solid rgba(255, 255, 255, 0.1)"
+            >ALL<i class="uil uil-arrow-right"></i
+          ></a>
+          <br />
+          <a href="/project-ds"
+            >Data Science<i class="uil uil-arrow-right"></i
+          ></a>
+          <br />
+          <a href="/project-cv"
+            >Computer Vision<i class="uil uil-arrow-right"></i
+          ></a>
+          <br />
+          <a href="/project-nlp"
+            >Natural Language Processing<i class="uil uil-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- DropDown Menu -->
+
+    <!-- row 1-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="/project4" class="portfolio-card">
+          <img
+            src="{% static 'img\BitcoinForecasting\Bitcoin.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Bitcoin Forecasting</h4>
+              <p class="font-weight-normal">Category: Time Series</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/project3" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\creditFraud\fraud-detection.png' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Fraud Detection - Imbalanced Data</h4>
+              <p class="font-weight-normal">Category: Classification</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/project2" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\priceHouse\zyro-image_home.png' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>House Price Prediction</h4>
+              <p class="font-weight-normal">Category: Regression</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row 2-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="/project6" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\EDA_SalaryDS\salary4.png' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>EDA Salary Data Scientist</h4>
+              <p class="font-weight-normal">
+                Category: Exploratory Data Analysis
+              </p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row 3-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row 4-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row 5-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row 6-->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            src="{% static 'img\none.jpg' %}"
+            class="portfolio-card-img"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="portfolio-card">
+          <img
+            class="portfolio-card-img"
+            src="{% static 'img\none.jpg' %}"
+            class="img-responsive rounded"
+            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+          />
+          <span class="portfolio-card-overlay">
+            <span class="portfolio-card-caption">
+              <h4>Web Designing</h4>
+              <p class="font-weight-normal">Category: Web Templates</p>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- end of row -->
+    <a href="/">
+      <div class="form-group col-sm-12 mt-4">
+        <input
+          type="submit"
+          value="Home"
+          class="btn btn-outline-primary rounded"
+        />
+      </div>
+    </a>
+  </div>
+  <!-- end of container -->
+</section>
+<!-- end of portfolio section -->
+
+<!-- pricing section -->
+{% endblock contents %}

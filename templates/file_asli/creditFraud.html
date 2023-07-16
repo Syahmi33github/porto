@@ -1,0 +1,2852 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>e93fe6f3db4f432385edd9044e8356ed</title>
+    <style>
+      html {
+        line-height: 1.5;
+        font-family: Georgia, serif;
+        font-size: 20px;
+        color: #1a1a1a;
+        background-color: #fdfdfd;
+      }
+      body {
+        margin: 0 auto;
+        max-width: 36em;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        hyphens: auto;
+        overflow-wrap: break-word;
+        text-rendering: optimizeLegibility;
+        font-kerning: normal;
+      }
+      @media (max-width: 600px) {
+        body {
+          font-size: 0.9em;
+          padding: 1em;
+        }
+        h1 {
+          font-size: 1.8em;
+        }
+      }
+      @media print {
+        body {
+          background-color: transparent;
+          color: black;
+          font-size: 12pt;
+        }
+        p,
+        h2,
+        h3 {
+          orphans: 3;
+          widows: 3;
+        }
+        h2,
+        h3,
+        h4 {
+          page-break-after: avoid;
+        }
+      }
+      p {
+        margin: 1em 0;
+      }
+      a {
+        color: #1a1a1a;
+      }
+      a:visited {
+        color: #1a1a1a;
+      }
+      img {
+        max-width: 100%;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 1.4em;
+      }
+      h5,
+      h6 {
+        font-size: 1em;
+        font-style: italic;
+      }
+      h6 {
+        font-weight: normal;
+      }
+      ol,
+      ul {
+        padding-left: 1.7em;
+        margin-top: 1em;
+      }
+      li > ol,
+      li > ul {
+        margin-top: 0;
+      }
+      blockquote {
+        margin: 1em 0 1em 1.7em;
+        padding-left: 1em;
+        border-left: 2px solid #e6e6e6;
+        color: #606060;
+      }
+      code {
+        font-family: Menlo, Monaco, "Lucida Console", Consolas, monospace;
+        font-size: 85%;
+        margin: 0;
+      }
+      pre {
+        margin: 1em 0;
+        overflow: auto;
+      }
+      pre code {
+        padding: 0;
+        overflow: visible;
+        overflow-wrap: normal;
+      }
+      .sourceCode {
+        background-color: transparent;
+        overflow: visible;
+      }
+      hr {
+        background-color: #1a1a1a;
+        border: none;
+        height: 1px;
+        margin: 1em 0;
+      }
+      table {
+        margin: 1em 0;
+        border-collapse: collapse;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        font-variant-numeric: lining-nums tabular-nums;
+      }
+      table caption {
+        margin-bottom: 0.75em;
+      }
+      tbody {
+        margin-top: 0.5em;
+        border-top: 1px solid #1a1a1a;
+        border-bottom: 1px solid #1a1a1a;
+      }
+      th {
+        border-top: 1px solid #1a1a1a;
+        padding: 0.25em 0.5em 0.25em 0.5em;
+      }
+      td {
+        padding: 0.125em 0.5em 0.25em 0.5em;
+      }
+      header {
+        margin-bottom: 4em;
+        text-align: center;
+      }
+      #TOC li {
+        list-style: none;
+      }
+      #TOC ul {
+        padding-left: 1.3em;
+      }
+      #TOC > ul {
+        padding-left: 0;
+      }
+      #TOC a:not(:hover) {
+        text-decoration: none;
+      }
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      div.columns {
+        display: flex;
+        gap: min(4vw, 1.5em);
+      }
+      div.column {
+        flex: auto;
+        overflow-x: auto;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+      ul.task-list {
+        list-style: none;
+      }
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1.6em;
+        vertical-align: middle;
+      }
+      pre > code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      pre > code.sourceCode > span {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      pre > code.sourceCode > span:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode > span {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        pre > code.sourceCode {
+          white-space: pre-wrap;
+        }
+        pre > code.sourceCode > span {
+          text-indent: -5em;
+          padding-left: 5em;
+        }
+      }
+      pre.numberSource code {
+        counter-reset: source-line 0;
+      }
+      pre.numberSource code > span {
+        position: relative;
+        left: -4em;
+        counter-increment: source-line;
+      }
+      pre.numberSource code > span > a:first-child::before {
+        content: counter(source-line);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      /* div.sourceCode
+      {   } */
+      @media screen {
+        pre > code.sourceCode > span > a:first-child::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+        color: #008000;
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      /* code span.ex { } Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+        color: #008000;
+        font-weight: bold;
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+      .display.math {
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    </style>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section
+      id="credit-fraud-with-imbalanced-datasets"
+      class="cell markdown"
+      id="7SdVfe_93cK9"
+    >
+      <h1>Credit Fraud with Imbalanced Datasets</h1>
+    </section>
+    <section id="project-overview" class="cell markdown" id="BJQLCk5z3tBi">
+      <h2>Project Overview</h2>
+    </section>
+    <div class="cell markdown" id="QzDo_B793vb2">
+      <p>
+        link dataset:
+        <a
+          href="https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/code?datasetId=310&amp;sortBy=voteCount"
+          class="uri"
+          >https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud/code?datasetId=310&amp;sortBy=voteCount</a
+        >
+      </p>
+    </div>
+    <div class="cell markdown" id="xM_xtmr33_XQ">
+      <p>
+        Project ini bertujuan membuat model terbaik untuk mengklasifikasi credit
+        fraud dengan data yang tidak seimbang
+      </p>
+    </div>
+    <div class="cell markdown" id="ardohpyq4xWy">
+      <p>
+        Kumpulan data berisi transaksi yang dilakukan oleh kartu kredit pada
+        bulan September 2013 oleh pemegang kartu Eropa. Dataset ini menyajikan
+        transaksi yang terjadi dalam dua hari, dimana kami memiliki 492 penipuan
+        dari 284.807 transaksi. Dataset sangat tidak seimbang, kelas positif
+        (penipuan) menyumbang 0,172% dari semua transaksi.
+      </p>
+      <p>
+        Ini hanya berisi variabel input numerik yang merupakan hasil dari
+        transformasi PCA. Karena masalah kerahasiaan, fitur asli dan lebih
+        banyak informasi latar belakang tentang data tidak disediakan.
+      </p>
+    </div>
+    <div class="cell markdown" id="Fj48zqKE496W">
+      <ul>
+        <li>
+          Fitur V1, V2, ... V28 adalah komponen utama yang diperoleh dengan PCA;
+        </li>
+        <li>
+          Satu-satunya fitur yang belum diubah dengan PCA adalah Waktu dan
+          Jumlah. Waktu Fitur berisi detik yang berlalu antara setiap transaksi
+          dan transaksi pertama dalam kumpulan data. Jumlah fitur adalah Jumlah
+          transaksi, fitur ini dapat digunakan untuk pembelajaran sensitif biaya
+          yang bergantung pada contoh.
+        </li>
+        <li>
+          Kelas Fitur adalah variabel respon dan dibutuhkan nilai 1 jika terjadi
+          penipuan dan 0 sebaliknya.
+        </li>
+      </ul>
+    </div>
+    <section id="import-data--module" class="cell markdown" id="SpKMytDJ4Zv-">
+      <h2>IMPORT DATA &amp; MODULE</h2>
+    </section>
+    <section
+      id="load-data-menggunakan-api-kaggle"
+      class="cell markdown"
+      id="NSqZlgwH5Okh"
+    >
+      <h3>Load data menggunakan API KAGGLE</h3>
+    </section>
+    <div
+      class="cell code"
+      data-execution_count="5"
+      data-colab='{"base_uri":"https://localhost:8080/","height":88}'
+      id="N-qXVfqL1oys"
+      data-outputId="de95ee8b-fae2-4e6f-e81f-008f8ff4dbee"
+    >
+      <div class="sourceCode" id="cb1">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># C:\Users\USER\.kaggle</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google.colab <span class="im">import</span> files</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>files.upload()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <input
+          type="file"
+          id="files-da69eed3-c55d-4eeb-9b6a-301740197644"
+          name="files[]"
+          multiple
+          disabled
+          style="border: none"
+        />
+        <output id="result-da69eed3-c55d-4eeb-9b6a-301740197644">
+          Upload widget is only available when the cell has been executed in the
+          current browser session. Please rerun this cell to enable.
+        </output>
+        <script>
+          // Copyright 2017 Google LLC
+          //
+          // Licensed under the Apache License, Version 2.0 (the "License");
+          // you may not use this file except in compliance with the License.
+          // You may obtain a copy of the License at
+          //
+          //      http://www.apache.org/licenses/LICENSE-2.0
+          //
+          // Unless required by applicable law or agreed to in writing, software
+          // distributed under the License is distributed on an "AS IS" BASIS,
+          // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+          // See the License for the specific language governing permissions and
+          // limitations under the License.
+
+          /**
+           * @fileoverview Helpers for google.colab Python module.
+           */
+          (function (scope) {
+            function span(text, styleAttributes = {}) {
+              const element = document.createElement("span");
+              element.textContent = text;
+              for (const key of Object.keys(styleAttributes)) {
+                element.style[key] = styleAttributes[key];
+              }
+              return element;
+            }
+
+            // Max number of bytes which will be uploaded at a time.
+            const MAX_PAYLOAD_SIZE = 100 * 1024;
+
+            function _uploadFiles(inputId, outputId) {
+              const steps = uploadFilesStep(inputId, outputId);
+              const outputElement = document.getElementById(outputId);
+              // Cache steps on the outputElement to make it available for the next call
+              // to uploadFilesContinue from Python.
+              outputElement.steps = steps;
+
+              return _uploadFilesContinue(outputId);
+            }
+
+            // This is roughly an async generator (not supported in the browser yet),
+            // where there are multiple asynchronous steps and the Python side is going
+            // to poll for completion of each step.
+            // This uses a Promise to block the python side on completion of each step,
+            // then passes the result of the previous step as the input to the next step.
+            function _uploadFilesContinue(outputId) {
+              const outputElement = document.getElementById(outputId);
+              const steps = outputElement.steps;
+
+              const next = steps.next(outputElement.lastPromiseValue);
+              return Promise.resolve(next.value.promise).then((value) => {
+                // Cache the last promise value to make it available to the next
+                // step of the generator.
+                outputElement.lastPromiseValue = value;
+                return next.value.response;
+              });
+            }
+
+            /**
+             * Generator function which is called between each async step of the upload
+             * process.
+             * @param {string} inputId Element ID of the input file picker element.
+             * @param {string} outputId Element ID of the output display.
+             * @return {!Iterable<!Object>} Iterable of next steps.
+             */
+            function* uploadFilesStep(inputId, outputId) {
+              const inputElement = document.getElementById(inputId);
+              inputElement.disabled = false;
+
+              const outputElement = document.getElementById(outputId);
+              outputElement.innerHTML = "";
+
+              const pickedPromise = new Promise((resolve) => {
+                inputElement.addEventListener("change", (e) => {
+                  resolve(e.target.files);
+                });
+              });
+
+              const cancel = document.createElement("button");
+              inputElement.parentElement.appendChild(cancel);
+              cancel.textContent = "Cancel upload";
+              const cancelPromise = new Promise((resolve) => {
+                cancel.onclick = () => {
+                  resolve(null);
+                };
+              });
+
+              // Wait for the user to pick the files.
+              const files = yield {
+                promise: Promise.race([pickedPromise, cancelPromise]),
+                response: {
+                  action: "starting",
+                },
+              };
+
+              cancel.remove();
+
+              // Disable the input element since further picks are not allowed.
+              inputElement.disabled = true;
+
+              if (!files) {
+                return {
+                  response: {
+                    action: "complete",
+                  },
+                };
+              }
+
+              for (const file of files) {
+                const li = document.createElement("li");
+                li.append(span(file.name, { fontWeight: "bold" }));
+                li.append(
+                  span(
+                    `(${file.type || "n/a"}) - ${file.size} bytes, ` +
+                      `last modified: ${
+                        file.lastModifiedDate
+                          ? file.lastModifiedDate.toLocaleDateString()
+                          : "n/a"
+                      } - `
+                  )
+                );
+                const percent = span("0% done");
+                li.appendChild(percent);
+
+                outputElement.appendChild(li);
+
+                const fileDataPromise = new Promise((resolve) => {
+                  const reader = new FileReader();
+                  reader.onload = (e) => {
+                    resolve(e.target.result);
+                  };
+                  reader.readAsArrayBuffer(file);
+                });
+                // Wait for the data to be ready.
+                let fileData = yield {
+                  promise: fileDataPromise,
+                  response: {
+                    action: "continue",
+                  },
+                };
+
+                // Use a chunked sending to avoid message size limits. See b/62115660.
+                let position = 0;
+                do {
+                  const length = Math.min(
+                    fileData.byteLength - position,
+                    MAX_PAYLOAD_SIZE
+                  );
+                  const chunk = new Uint8Array(fileData, position, length);
+                  position += length;
+
+                  const base64 = btoa(String.fromCharCode.apply(null, chunk));
+                  yield {
+                    response: {
+                      action: "append",
+                      file: file.name,
+                      data: base64,
+                    },
+                  };
+
+                  let percentDone =
+                    fileData.byteLength === 0
+                      ? 100
+                      : Math.round((position / fileData.byteLength) * 100);
+                  percent.textContent = `${percentDone}% done`;
+                } while (position < fileData.byteLength);
+              }
+
+              // All done.
+              yield {
+                response: {
+                  action: "complete",
+                },
+              };
+            }
+
+            scope.google = scope.google || {};
+            scope.google.colab = scope.google.colab || {};
+            scope.google.colab._files = {
+              _uploadFiles,
+              _uploadFilesContinue,
+            };
+          })(self);
+        </script>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Saving kaggle.json to kaggle (1).json
+</code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="5">
+        <pre><code>{&#39;kaggle.json&#39;: b&#39;{&quot;username&quot;:&quot;syahmisajid12&quot;,&quot;key&quot;:&quot;a76cee502ebc4268b9b384c1c587dfe1&quot;}&#39;}</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="6"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="hZ4c9mSX5LuW"
+      data-outputId="0a0a4f81-51d1-4622-871a-fdf9a9f9974d"
+    >
+      <div class="sourceCode" id="cb4">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>mkdir <span class="op">~/</span>.kaggle</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cp kaggle.json <span class="op">~/</span>.kaggle<span class="op">/</span></span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>mkdir: cannot create directory ‘/root/.kaggle’: File exists
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="sD6IGqR07JO4">
+      <p>Load Data dari Kaggle</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="7"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="A4KJjvQL7DbM"
+      data-outputId="87b596f8-b75c-446e-a5c6-a72db2c1ca78"
+    >
+      <div class="sourceCode" id="cb6">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>kaggle datasets download <span class="op">-</span>d mlg<span class="op">-</span>ulb<span class="op">/</span>creditcardfraud</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run &#39;chmod 600 /root/.kaggle/kaggle.json&#39;
+creditcardfraud.zip: Skipping, found more recently modified local copy (use --force to force download)
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="VHSpJgR1Wkng">
+      <p>Import Module</p>
+    </div>
+    <div class="cell code" data-execution_count="8" id="SXf3mJc37LvO">
+      <div class="sourceCode" id="cb8">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="EKsxikumWnVL">
+      <p>Import Function</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="9"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="-D6ZGvMT7ORk"
+      data-outputId="c51a5036-60f8-4576-f8b4-92749168cf72"
+    >
+      <div class="sourceCode" id="cb9">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get helper_functions.py script from course GitHub</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>raw.githubusercontent.com<span class="op">/</span>Syahmi33github<span class="op">/</span>Emotion<span class="op">-</span>Classification<span class="op">/</span>main<span class="op">/</span>helper_functions.py</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import helper functions we&#39;re going to use</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> helper_functions <span class="im">import</span> unzip_data</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>--2023-06-18 07:14:15--  https://raw.githubusercontent.com/Syahmi33github/Emotion-Classification/main/helper_functions.py
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 11485 (11K) [text/plain]
+Saving to: ‘helper_functions.py’
+
+
+helper_functions.py   0%[                    ]       0  --.-KB/s               
+helper_functions.py 100%[===================&gt;]  11.22K  --.-KB/s    in 0s      
+
+2023-06-18 07:14:15 (60.7 MB/s) - ‘helper_functions.py’ saved [11485/11485]
+
+</code></pre>
+      </div>
+    </div>
+    <section
+      id="exploratory-data-analysis"
+      class="cell markdown"
+      id="68sz8Z657VBU"
+    >
+      <h2>EXPLORATORY DATA ANALYSIS</h2>
+    </section>
+    <div class="cell code" data-execution_count="10" id="7QoyHMcf7SPC">
+      <div class="sourceCode" id="cb11">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>unzip_data(<span class="st">&quot;/content/creditcardfraud.zip&quot;</span>)</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="11"
+      data-colab='{"base_uri":"https://localhost:8080/","height":236}'
+      id="rqvupOKL7eR1"
+      data-outputId="eca314bc-899b-4cf5-9a02-472835e4252b"
+    >
+      <div class="sourceCode" id="cb12">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;/content/creditcard.csv&#39;</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="11">
+        <div id="df-33f83a61-a4c3-49b7-ba0d-a87ed9f2421f">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>Time</th>
+                    <th>V1</th>
+                    <th>V2</th>
+                    <th>V3</th>
+                    <th>V4</th>
+                    <th>V5</th>
+                    <th>V6</th>
+                    <th>V7</th>
+                    <th>V8</th>
+                    <th>V9</th>
+                    <th>...</th>
+                    <th>V21</th>
+                    <th>V22</th>
+                    <th>V23</th>
+                    <th>V24</th>
+                    <th>V25</th>
+                    <th>V26</th>
+                    <th>V27</th>
+                    <th>V28</th>
+                    <th>Amount</th>
+                    <th>Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>0.0</td>
+                    <td>-1.359807</td>
+                    <td>-0.072781</td>
+                    <td>2.536347</td>
+                    <td>1.378155</td>
+                    <td>-0.338321</td>
+                    <td>0.462388</td>
+                    <td>0.239599</td>
+                    <td>0.098698</td>
+                    <td>0.363787</td>
+                    <td>...</td>
+                    <td>-0.018307</td>
+                    <td>0.277838</td>
+                    <td>-0.110474</td>
+                    <td>0.066928</td>
+                    <td>0.128539</td>
+                    <td>-0.189115</td>
+                    <td>0.133558</td>
+                    <td>-0.021053</td>
+                    <td>149.62</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>0.0</td>
+                    <td>1.191857</td>
+                    <td>0.266151</td>
+                    <td>0.166480</td>
+                    <td>0.448154</td>
+                    <td>0.060018</td>
+                    <td>-0.082361</td>
+                    <td>-0.078803</td>
+                    <td>0.085102</td>
+                    <td>-0.255425</td>
+                    <td>...</td>
+                    <td>-0.225775</td>
+                    <td>-0.638672</td>
+                    <td>0.101288</td>
+                    <td>-0.339846</td>
+                    <td>0.167170</td>
+                    <td>0.125895</td>
+                    <td>-0.008983</td>
+                    <td>0.014724</td>
+                    <td>2.69</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>1.0</td>
+                    <td>-1.358354</td>
+                    <td>-1.340163</td>
+                    <td>1.773209</td>
+                    <td>0.379780</td>
+                    <td>-0.503198</td>
+                    <td>1.800499</td>
+                    <td>0.791461</td>
+                    <td>0.247676</td>
+                    <td>-1.514654</td>
+                    <td>...</td>
+                    <td>0.247998</td>
+                    <td>0.771679</td>
+                    <td>0.909412</td>
+                    <td>-0.689281</td>
+                    <td>-0.327642</td>
+                    <td>-0.139097</td>
+                    <td>-0.055353</td>
+                    <td>-0.059752</td>
+                    <td>378.66</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>1.0</td>
+                    <td>-0.966272</td>
+                    <td>-0.185226</td>
+                    <td>1.792993</td>
+                    <td>-0.863291</td>
+                    <td>-0.010309</td>
+                    <td>1.247203</td>
+                    <td>0.237609</td>
+                    <td>0.377436</td>
+                    <td>-1.387024</td>
+                    <td>...</td>
+                    <td>-0.108300</td>
+                    <td>0.005274</td>
+                    <td>-0.190321</td>
+                    <td>-1.175575</td>
+                    <td>0.647376</td>
+                    <td>-0.221929</td>
+                    <td>0.062723</td>
+                    <td>0.061458</td>
+                    <td>123.50</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>2.0</td>
+                    <td>-1.158233</td>
+                    <td>0.877737</td>
+                    <td>1.548718</td>
+                    <td>0.403034</td>
+                    <td>-0.407193</td>
+                    <td>0.095921</td>
+                    <td>0.592941</td>
+                    <td>-0.270533</td>
+                    <td>0.817739</td>
+                    <td>...</td>
+                    <td>-0.009431</td>
+                    <td>0.798278</td>
+                    <td>-0.137458</td>
+                    <td>0.141267</td>
+                    <td>-0.206010</td>
+                    <td>0.502292</td>
+                    <td>0.219422</td>
+                    <td>0.215153</td>
+                    <td>69.99</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>5 rows × 31 columns</p>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-33f83a61-a4c3-49b7-ba0d-a87ed9f2421f')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-33f83a61-a4c3-49b7-ba0d-a87ed9f2421f button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-33f83a61-a4c3-49b7-ba0d-a87ed9f2421f"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="12"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="fKKSCKf37qsV"
+      data-outputId="fa8f04c7-92bb-460c-81b0-ee0b354adc5e"
+    >
+      <div class="sourceCode" id="cb13">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df.columns</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="12">
+        <pre><code>Index([&#39;Time&#39;, &#39;V1&#39;, &#39;V2&#39;, &#39;V3&#39;, &#39;V4&#39;, &#39;V5&#39;, &#39;V6&#39;, &#39;V7&#39;, &#39;V8&#39;, &#39;V9&#39;, &#39;V10&#39;,
+       &#39;V11&#39;, &#39;V12&#39;, &#39;V13&#39;, &#39;V14&#39;, &#39;V15&#39;, &#39;V16&#39;, &#39;V17&#39;, &#39;V18&#39;, &#39;V19&#39;, &#39;V20&#39;,
+       &#39;V21&#39;, &#39;V22&#39;, &#39;V23&#39;, &#39;V24&#39;, &#39;V25&#39;, &#39;V26&#39;, &#39;V27&#39;, &#39;V28&#39;, &#39;Amount&#39;,
+       &#39;Class&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="13"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="Q9cgbF4M7vAU"
+      data-outputId="978f5b56-7502-49ef-e124-d75c9bb286ef"
+    >
+      <div class="sourceCode" id="cb15">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df.shape</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="13">
+        <pre><code>(284807, 31)</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="14"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="ilexm-kV8Fma"
+      data-outputId="d9892db7-4f2c-4797-e4a4-23a71cd68270"
+    >
+      <div class="sourceCode" id="cb17">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 284807 entries, 0 to 284806
+Data columns (total 31 columns):
+ #   Column  Non-Null Count   Dtype  
+---  ------  --------------   -----  
+ 0   Time    284807 non-null  float64
+ 1   V1      284807 non-null  float64
+ 2   V2      284807 non-null  float64
+ 3   V3      284807 non-null  float64
+ 4   V4      284807 non-null  float64
+ 5   V5      284807 non-null  float64
+ 6   V6      284807 non-null  float64
+ 7   V7      284807 non-null  float64
+ 8   V8      284807 non-null  float64
+ 9   V9      284807 non-null  float64
+ 10  V10     284807 non-null  float64
+ 11  V11     284807 non-null  float64
+ 12  V12     284807 non-null  float64
+ 13  V13     284807 non-null  float64
+ 14  V14     284807 non-null  float64
+ 15  V15     284807 non-null  float64
+ 16  V16     284807 non-null  float64
+ 17  V17     284807 non-null  float64
+ 18  V18     284807 non-null  float64
+ 19  V19     284807 non-null  float64
+ 20  V20     284807 non-null  float64
+ 21  V21     284807 non-null  float64
+ 22  V22     284807 non-null  float64
+ 23  V23     284807 non-null  float64
+ 24  V24     284807 non-null  float64
+ 25  V25     284807 non-null  float64
+ 26  V26     284807 non-null  float64
+ 27  V27     284807 non-null  float64
+ 28  V28     284807 non-null  float64
+ 29  Amount  284807 non-null  float64
+ 30  Class   284807 non-null  int64  
+dtypes: float64(30), int64(1)
+memory usage: 67.4 MB
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="NmIYC6ML9gPr">
+      <p>Dapat terlihat tidak terdapat null pada Data</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="15"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="bOqjo1ca7yOq"
+      data-outputId="6373a807-5e60-4376-aad7-a8c4d339c0b4"
+    >
+      <div class="sourceCode" id="cb19">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;Class&quot;</span>].unique()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="15">
+        <pre><code>array([0, 1])</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="16"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="mICWpDzW8dH4"
+      data-outputId="e74117e5-123d-447e-e8e8-171e2fdc5fd4"
+    >
+      <div class="sourceCode" id="cb21">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&quot;Class&quot;</span>].value_counts()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="16">
+        <pre><code>0    284315
+1       492
+Name: Class, dtype: int64</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="17"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="l0pEKLYE9OwT"
+      data-outputId="3517d16e-203d-4ccd-820d-99df9fd62b9b"
+    >
+      <div class="sourceCode" id="cb23">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The classes are heavily skewed we need to solve this issue later.</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;No Frauds&#39;</span>, <span class="bu">round</span>(df[<span class="st">&#39;Class&#39;</span>].value_counts()[<span class="dv">0</span>]<span class="op">/</span><span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span>,<span class="dv">2</span>), <span class="st">&#39;</span><span class="sc">% o</span><span class="st">f the dataset&#39;</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Frauds&#39;</span>, <span class="bu">round</span>(df[<span class="st">&#39;Class&#39;</span>].value_counts()[<span class="dv">1</span>]<span class="op">/</span><span class="bu">len</span>(df) <span class="op">*</span> <span class="dv">100</span>,<span class="dv">2</span>), <span class="st">&#39;</span><span class="sc">% o</span><span class="st">f the dataset&#39;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>No Frauds 99.83 % of the dataset
+Frauds 0.17 % of the dataset
+</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="AE6r6v-L9XlU">
+      <p>
+        Catatan: Perhatikan betapa tidak seimbangnya kumpulan data asli!
+        Sebagian besar transaksi non-penipuan. Jika kami menggunakan kerangka
+        data ini sebagai dasar untuk model dan analisis prediktif kami, kami
+        mungkin mendapatkan banyak kesalahan dan algoritme kami mungkin akan
+        terlalu cocok karena akan "menganggap" bahwa sebagian besar transaksi
+        bukanlah penipuan. Tapi kami tidak ingin model kami berasumsi, kami
+        ingin model kami mendeteksi pola yang memberikan tanda-tanda penipuan!
+      </p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="18"
+      data-colab='{"base_uri":"https://localhost:8080/","height":466}'
+      id="BKC-R6Gw8hWL"
+      data-outputId="cf5439d5-2633-408b-d8e6-be19617985e4"
+    >
+      <div class="sourceCode" id="cb25">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, data<span class="op">=</span>df)</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="18">
+        <pre><code>&lt;Axes: xlabel=&#39;Class&#39;, ylabel=&#39;count&#39;&gt;</code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/78f00104868cc622b4a76b02777c22bdd67b7378.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="fLEIh2Ok9J_k">
+      <p>
+        Distribusi: Dengan melihat distribusi kita dapat mengetahui seberapa
+        miring fitur-fitur ini, kita juga dapat melihat distribusi lebih lanjut
+        dari fitur-fitur lainnya. Ada teknik yang dapat membantu distribusi agar
+        tidak terlalu miring yang akan diterapkan di notebook ini di masa
+        mendatang.
+      </p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="19"
+      data-colab='{"base_uri":"https://localhost:8080/","height":409}'
+      id="wJMfYTCt8K7K"
+      data-outputId="a9a27dca-e5b8-459d-c056-15d7dde0c8f1"
+    >
+      <div class="sourceCode" id="cb27">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Mengabaikan semua peringatan</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">&quot;ignore&quot;</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">18</span>,<span class="dv">4</span>))</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>amount_val <span class="op">=</span> df[<span class="st">&#39;Amount&#39;</span>].values</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>time_val <span class="op">=</span> df[<span class="st">&#39;Time&#39;</span>].values</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>sns.distplot(amount_val, ax<span class="op">=</span>ax[<span class="dv">0</span>], color<span class="op">=</span><span class="st">&#39;r&#39;</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_title(<span class="st">&#39;Distribution of Transaction Amount&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_xlim([<span class="bu">min</span>(amount_val), <span class="bu">max</span>(amount_val)])</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>sns.distplot(time_val, ax<span class="op">=</span>ax[<span class="dv">1</span>], color<span class="op">=</span><span class="st">&#39;b&#39;</span>)</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_title(<span class="st">&#39;Distribution of Transaction Time&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlim([<span class="bu">min</span>(time_val), <span class="bu">max</span>(time_val)])</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="19">
+        <pre><code>(0.0, 172792.0)</code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/032a2f2d52b3f27bf340fc5e01f14c23e12e5070.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section id="data-pre-processing" class="cell markdown" id="-ZNYapW1_2rJ">
+      <h2>Data Pre Processing</h2>
+    </section>
+    <section
+      id="scaling-and-distributing"
+      class="cell markdown"
+      id="xiY-VU3d_IPQ"
+    >
+      <h3>Scaling and Distributing</h3>
+    </section>
+    <div class="cell markdown" id="F8TpCTgV_dOz">
+      <p>
+        Pertama yang harus dilakukan adalah melakukan scaling pada kolom Time
+        dan Amount agar sama dengan kolom lain. Selanjutnya juga perlu dibuat
+        sub sampel kerangka data agar memiliki jumlah kasus Penipuan dan
+        Non-Penipuan yang sama, membantu algoritme kami lebih memahami pola yang
+        menentukan apakah suatu transaksi merupakan penipuan atau bukan.
+      </p>
+    </div>
+    <section id="apa-itu-sub-sample" class="cell markdown" id="7dHPeMqZADUb">
+      <h4>Apa itu sub-Sample?</h4>
+    </section>
+    <div class="cell markdown" id="NwgdCzY4AJPB">
+      <p>
+        Dalam skenario ini, subsampel kami akan menjadi kerangka data dengan
+        rasio transaksi penipuan dan non-penipuan 50/50. Artinya sub-sampel kami
+        akan memiliki jumlah transaksi penipuan dan non-penipuan yang sama.
+      </p>
+    </div>
+    <section
+      id="kenapa-kita-harus-membuat-sub-sample"
+      class="cell markdown"
+      id="Fau6ZmmwAJ7k"
+    >
+      <h4>Kenapa kita harus membuat sub-Sample?</h4>
+    </section>
+    <div class="cell markdown" id="XUalBzEsATwf">
+      <ul>
+        <li>
+          Overfitting: Model klasifikasi kami akan mengasumsikan bahwa dalam
+          banyak kasus tidak ada penipuan! Yang kami inginkan untuk model kami
+          adalah memastikan kapan penipuan terjadi.
+        </li>
+        <li>
+          Korelasi yang Salah: Meskipun kami tidak tahu kepanjangan dari fitur
+          "V", akan berguna untuk memahami bagaimana masing-masing fitur ini
+          memengaruhi hasil (Penipuan atau Tanpa Penipuan) dengan memiliki
+          kerangka data yang tidak seimbang yang tidak dapat kami lihat korelasi
+          yang benar antara kelas dan fitur.
+        </li>
+      </ul>
+    </div>
+    <section id="summary" class="cell markdown" id="OvK8FC2IAj_D">
+      <h4>Summary</h4>
+    </section>
+    <div class="cell markdown" id="gL7_RnnuAh3N">
+      <ul>
+        <li>Kolom Time dan Amount adalah nilai yang akan diskalakan.</li>
+        <li>
+          Ada 492 kasus penipuan di dataset kami sehingga kami bisa mendapatkan
+          492 kasus non-penipuan secara acak untuk membuat sub kerangka data
+          baru kami.
+        </li>
+        <li>
+          Menggabungkan 492 kasus penipuan dan bukan penipuan, membuat
+          sub-sampel baru.
+        </li>
+      </ul>
+    </div>
+    <div class="cell code" data-execution_count="20" id="4S-hVp5ZBrAC">
+      <div class="sourceCode" id="cb29">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Since most of our data has already been scaled we should scale the columns that are left to scale (Amount and Time)</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler, RobustScaler</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># RobustScaler is less prone to outliers.</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>std_scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>rob_scaler <span class="op">=</span> RobustScaler()</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;scaled_amount&#39;</span>] <span class="op">=</span> rob_scaler.fit_transform(df[<span class="st">&#39;Amount&#39;</span>].values.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;scaled_time&#39;</span>] <span class="op">=</span> rob_scaler.fit_transform(df[<span class="st">&#39;Time&#39;</span>].values.reshape(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>))</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>df.drop([<span class="st">&#39;Time&#39;</span>,<span class="st">&#39;Amount&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="21"
+      data-colab='{"base_uri":"https://localhost:8080/","height":300}'
+      id="aW3IHQ3sBtGp"
+      data-outputId="2eb78fc7-aa6d-4d10-af10-ad9434ff7cee"
+    >
+      <div class="sourceCode" id="cb30">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>scaled_amount <span class="op">=</span> df[<span class="st">&#39;scaled_amount&#39;</span>]</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>scaled_time <span class="op">=</span> df[<span class="st">&#39;scaled_time&#39;</span>]</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>df.drop([<span class="st">&#39;scaled_amount&#39;</span>, <span class="st">&#39;scaled_time&#39;</span>], axis<span class="op">=</span><span class="dv">1</span>, inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>df.insert(<span class="dv">0</span>, <span class="st">&#39;scaled_amount&#39;</span>, scaled_amount)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>df.insert(<span class="dv">1</span>, <span class="st">&#39;scaled_time&#39;</span>, scaled_time)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Amount and Time are Scaled!</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="21">
+        <div id="df-f8c56658-ec02-4cf6-991e-ed85ef784225">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>scaled_amount</th>
+                    <th>scaled_time</th>
+                    <th>V1</th>
+                    <th>V2</th>
+                    <th>V3</th>
+                    <th>V4</th>
+                    <th>V5</th>
+                    <th>V6</th>
+                    <th>V7</th>
+                    <th>V8</th>
+                    <th>...</th>
+                    <th>V20</th>
+                    <th>V21</th>
+                    <th>V22</th>
+                    <th>V23</th>
+                    <th>V24</th>
+                    <th>V25</th>
+                    <th>V26</th>
+                    <th>V27</th>
+                    <th>V28</th>
+                    <th>Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>1.783274</td>
+                    <td>-0.994983</td>
+                    <td>-1.359807</td>
+                    <td>-0.072781</td>
+                    <td>2.536347</td>
+                    <td>1.378155</td>
+                    <td>-0.338321</td>
+                    <td>0.462388</td>
+                    <td>0.239599</td>
+                    <td>0.098698</td>
+                    <td>...</td>
+                    <td>0.251412</td>
+                    <td>-0.018307</td>
+                    <td>0.277838</td>
+                    <td>-0.110474</td>
+                    <td>0.066928</td>
+                    <td>0.128539</td>
+                    <td>-0.189115</td>
+                    <td>0.133558</td>
+                    <td>-0.021053</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>-0.269825</td>
+                    <td>-0.994983</td>
+                    <td>1.191857</td>
+                    <td>0.266151</td>
+                    <td>0.166480</td>
+                    <td>0.448154</td>
+                    <td>0.060018</td>
+                    <td>-0.082361</td>
+                    <td>-0.078803</td>
+                    <td>0.085102</td>
+                    <td>...</td>
+                    <td>-0.069083</td>
+                    <td>-0.225775</td>
+                    <td>-0.638672</td>
+                    <td>0.101288</td>
+                    <td>-0.339846</td>
+                    <td>0.167170</td>
+                    <td>0.125895</td>
+                    <td>-0.008983</td>
+                    <td>0.014724</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>4.983721</td>
+                    <td>-0.994972</td>
+                    <td>-1.358354</td>
+                    <td>-1.340163</td>
+                    <td>1.773209</td>
+                    <td>0.379780</td>
+                    <td>-0.503198</td>
+                    <td>1.800499</td>
+                    <td>0.791461</td>
+                    <td>0.247676</td>
+                    <td>...</td>
+                    <td>0.524980</td>
+                    <td>0.247998</td>
+                    <td>0.771679</td>
+                    <td>0.909412</td>
+                    <td>-0.689281</td>
+                    <td>-0.327642</td>
+                    <td>-0.139097</td>
+                    <td>-0.055353</td>
+                    <td>-0.059752</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>1.418291</td>
+                    <td>-0.994972</td>
+                    <td>-0.966272</td>
+                    <td>-0.185226</td>
+                    <td>1.792993</td>
+                    <td>-0.863291</td>
+                    <td>-0.010309</td>
+                    <td>1.247203</td>
+                    <td>0.237609</td>
+                    <td>0.377436</td>
+                    <td>...</td>
+                    <td>-0.208038</td>
+                    <td>-0.108300</td>
+                    <td>0.005274</td>
+                    <td>-0.190321</td>
+                    <td>-1.175575</td>
+                    <td>0.647376</td>
+                    <td>-0.221929</td>
+                    <td>0.062723</td>
+                    <td>0.061458</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>0.670579</td>
+                    <td>-0.994960</td>
+                    <td>-1.158233</td>
+                    <td>0.877737</td>
+                    <td>1.548718</td>
+                    <td>0.403034</td>
+                    <td>-0.407193</td>
+                    <td>0.095921</td>
+                    <td>0.592941</td>
+                    <td>-0.270533</td>
+                    <td>...</td>
+                    <td>0.408542</td>
+                    <td>-0.009431</td>
+                    <td>0.798278</td>
+                    <td>-0.137458</td>
+                    <td>0.141267</td>
+                    <td>-0.206010</td>
+                    <td>0.502292</td>
+                    <td>0.219422</td>
+                    <td>0.215153</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>5 rows × 31 columns</p>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-f8c56658-ec02-4cf6-991e-ed85ef784225')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-f8c56658-ec02-4cf6-991e-ed85ef784225 button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-f8c56658-ec02-4cf6-991e-ed85ef784225"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="split-data" class="cell markdown" id="F2ybt-Tvlydb">
+      <h3>Split Data</h3>
+    </section>
+    <div class="cell markdown" id="WsQ8wUmzmAXS">
+      <p>
+        Sebelum melanjutkan dengan teknik Random UnderSampling kita harus
+        memisahkan kerangka data asli. Mengapa? untuk tujuan pengujian, ingat
+        meskipun kami memisahkan data saat menerapkan teknik Random
+        UnderSampling atau OverSampling, kami ingin menguji model kami pada set
+        pengujian asli, bukan pada set pengujian yang dibuat oleh salah satu
+        dari teknik ini. Tujuan utamanya adalah untuk menyesuaikan model baik
+        dengan kerangka data yang undersample dan oversample (agar model kami
+        dapat mendeteksi pola), dan mengujinya pada set pengujian asli.
+      </p>
+    </div>
+    <div class="cell markdown" id="pPawFFwpm-h_">
+      <p>
+        Splitting menggunakan StratifiedKFold dan bukan menggunakan
+        Train_test_split dikarenakan variabel target pada dataset yang tidak
+        seimbang
+      </p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="22"
+      data-colab='{"base_uri":"https://localhost:8080/","height":300}'
+      id="6lQW-STHqpD2"
+      data-outputId="24bd454d-6050-4655-de09-470e8ca45585"
+    >
+      <div class="sourceCode" id="cb31">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Since our classes are highly skewed we should make them equivalent in order to have a normal distribution of the classes.</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Lets shuffle the data before creating the subsamples</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sample(frac<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># amount of fraud classes 492 rows.</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>fraud_df <span class="op">=</span> df.loc[df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>]</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>non_fraud_df <span class="op">=</span> df.loc[df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">0</span>][:<span class="dv">492</span>]</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>normal_distributed_df <span class="op">=</span> pd.concat([fraud_df, non_fraud_df])</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Shuffle dataframe rows</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>new_df <span class="op">=</span> normal_distributed_df.sample(frac<span class="op">=</span><span class="dv">1</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>new_df.head()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="22">
+        <div id="df-422d5ba5-e27e-4238-85b4-d0a201a5ca9a">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>scaled_amount</th>
+                    <th>scaled_time</th>
+                    <th>V1</th>
+                    <th>V2</th>
+                    <th>V3</th>
+                    <th>V4</th>
+                    <th>V5</th>
+                    <th>V6</th>
+                    <th>V7</th>
+                    <th>V8</th>
+                    <th>...</th>
+                    <th>V20</th>
+                    <th>V21</th>
+                    <th>V22</th>
+                    <th>V23</th>
+                    <th>V24</th>
+                    <th>V25</th>
+                    <th>V26</th>
+                    <th>V27</th>
+                    <th>V28</th>
+                    <th>Class</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>115992</th>
+                    <td>0.460980</td>
+                    <td>-0.124414</td>
+                    <td>-0.425057</td>
+                    <td>0.849156</td>
+                    <td>1.226142</td>
+                    <td>0.708086</td>
+                    <td>-0.047749</td>
+                    <td>-0.121907</td>
+                    <td>0.649376</td>
+                    <td>0.057568</td>
+                    <td>...</td>
+                    <td>-0.099071</td>
+                    <td>0.098259</td>
+                    <td>0.183787</td>
+                    <td>-0.104800</td>
+                    <td>-0.034909</td>
+                    <td>-0.448521</td>
+                    <td>-0.449292</td>
+                    <td>0.064656</td>
+                    <td>0.133608</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>101509</th>
+                    <td>4.164047</td>
+                    <td>-0.197782</td>
+                    <td>-1.739334</td>
+                    <td>-1.304655</td>
+                    <td>0.314103</td>
+                    <td>0.053740</td>
+                    <td>-0.058696</td>
+                    <td>0.071260</td>
+                    <td>0.694862</td>
+                    <td>-0.313270</td>
+                    <td>...</td>
+                    <td>-1.463994</td>
+                    <td>-0.665172</td>
+                    <td>-0.632078</td>
+                    <td>-0.421176</td>
+                    <td>-0.400774</td>
+                    <td>-0.001640</td>
+                    <td>-0.495162</td>
+                    <td>0.031633</td>
+                    <td>0.066280</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>119596</th>
+                    <td>-0.223713</td>
+                    <td>-0.107873</td>
+                    <td>-0.192511</td>
+                    <td>0.897063</td>
+                    <td>2.090686</td>
+                    <td>0.991399</td>
+                    <td>-0.192774</td>
+                    <td>-0.773810</td>
+                    <td>0.695674</td>
+                    <td>-0.345058</td>
+                    <td>...</td>
+                    <td>0.265774</td>
+                    <td>-0.191966</td>
+                    <td>-0.379584</td>
+                    <td>-0.030380</td>
+                    <td>0.719189</td>
+                    <td>-0.459638</td>
+                    <td>0.276302</td>
+                    <td>-0.068824</td>
+                    <td>-0.101330</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>255403</th>
+                    <td>-0.237965</td>
+                    <td>0.851925</td>
+                    <td>1.170756</td>
+                    <td>2.501038</td>
+                    <td>-4.986159</td>
+                    <td>5.374160</td>
+                    <td>0.997798</td>
+                    <td>-1.259004</td>
+                    <td>-1.237689</td>
+                    <td>0.358426</td>
+                    <td>...</td>
+                    <td>0.227618</td>
+                    <td>0.123145</td>
+                    <td>-0.713201</td>
+                    <td>-0.080868</td>
+                    <td>-0.964310</td>
+                    <td>0.338568</td>
+                    <td>0.068630</td>
+                    <td>0.481588</td>
+                    <td>0.268226</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>150660</th>
+                    <td>0.319989</td>
+                    <td>0.107626</td>
+                    <td>-6.185857</td>
+                    <td>7.102985</td>
+                    <td>-13.030455</td>
+                    <td>8.010823</td>
+                    <td>-7.885237</td>
+                    <td>-3.974550</td>
+                    <td>-12.229608</td>
+                    <td>4.971232</td>
+                    <td>...</td>
+                    <td>0.483930</td>
+                    <td>2.502772</td>
+                    <td>0.481691</td>
+                    <td>0.480958</td>
+                    <td>0.360319</td>
+                    <td>-0.293354</td>
+                    <td>-0.199193</td>
+                    <td>-0.203917</td>
+                    <td>0.398927</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>5 rows × 31 columns</p>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-422d5ba5-e27e-4238-85b4-d0a201a5ca9a')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-422d5ba5-e27e-4238-85b4-d0a201a5ca9a button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-422d5ba5-e27e-4238-85b4-d0a201a5ca9a"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="23"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="V-4onwkVrGjg"
+      data-outputId="6c81c2f3-1758-4734-9e5d-457da42b0db9"
+    >
+      <div class="sourceCode" id="cb32">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>new_df[<span class="st">&quot;Class&quot;</span>].value_counts()</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="23">
+        <pre><code>0    492
+1    492
+Name: Class, dtype: int64</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="24"
+      data-colab='{"base_uri":"https://localhost:8080/","height":473}'
+      id="7ns_J9BSrSOM"
+      data-outputId="317b2e49-9384-4dfe-fed8-d52306a058aa"
+    >
+      <div class="sourceCode" id="cb34">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>sns.countplot(x<span class="op">=</span><span class="st">&#39;Class&#39;</span>, data<span class="op">=</span>new_df)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Equally Distributed Classes&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/c2f597805c87b166be9aa5e2e2c0d55f14d8cdc8.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="25"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="ohXsN_Gcsjdn"
+      data-outputId="f4220a4a-8192-4921-9086-52a3aca676ac"
+    >
+      <div class="sourceCode" id="cb35">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>new_df.corr()[<span class="st">&#39;Class&#39;</span>].sort_values(ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="25">
+        <pre><code>Class            1.000000
+V4               0.708663
+V11              0.683195
+V2               0.498836
+V19              0.258451
+V20              0.178963
+V21              0.133616
+V27              0.101208
+V28              0.100556
+scaled_amount    0.073468
+V26              0.067301
+V8               0.058122
+V25              0.039145
+V22              0.019633
+V23             -0.021869
+V13             -0.055258
+V15             -0.067281
+V24             -0.069355
+scaled_time     -0.113380
+V5              -0.377219
+V6              -0.417613
+V1              -0.445330
+V18             -0.456596
+V7              -0.475463
+V9              -0.556483
+V17             -0.558058
+V3              -0.568261
+V16             -0.597138
+V10             -0.630715
+V12             -0.684510
+V14             -0.751003
+Name: Class, dtype: float64</code></pre>
+      </div>
+    </div>
+    <div class="cell markdown" id="taAXsFU8tlQJ">
+      <p>Korelasi masing masing Feature Terhadap Variabel Target</p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="26"
+      data-colab='{"base_uri":"https://localhost:8080/","height":967}'
+      id="tbTogn14uETM"
+      data-outputId="04385026-defa-4c7b-b3ef-23fba79ddf7d"
+    >
+      <div class="sourceCode" id="cb37">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make sure we use the subsample in our correlation</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>f, (ax1) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">15</span>,<span class="dv">10</span>))</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Entire DataFrame</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>sub_sample_corr <span class="op">=</span> new_df.corr()</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>sns.heatmap(sub_sample_corr, cmap<span class="op">=</span><span class="st">&#39;coolwarm_r&#39;</span>, annot_kws<span class="op">=</span>{<span class="st">&#39;size&#39;</span>:<span class="dv">5</span>}, ax<span class="op">=</span>ax1)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;SubSample Correlation Matrix </span><span class="ch">\n</span><span class="st"> (use for reference)&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/0677a9845de0ce8d096d5f5c479e6c5b51036cdc.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="7dFv8QweutYL">
+      <ul>
+        <li>
+          <strong>Negative Correlations:</strong> V17, V14, V12 and V10 are
+          negatively correlated. Notice how the lower these values are, the more
+          likely the end result will be a fraud transaction.
+        </li>
+        <li>
+          <strong>Positive Correlations:</strong> V2, V4, V11, and V19 are
+          positively correlated. Notice how the higher these values are, the
+          more likely the end result will be a fraud transaction.
+        </li>
+        <li>
+          <strong>BoxPlots:</strong> We will use boxplots to have a better
+          understanding of the distribution of these features in fradulent and
+          non fradulent transactions.
+        </li>
+      </ul>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="27"
+      data-colab='{"base_uri":"https://localhost:8080/","height":409}'
+      id="rlK6-LTGvCvP"
+      data-outputId="365ea73b-ef96-44f2-a0e8-5dbf7473333e"
+    >
+      <div class="sourceCode" id="cb38">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>f, axes <span class="op">=</span> plt.subplots(ncols<span class="op">=</span><span class="dv">4</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">4</span>))</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Negative Correlations with our Class (The lower our feature value the more likely it will be a fraud transaction)</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V17&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">0</span>])</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">&#39;V17 vs Class Negative Correlation&#39;</span>)</span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V14&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">1</span>])</span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="st">&#39;V14 vs Class Negative Correlation&#39;</span>)</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V12&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">2</span>])</span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].set_title(<span class="st">&#39;V12 vs Class Negative Correlation&#39;</span>)</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-15"><a href="#cb38-15" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V10&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">3</span>])</span>
+<span id="cb38-16"><a href="#cb38-16" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">3</span>].set_title(<span class="st">&#39;V10 vs Class Negative Correlation&#39;</span>)</span>
+<span id="cb38-17"><a href="#cb38-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-18"><a href="#cb38-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/596c065c12a208f77025257d8aed8a5a12b4654a.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="28"
+      data-colab='{"base_uri":"https://localhost:8080/","height":410}'
+      id="IIDN2tmjvgxC"
+      data-outputId="57261e28-edc9-413b-9878-f62f1e4670a7"
+    >
+      <div class="sourceCode" id="cb39">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>f, axes <span class="op">=</span> plt.subplots(ncols<span class="op">=</span><span class="dv">4</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">4</span>))</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Positive correlations (The higher the feature the probability increases that it will be a fraud transaction)</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V11&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">0</span>])</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].set_title(<span class="st">&#39;V11 vs Class Positive Correlation&#39;</span>)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V4&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">1</span>])</span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].set_title(<span class="st">&#39;V4 vs Class Positive Correlation&#39;</span>)</span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V2&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">2</span>])</span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">2</span>].set_title(<span class="st">&#39;V2 vs Class Positive Correlation&#39;</span>)</span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-15"><a href="#cb39-15" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V19&quot;</span>, data<span class="op">=</span>new_df, palette<span class="op">=</span><span class="st">&#39;bright&#39;</span>, ax<span class="op">=</span>axes[<span class="dv">3</span>])</span>
+<span id="cb39-16"><a href="#cb39-16" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">3</span>].set_title(<span class="st">&#39;V19 vs Class Positive Correlation&#39;</span>)</span>
+<span id="cb39-17"><a href="#cb39-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-18"><a href="#cb39-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/7f955f60e7fed863767f7a722745deae7eaba07f.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="qUjECWOk2P1d">
+      <p>
+        Tujuan utama kami di bagian ini adalah untuk menghapus "extreme outlier"
+        dari fitur yang memiliki korelasi tinggi dengan kelas kami. Ini akan
+        berdampak positif pada keakuratan model kami.
+      </p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="29"
+      data-colab='{"base_uri":"https://localhost:8080/","height":414}'
+      id="UMZX2s2K3A-K"
+      data-outputId="a9eee4d8-ccaa-48ae-c9cc-0fe860bfbfcc"
+    >
+      <div class="sourceCode" id="cb40">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> norm</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>f, (ax1, ax2, ax3) <span class="op">=</span> plt.subplots(<span class="dv">1</span>,<span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">4</span>))</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>v14_fraud_dist <span class="op">=</span> new_df[<span class="st">&#39;V14&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>sns.distplot(v14_fraud_dist,ax<span class="op">=</span>ax1, fit<span class="op">=</span>norm, color<span class="op">=</span><span class="st">&#39;#FB8861&#39;</span>)</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;V14 Distribution </span><span class="ch">\n</span><span class="st"> (Fraud Transactions)&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>v12_fraud_dist <span class="op">=</span> new_df[<span class="st">&#39;V12&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>sns.distplot(v12_fraud_dist,ax<span class="op">=</span>ax2, fit<span class="op">=</span>norm, color<span class="op">=</span><span class="st">&#39;#56F9BB&#39;</span>)</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&#39;V12 Distribution </span><span class="ch">\n</span><span class="st"> (Fraud Transactions)&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-13"><a href="#cb40-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-14"><a href="#cb40-14" aria-hidden="true" tabindex="-1"></a>v10_fraud_dist <span class="op">=</span> new_df[<span class="st">&#39;V10&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb40-15"><a href="#cb40-15" aria-hidden="true" tabindex="-1"></a>sns.distplot(v10_fraud_dist,ax<span class="op">=</span>ax3, fit<span class="op">=</span>norm, color<span class="op">=</span><span class="st">&#39;#C5B3F9&#39;</span>)</span>
+<span id="cb40-16"><a href="#cb40-16" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&#39;V10 Distribution </span><span class="ch">\n</span><span class="st"> (Fraud Transactions)&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb40-17"><a href="#cb40-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-18"><a href="#cb40-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/b04e049c2d4fd1ff67bb84baccd7319fa80868e5.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="Tz--7_2x3e6U"></div>
+    <section id="penghapusan-outlier" class="cell markdown" id="nrAUKAAy3m0G">
+      <h3>Penghapusan Outlier</h3>
+    </section>
+    <div class="cell markdown" id="lJ3IjEhF3tTK">
+      <p>
+        Harus berhati-hati tentang seberapa jauh menginginkan ambang batas untuk
+        menghilangkan outlier. Kami menentukan ambang batas dengan mengalikan
+        angka (mis: 1,5) dengan (Jangkauan Interkuartil). Semakin tinggi ambang
+        ini, semakin sedikit outlier yang akan terdeteksi (dikalikan dengan
+        angka yang lebih tinggi, mis: 3), dan semakin rendah ambang ini, semakin
+        banyak outlier yang akan dideteksi.
+      </p>
+      <p>
+        Pengorbanan: Semakin rendah ambang batas, semakin banyak outlier yang
+        akan dihapus, namun kami ingin lebih fokus pada "outlier ekstrem"
+        daripada hanya outlier. Mengapa? karena kami mungkin menghadapi risiko
+        kehilangan informasi yang akan menyebabkan model kami memiliki akurasi
+        yang lebih rendah. Anda dapat bermain dengan ambang batas ini dan
+        melihat pengaruhnya terhadap keakuratan model klasifikasi kami.
+      </p>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="30"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="nDZwy_wm39wC"
+      data-outputId="de95b989-f9ba-4f59-dc3b-0693ba90b0ba"
+    >
+      <div class="sourceCode" id="cb41">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # -----&gt; V14 Removing Outliers (Highest Negative Correlated with Labels)</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>v14_fraud <span class="op">=</span> new_df[<span class="st">&#39;V14&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>q25, q75 <span class="op">=</span> np.percentile(v14_fraud, <span class="dv">25</span>), np.percentile(v14_fraud, <span class="dv">75</span>)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Quartile 25: </span><span class="sc">{}</span><span class="st"> | Quartile 75: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(q25, q75))</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>v14_iqr <span class="op">=</span> q75 <span class="op">-</span> q25</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;iqr: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v14_iqr))</span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>v14_cut_off <span class="op">=</span> v14_iqr <span class="op">*</span> <span class="fl">1.5</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>v14_lower, v14_upper <span class="op">=</span> q25 <span class="op">-</span> v14_cut_off, q75 <span class="op">+</span> v14_cut_off</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Cut Off: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v14_cut_off))</span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V14 Lower: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v14_lower))</span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V14 Upper: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v14_upper))</span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> v14_fraud <span class="cf">if</span> x <span class="op">&lt;</span> v14_lower <span class="kw">or</span> x <span class="op">&gt;</span> v14_upper]</span>
+<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Feature V14 Outliers for Fraud Cases: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(<span class="bu">len</span>(outliers)))</span>
+<span id="cb41-16"><a href="#cb41-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V10 outliers:</span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(outliers))</span>
+<span id="cb41-17"><a href="#cb41-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-18"><a href="#cb41-18" aria-hidden="true" tabindex="-1"></a>new_df <span class="op">=</span> new_df.drop(new_df[(new_df[<span class="st">&#39;V14&#39;</span>] <span class="op">&gt;</span> v14_upper) <span class="op">|</span> (new_df[<span class="st">&#39;V14&#39;</span>] <span class="op">&lt;</span> v14_lower)].index)</span>
+<span id="cb41-19"><a href="#cb41-19" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;----&#39;</span> <span class="op">*</span> <span class="dv">44</span>)</span>
+<span id="cb41-20"><a href="#cb41-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-21"><a href="#cb41-21" aria-hidden="true" tabindex="-1"></a><span class="co"># -----&gt; V12 removing outliers from fraud transactions</span></span>
+<span id="cb41-22"><a href="#cb41-22" aria-hidden="true" tabindex="-1"></a>v12_fraud <span class="op">=</span> new_df[<span class="st">&#39;V12&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb41-23"><a href="#cb41-23" aria-hidden="true" tabindex="-1"></a>q25, q75 <span class="op">=</span> np.percentile(v12_fraud, <span class="dv">25</span>), np.percentile(v12_fraud, <span class="dv">75</span>)</span>
+<span id="cb41-24"><a href="#cb41-24" aria-hidden="true" tabindex="-1"></a>v12_iqr <span class="op">=</span> q75 <span class="op">-</span> q25</span>
+<span id="cb41-25"><a href="#cb41-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-26"><a href="#cb41-26" aria-hidden="true" tabindex="-1"></a>v12_cut_off <span class="op">=</span> v12_iqr <span class="op">*</span> <span class="fl">1.5</span></span>
+<span id="cb41-27"><a href="#cb41-27" aria-hidden="true" tabindex="-1"></a>v12_lower, v12_upper <span class="op">=</span> q25 <span class="op">-</span> v12_cut_off, q75 <span class="op">+</span> v12_cut_off</span>
+<span id="cb41-28"><a href="#cb41-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V12 Lower: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v12_lower))</span>
+<span id="cb41-29"><a href="#cb41-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V12 Upper: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v12_upper))</span>
+<span id="cb41-30"><a href="#cb41-30" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> v12_fraud <span class="cf">if</span> x <span class="op">&lt;</span> v12_lower <span class="kw">or</span> x <span class="op">&gt;</span> v12_upper]</span>
+<span id="cb41-31"><a href="#cb41-31" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V12 outliers: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(outliers))</span>
+<span id="cb41-32"><a href="#cb41-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Feature V12 Outliers for Fraud Cases: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(<span class="bu">len</span>(outliers)))</span>
+<span id="cb41-33"><a href="#cb41-33" aria-hidden="true" tabindex="-1"></a>new_df <span class="op">=</span> new_df.drop(new_df[(new_df[<span class="st">&#39;V12&#39;</span>] <span class="op">&gt;</span> v12_upper) <span class="op">|</span> (new_df[<span class="st">&#39;V12&#39;</span>] <span class="op">&lt;</span> v12_lower)].index)</span>
+<span id="cb41-34"><a href="#cb41-34" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Number of Instances after outliers removal: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(<span class="bu">len</span>(new_df)))</span>
+<span id="cb41-35"><a href="#cb41-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;----&#39;</span> <span class="op">*</span> <span class="dv">44</span>)</span>
+<span id="cb41-36"><a href="#cb41-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-37"><a href="#cb41-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-38"><a href="#cb41-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Removing outliers V10 Feature</span></span>
+<span id="cb41-39"><a href="#cb41-39" aria-hidden="true" tabindex="-1"></a>v10_fraud <span class="op">=</span> new_df[<span class="st">&#39;V10&#39;</span>].loc[new_df[<span class="st">&#39;Class&#39;</span>] <span class="op">==</span> <span class="dv">1</span>].values</span>
+<span id="cb41-40"><a href="#cb41-40" aria-hidden="true" tabindex="-1"></a>q25, q75 <span class="op">=</span> np.percentile(v10_fraud, <span class="dv">25</span>), np.percentile(v10_fraud, <span class="dv">75</span>)</span>
+<span id="cb41-41"><a href="#cb41-41" aria-hidden="true" tabindex="-1"></a>v10_iqr <span class="op">=</span> q75 <span class="op">-</span> q25</span>
+<span id="cb41-42"><a href="#cb41-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-43"><a href="#cb41-43" aria-hidden="true" tabindex="-1"></a>v10_cut_off <span class="op">=</span> v10_iqr <span class="op">*</span> <span class="fl">1.5</span></span>
+<span id="cb41-44"><a href="#cb41-44" aria-hidden="true" tabindex="-1"></a>v10_lower, v10_upper <span class="op">=</span> q25 <span class="op">-</span> v10_cut_off, q75 <span class="op">+</span> v10_cut_off</span>
+<span id="cb41-45"><a href="#cb41-45" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V10 Lower: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v10_lower))</span>
+<span id="cb41-46"><a href="#cb41-46" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V10 Upper: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(v10_upper))</span>
+<span id="cb41-47"><a href="#cb41-47" aria-hidden="true" tabindex="-1"></a>outliers <span class="op">=</span> [x <span class="cf">for</span> x <span class="kw">in</span> v10_fraud <span class="cf">if</span> x <span class="op">&lt;</span> v10_lower <span class="kw">or</span> x <span class="op">&gt;</span> v10_upper]</span>
+<span id="cb41-48"><a href="#cb41-48" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;V10 outliers: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(outliers))</span>
+<span id="cb41-49"><a href="#cb41-49" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Feature V10 Outliers for Fraud Cases: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(<span class="bu">len</span>(outliers)))</span>
+<span id="cb41-50"><a href="#cb41-50" aria-hidden="true" tabindex="-1"></a>new_df <span class="op">=</span> new_df.drop(new_df[(new_df[<span class="st">&#39;V10&#39;</span>] <span class="op">&gt;</span> v10_upper) <span class="op">|</span> (new_df[<span class="st">&#39;V10&#39;</span>] <span class="op">&lt;</span> v10_lower)].index)</span>
+<span id="cb41-51"><a href="#cb41-51" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Number of Instances after outliers removal: </span><span class="sc">{}</span><span class="st">&#39;</span>.<span class="bu">format</span>(<span class="bu">len</span>(new_df)))</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Quartile 25: -9.692722964972386 | Quartile 75: -4.282820849486865
+iqr: 5.409902115485521
+Cut Off: 8.114853173228282
+V14 Lower: -17.807576138200666
+V14 Upper: 3.8320323237414167
+Feature V14 Outliers for Fraud Cases: 4
+V10 outliers:[-18.8220867423816, -19.2143254902614, -18.4937733551053, -18.0499976898594]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+V12 Lower: -17.3430371579634
+V12 Upper: 5.776973384895937
+V12 outliers: [-18.5536970096458, -18.6837146333443, -18.0475965708216, -18.4311310279993]
+Feature V12 Outliers for Fraud Cases: 4
+Number of Instances after outliers removal: 976
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+V10 Lower: -14.89885463232024
+V10 Upper: 4.92033495834214
+V10 outliers: [-23.2282548357516, -18.9132433348732, -17.1415136412892, -22.1870885620007, -14.9246547735487, -14.9246547735487, -19.836148851696, -16.6011969664137, -16.2556117491401, -18.2711681738888, -15.1237521803455, -22.1870885620007, -15.5637913387301, -15.2399619587112, -15.2318333653018, -22.1870885620007, -15.1241628144947, -24.5882624372475, -16.7460441053944, -15.3460988468775, -15.2399619587112, -15.5637913387301, -20.9491915543611, -22.1870885620007, -16.3035376590131, -24.4031849699728, -16.6496281595399]
+Feature V10 Outliers for Fraud Cases: 27
+Number of Instances after outliers removal: 947
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="31"
+      data-colab='{"base_uri":"https://localhost:8080/","height":586}'
+      id="WQydkyBu4B_Z"
+      data-outputId="1e13028d-6347-45ed-fa91-4f62d7694c8d"
+    >
+      <div class="sourceCode" id="cb43">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>f,(ax1, ax2, ax3) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">20</span>,<span class="dv">6</span>))</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>colors <span class="op">=</span> [<span class="st">&#39;#B3F9C5&#39;</span>, <span class="st">&#39;#f9c5b3&#39;</span>]</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Boxplots with outliers removed</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature V14</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V14&quot;</span>, data<span class="op">=</span>new_df,ax<span class="op">=</span>ax1, palette<span class="op">=</span>colors)</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&quot;V14 Feature </span><span class="ch">\n</span><span class="st"> Reduction of outliers&quot;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a>ax1.annotate(<span class="st">&#39;Fewer extreme </span><span class="ch">\n</span><span class="st"> outliers&#39;</span>, xy<span class="op">=</span>(<span class="fl">0.98</span>, <span class="op">-</span><span class="fl">17.5</span>), xytext<span class="op">=</span>(<span class="dv">0</span>, <span class="op">-</span><span class="dv">12</span>),</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>            arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>),</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature 12</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V12&quot;</span>, data<span class="op">=</span>new_df, ax<span class="op">=</span>ax2, palette<span class="op">=</span>colors)</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&quot;V12 Feature </span><span class="ch">\n</span><span class="st"> Reduction of outliers&quot;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>ax2.annotate(<span class="st">&#39;Fewer extreme </span><span class="ch">\n</span><span class="st"> outliers&#39;</span>, xy<span class="op">=</span>(<span class="fl">0.98</span>, <span class="op">-</span><span class="fl">17.3</span>), xytext<span class="op">=</span>(<span class="dv">0</span>, <span class="op">-</span><span class="dv">12</span>),</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>            arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>),</span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Feature V10</span></span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>sns.boxplot(x<span class="op">=</span><span class="st">&quot;Class&quot;</span>, y<span class="op">=</span><span class="st">&quot;V10&quot;</span>, data<span class="op">=</span>new_df, ax<span class="op">=</span>ax3, palette<span class="op">=</span>colors)</span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&quot;V10 Feature </span><span class="ch">\n</span><span class="st"> Reduction of outliers&quot;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>ax3.annotate(<span class="st">&#39;Fewer extreme </span><span class="ch">\n</span><span class="st"> outliers&#39;</span>, xy<span class="op">=</span>(<span class="fl">0.95</span>, <span class="op">-</span><span class="fl">16.5</span>), xytext<span class="op">=</span>(<span class="dv">0</span>, <span class="op">-</span><span class="dv">12</span>),</span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a>            arrowprops<span class="op">=</span><span class="bu">dict</span>(facecolor<span class="op">=</span><span class="st">&#39;black&#39;</span>),</span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a>            fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/d479c072b18ac2bb4fba209423841772c8b82937.png"
+          />
+        </p>
+      </div>
+    </div>
+    <section
+      id="dimensionality-reduction-and-clustering"
+      class="cell markdown"
+      id="WzUM2iMg45mG"
+    >
+      <h2>Dimensionality Reduction and Clustering</h2>
+    </section>
+    <div class="cell markdown" id="mPb7chUT5ADS">
+      <ul>
+        <li>
+          Algoritme t-SNE dapat secara akurat mengelompokkan kasus penipuan dan
+          non-penipuan dalam kumpulan data kami.
+        </li>
+        <li>
+          Meskipun subsampelnya cukup kecil, algoritme t-SNE mampu mendeteksi
+          cluster dengan cukup akurat di setiap skenario (saya mengocok dataset
+          sebelum menjalankan t-SNE)
+        </li>
+        <li>
+          Bertujuan untuk melihat apakah ada pola tertentu antara kasus penipuan
+          dan non-penipuan
+        </li>
+      </ul>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="32"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="JMVw-CLS5Gmj"
+      data-outputId="81e441bb-f977-4324-8982-10e4f59ea701"
+    >
+      <div class="sourceCode" id="cb44">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA, TruncatedSVD</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a><span class="co"># New_df is from the random undersample data (fewer instances)</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> new_df.drop(<span class="st">&#39;Class&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> new_df[<span class="st">&#39;Class&#39;</span>]</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a><span class="co"># T-SNE Implementation</span></span>
+<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> time.time()</span>
+<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a>X_reduced_tsne <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">42</span>).fit_transform(X.values)</span>
+<span id="cb44-13"><a href="#cb44-13" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb44-14"><a href="#cb44-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;T-SNE took </span><span class="sc">{:.2}</span><span class="st"> s&quot;</span>.<span class="bu">format</span>(t1 <span class="op">-</span> t0))</span>
+<span id="cb44-15"><a href="#cb44-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-16"><a href="#cb44-16" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA Implementation</span></span>
+<span id="cb44-17"><a href="#cb44-17" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> time.time()</span>
+<span id="cb44-18"><a href="#cb44-18" aria-hidden="true" tabindex="-1"></a>X_reduced_pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>, random_state<span class="op">=</span><span class="dv">42</span>).fit_transform(X.values)</span>
+<span id="cb44-19"><a href="#cb44-19" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb44-20"><a href="#cb44-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;PCA took </span><span class="sc">{:.2}</span><span class="st"> s&quot;</span>.<span class="bu">format</span>(t1 <span class="op">-</span> t0))</span>
+<span id="cb44-21"><a href="#cb44-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-22"><a href="#cb44-22" aria-hidden="true" tabindex="-1"></a><span class="co"># TruncatedSVD</span></span>
+<span id="cb44-23"><a href="#cb44-23" aria-hidden="true" tabindex="-1"></a>t0 <span class="op">=</span> time.time()</span>
+<span id="cb44-24"><a href="#cb44-24" aria-hidden="true" tabindex="-1"></a>X_reduced_svd <span class="op">=</span> TruncatedSVD(n_components<span class="op">=</span><span class="dv">2</span>, algorithm<span class="op">=</span><span class="st">&#39;randomized&#39;</span>, random_state<span class="op">=</span><span class="dv">42</span>).fit_transform(X.values)</span>
+<span id="cb44-25"><a href="#cb44-25" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb44-26"><a href="#cb44-26" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Truncated SVD took </span><span class="sc">{:.2}</span><span class="st"> s&quot;</span>.<span class="bu">format</span>(t1 <span class="op">-</span> t0))</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>T-SNE took 8.3 s
+PCA took 0.022 s
+Truncated SVD took 0.0093 s
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="33"
+      data-colab='{"base_uri":"https://localhost:8080/","height":496}'
+      id="DXk0i9CK5UM8"
+      data-outputId="e349b5e0-7f97-4940-c555-8af0610efcce"
+    >
+      <div class="sourceCode" id="cb46">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> mpatches</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>f, (ax1, ax2, ax3) <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">24</span>,<span class="dv">6</span>))</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="co"># labels = [&#39;No Fraud&#39;, &#39;Fraud&#39;]</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>f.suptitle(<span class="st">&#39;Clusters using Dimensionality Reduction&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>blue_patch <span class="op">=</span> mpatches.Patch(color<span class="op">=</span><span class="st">&#39;#0A0AFF&#39;</span>, label<span class="op">=</span><span class="st">&#39;No Fraud&#39;</span>)</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>red_patch <span class="op">=</span> mpatches.Patch(color<span class="op">=</span><span class="st">&#39;#AF0000&#39;</span>, label<span class="op">=</span><span class="st">&#39;Fraud&#39;</span>)</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a><span class="co"># t-SNE scatter plot</span></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>ax1.scatter(X_reduced_tsne[:,<span class="dv">0</span>], X_reduced_tsne[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">0</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;No Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>ax1.scatter(X_reduced_tsne[:,<span class="dv">0</span>], X_reduced_tsne[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">1</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>ax1.set_title(<span class="st">&#39;t-SNE&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>ax1.grid(<span class="va">True</span>)</span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>ax1.legend(handles<span class="op">=</span>[blue_patch, red_patch])</span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA scatter plot</span></span>
+<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a>ax2.scatter(X_reduced_pca[:,<span class="dv">0</span>], X_reduced_pca[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">0</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;No Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a>ax2.scatter(X_reduced_pca[:,<span class="dv">0</span>], X_reduced_pca[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">1</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>ax2.set_title(<span class="st">&#39;PCA&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a>ax2.grid(<span class="va">True</span>)</span>
+<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a>ax2.legend(handles<span class="op">=</span>[blue_patch, red_patch])</span>
+<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a><span class="co"># TruncatedSVD scatter plot</span></span>
+<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a>ax3.scatter(X_reduced_svd[:,<span class="dv">0</span>], X_reduced_svd[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">0</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;No Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a>ax3.scatter(X_reduced_svd[:,<span class="dv">0</span>], X_reduced_svd[:,<span class="dv">1</span>], c<span class="op">=</span>(y <span class="op">==</span> <span class="dv">1</span>), cmap<span class="op">=</span><span class="st">&#39;coolwarm&#39;</span>, label<span class="op">=</span><span class="st">&#39;Fraud&#39;</span>, linewidths<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a>ax3.set_title(<span class="st">&#39;Truncated SVD&#39;</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
+<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a>ax3.grid(<span class="va">True</span>)</span>
+<span id="cb46-35"><a href="#cb46-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-36"><a href="#cb46-36" aria-hidden="true" tabindex="-1"></a>ax3.legend(handles<span class="op">=</span>[blue_patch, red_patch])</span>
+<span id="cb46-37"><a href="#cb46-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-38"><a href="#cb46-38" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre>
+      </div>
+      <div class="output display_data">
+        <p>
+          <img
+            src="vertopal_f55cc8703cc946029d3a45b34a6cc4e3/5dd76039ce59c5f3b75af6e1c398c1dc0b317c29.png"
+          />
+        </p>
+      </div>
+    </div>
+    <div class="cell markdown" id="434Czy9w9G_d">
+      <p>
+        Ini memberi kami indikasi bahwa model prediktif lebih lanjut akan
+        bekerja cukup baik dalam memisahkan kasus penipuan dari kasus
+        non-penipuan.
+      </p>
+    </div>
+    <section id="modeling" class="cell markdown" id="WW80RpcV54xP">
+      <h2>Modeling</h2>
+    </section>
+    <div class="cell code" data-execution_count="34" id="FlnkFwgn50gx">
+      <div class="sourceCode" id="cb47">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Undersampling before cross validating (prone to overfit)</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> new_df.drop(<span class="st">&#39;Class&#39;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> new_df[<span class="st">&#39;Class&#39;</span>]</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="35" id="6RnKhzis58-Y">
+      <div class="sourceCode" id="cb48">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Our data is already scaled we should split our training and test sets</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This is explicitly used for undersampling.</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>X_train, X_test, y_train, y_test <span class="op">=</span> train_test_split(X, y, test_size<span class="op">=</span><span class="fl">0.2</span>, random_state<span class="op">=</span><span class="dv">42</span>)</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="36" id="hmAMmr1o5_Fd">
+      <div class="sourceCode" id="cb49">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Turn the values into an array for feeding the classification algorithms.</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>X_train <span class="op">=</span> X_train.values</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>X_test <span class="op">=</span> X_test.values</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>y_train <span class="op">=</span> y_train.values</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>y_test <span class="op">=</span> y_test.values</span></code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="37" id="Ytngp8PR6BvP">
+      <div class="sourceCode" id="cb50">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Classifier Libraries</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.svm <span class="im">import</span> SVC</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> KNeighborsClassifier</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestClassifier</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Let&#39;s implement simple classifiers</span></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a>classifiers <span class="op">=</span> {</span>
+<span id="cb50-11"><a href="#cb50-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;LogisiticRegression&quot;</span>: LogisticRegression(),</span>
+<span id="cb50-12"><a href="#cb50-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;KNearest&quot;</span>: KNeighborsClassifier(),</span>
+<span id="cb50-13"><a href="#cb50-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Support Vector Classifier&quot;</span>: SVC(),</span>
+<span id="cb50-14"><a href="#cb50-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;DecisionTreeClassifier&quot;</span>: DecisionTreeClassifier(),</span>
+<span id="cb50-15"><a href="#cb50-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;RandomForestClassifier&quot;</span> : RandomForestClassifier()</span>
+<span id="cb50-16"><a href="#cb50-16" aria-hidden="true" tabindex="-1"></a>}</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="38"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="T6OfCp3w6UTf"
+      data-outputId="28f4ca6a-4b55-4eab-c743-fc7234adf58e"
+    >
+      <div class="sourceCode" id="cb51">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Wow our scores are getting even high scores even when applying cross validation.</span></span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> cross_val_score</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, classifier <span class="kw">in</span> classifiers.items():</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>    classifier.fit(X_train, y_train)</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>    training_score <span class="op">=</span> cross_val_score(classifier, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">&quot;Classifiers: &quot;</span>, classifier.__class__.<span class="va">__name__</span>, <span class="st">&quot;Has a training score of&quot;</span>, <span class="bu">round</span>(training_score.mean(), <span class="dv">2</span>) <span class="op">*</span> <span class="dv">100</span>, <span class="st">&quot;% accuracy score&quot;</span>)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Classifiers:  LogisticRegression Has a training score of 93.0 % accuracy score
+Classifiers:  KNeighborsClassifier Has a training score of 92.0 % accuracy score
+Classifiers:  SVC Has a training score of 93.0 % accuracy score
+Classifiers:  DecisionTreeClassifier Has a training score of 89.0 % accuracy score
+Classifiers:  RandomForestClassifier Has a training score of 93.0 % accuracy score
+</code></pre>
+      </div>
+    </div>
+    <div class="cell code" data-execution_count="39" id="pBAk0CG16g4e">
+      <div class="sourceCode" id="cb53">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use GridSearchCV to find the best parameters.</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> GridSearchCV</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Logistic Regression</span></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>log_reg_params <span class="op">=</span> {<span class="st">&quot;penalty&quot;</span>: [<span class="st">&#39;l1&#39;</span>, <span class="st">&#39;l2&#39;</span>], <span class="st">&#39;C&#39;</span>: [<span class="fl">0.001</span>, <span class="fl">0.01</span>, <span class="fl">0.1</span>, <span class="dv">1</span>, <span class="dv">10</span>, <span class="dv">100</span>, <span class="dv">1000</span>]}</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>grid_log_reg <span class="op">=</span> GridSearchCV(LogisticRegression(), log_reg_params)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>grid_log_reg.fit(X_train, y_train)</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a><span class="co"># We automatically get the logistic regression with the best parameters.</span></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>log_reg <span class="op">=</span> grid_log_reg.best_estimator_</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>knears_params <span class="op">=</span> {<span class="st">&quot;n_neighbors&quot;</span>: <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">1</span>)), <span class="st">&#39;algorithm&#39;</span>: [<span class="st">&#39;auto&#39;</span>, <span class="st">&#39;ball_tree&#39;</span>, <span class="st">&#39;kd_tree&#39;</span>, <span class="st">&#39;brute&#39;</span>]}</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>grid_knears <span class="op">=</span> GridSearchCV(KNeighborsClassifier(), knears_params)</span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>grid_knears.fit(X_train, y_train)</span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a><span class="co"># KNears best estimator</span></span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a>knears_neighbors <span class="op">=</span> grid_knears.best_estimator_</span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Support Vector Classifier</span></span>
+<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>svc_params <span class="op">=</span> {<span class="st">&#39;C&#39;</span>: [<span class="fl">0.5</span>, <span class="fl">0.7</span>, <span class="fl">0.9</span>, <span class="dv">1</span>], <span class="st">&#39;kernel&#39;</span>: [<span class="st">&#39;rbf&#39;</span>, <span class="st">&#39;poly&#39;</span>, <span class="st">&#39;sigmoid&#39;</span>, <span class="st">&#39;linear&#39;</span>]}</span>
+<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a>grid_svc <span class="op">=</span> GridSearchCV(SVC(), svc_params)</span>
+<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a>grid_svc.fit(X_train, y_train)</span>
+<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a><span class="co"># SVC best estimator</span></span>
+<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a>svc <span class="op">=</span> grid_svc.best_estimator_</span>
+<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-27"><a href="#cb53-27" aria-hidden="true" tabindex="-1"></a><span class="co"># DecisionTree Classifier</span></span>
+<span id="cb53-28"><a href="#cb53-28" aria-hidden="true" tabindex="-1"></a>tree_params <span class="op">=</span> {<span class="st">&quot;criterion&quot;</span>: [<span class="st">&quot;gini&quot;</span>, <span class="st">&quot;entropy&quot;</span>], <span class="st">&quot;max_depth&quot;</span>: <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">1</span>)),</span>
+<span id="cb53-29"><a href="#cb53-29" aria-hidden="true" tabindex="-1"></a>              <span class="st">&quot;min_samples_leaf&quot;</span>: <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">1</span>))}</span>
+<span id="cb53-30"><a href="#cb53-30" aria-hidden="true" tabindex="-1"></a>grid_tree <span class="op">=</span> GridSearchCV(DecisionTreeClassifier(), tree_params)</span>
+<span id="cb53-31"><a href="#cb53-31" aria-hidden="true" tabindex="-1"></a>grid_tree.fit(X_train, y_train)</span>
+<span id="cb53-32"><a href="#cb53-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-33"><a href="#cb53-33" aria-hidden="true" tabindex="-1"></a><span class="co"># tree best estimator</span></span>
+<span id="cb53-34"><a href="#cb53-34" aria-hidden="true" tabindex="-1"></a>tree_clf <span class="op">=</span> grid_tree.best_estimator_</span>
+<span id="cb53-35"><a href="#cb53-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-36"><a href="#cb53-36" aria-hidden="true" tabindex="-1"></a><span class="co"># RandomForest Classifier</span></span>
+<span id="cb53-37"><a href="#cb53-37" aria-hidden="true" tabindex="-1"></a>n_estimators<span class="op">=</span>[<span class="dv">64</span>,<span class="dv">100</span>,<span class="dv">128</span>,<span class="dv">200</span>]</span>
+<span id="cb53-38"><a href="#cb53-38" aria-hidden="true" tabindex="-1"></a>max_features<span class="op">=</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<span id="cb53-39"><a href="#cb53-39" aria-hidden="true" tabindex="-1"></a>bootstrap <span class="op">=</span> [<span class="va">True</span>,<span class="va">False</span>]</span>
+<span id="cb53-40"><a href="#cb53-40" aria-hidden="true" tabindex="-1"></a>oob_score <span class="op">=</span> [<span class="va">True</span>,<span class="va">False</span>]</span>
+<span id="cb53-41"><a href="#cb53-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-42"><a href="#cb53-42" aria-hidden="true" tabindex="-1"></a>randomfr_params <span class="op">=</span> {<span class="st">&#39;n_estimators&#39;</span>:n_estimators,</span>
+<span id="cb53-43"><a href="#cb53-43" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;max_features&#39;</span>:max_features,</span>
+<span id="cb53-44"><a href="#cb53-44" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;bootstrap&#39;</span>:bootstrap,</span>
+<span id="cb53-45"><a href="#cb53-45" aria-hidden="true" tabindex="-1"></a>             <span class="st">&#39;oob_score&#39;</span>:oob_score}</span>
+<span id="cb53-46"><a href="#cb53-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-47"><a href="#cb53-47" aria-hidden="true" tabindex="-1"></a>grid_randomfr <span class="op">=</span> GridSearchCV(RandomForestClassifier(), randomfr_params)</span>
+<span id="cb53-48"><a href="#cb53-48" aria-hidden="true" tabindex="-1"></a>grid_randomfr.fit(X_train, y_train)</span>
+<span id="cb53-49"><a href="#cb53-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-50"><a href="#cb53-50" aria-hidden="true" tabindex="-1"></a><span class="co"># tree best estimator</span></span>
+<span id="cb53-51"><a href="#cb53-51" aria-hidden="true" tabindex="-1"></a>randomfr <span class="op">=</span> grid_randomfr.best_estimator_</span></code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="40"
+      data-colab='{"base_uri":"https://localhost:8080/"}'
+      id="4E78uMsX7j74"
+      data-outputId="0cad8953-8d2a-4ffc-ed70-95f35fc371a3"
+    >
+      <div class="sourceCode" id="cb54">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Overfitting Case</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>log_reg_score <span class="op">=</span> cross_val_score(log_reg, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>acc_log <span class="op">=</span> <span class="bu">round</span>(log_reg_score.mean() <span class="op">*</span> <span class="dv">100</span>, <span class="dv">2</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;%&#39;</span></span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Logistic Regression Cross Validation Score:&#39;</span>, acc_log)</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a>knears_score <span class="op">=</span> cross_val_score(knears_neighbors, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>acc_knn <span class="op">=</span> <span class="bu">round</span>(knears_score.mean() <span class="op">*</span> <span class="dv">100</span>, <span class="dv">2</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;%&#39;</span></span>
+<span id="cb54-9"><a href="#cb54-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Knears Neighbors Cross Validation Score:&#39;</span>, acc_knn)</span>
+<span id="cb54-10"><a href="#cb54-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-11"><a href="#cb54-11" aria-hidden="true" tabindex="-1"></a>svc_score <span class="op">=</span> cross_val_score(svc, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb54-12"><a href="#cb54-12" aria-hidden="true" tabindex="-1"></a>acc_svc <span class="op">=</span> <span class="bu">round</span>(svc_score.mean() <span class="op">*</span> <span class="dv">100</span>, <span class="dv">2</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;%&#39;</span></span>
+<span id="cb54-13"><a href="#cb54-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Support Vector Classifier Cross Validation Score:&#39;</span>, acc_svc)</span>
+<span id="cb54-14"><a href="#cb54-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-15"><a href="#cb54-15" aria-hidden="true" tabindex="-1"></a>tree_score <span class="op">=</span> cross_val_score(tree_clf, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb54-16"><a href="#cb54-16" aria-hidden="true" tabindex="-1"></a>acc_tree <span class="op">=</span> <span class="bu">round</span>(tree_score.mean() <span class="op">*</span> <span class="dv">100</span>, <span class="dv">2</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;%&#39;</span></span>
+<span id="cb54-17"><a href="#cb54-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;DecisionTree Classifier Cross Validation Score:&#39;</span>, acc_tree)</span>
+<span id="cb54-18"><a href="#cb54-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-19"><a href="#cb54-19" aria-hidden="true" tabindex="-1"></a>randomfr_score <span class="op">=</span> cross_val_score(randomfr, X_train, y_train, cv<span class="op">=</span><span class="dv">5</span>)</span>
+<span id="cb54-20"><a href="#cb54-20" aria-hidden="true" tabindex="-1"></a>acc_rf <span class="op">=</span> <span class="bu">round</span>(randomfr_score.mean() <span class="op">*</span> <span class="dv">100</span>, <span class="dv">2</span>).astype(<span class="bu">str</span>) <span class="op">+</span> <span class="st">&#39;%&#39;</span></span>
+<span id="cb54-21"><a href="#cb54-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Random Forest Cross Validation Score:&#39;</span>, acc_rf)</span></code></pre>
+      </div>
+      <div class="output stream stdout">
+        <pre><code>Logistic Regression Cross Validation Score: 93.39%
+Knears Neighbors Cross Validation Score: 92.73%
+Support Vector Classifier Cross Validation Score: 93.0%
+DecisionTree Classifier Cross Validation Score: 90.75%
+Random Forest Cross Validation Score: 92.74%
+</code></pre>
+      </div>
+    </div>
+    <div
+      class="cell code"
+      data-execution_count="41"
+      data-colab='{"base_uri":"https://localhost:8080/","height":206}'
+      id="8S3mPXiW95Nx"
+      data-outputId="b818dedd-7d73-4fee-d858-9d5eb2144f34"
+    >
+      <div class="sourceCode" id="cb56">
+        <pre
+          class="sourceCode python"
+        ><code class="sourceCode python"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>Model <span class="op">=</span> [<span class="st">&quot;Logistic Regression&quot;</span>, <span class="st">&quot;KNN&quot;</span>, <span class="st">&quot;Support Vector&quot;</span>, <span class="st">&quot;DecisionTree&quot;</span>, <span class="st">&quot;Random Forest&quot;</span>]</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>acc <span class="op">=</span> [acc_log,acc_knn,acc_svc,acc_tree,acc_rf]</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>df_acc <span class="op">=</span> pd.DataFrame(data<span class="op">=</span>acc, index<span class="op">=</span>Model, columns <span class="op">=</span> [<span class="st">&quot;accuracy&quot;</span>])</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>df_acc</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>df_acc.sort_values(<span class="st">&#39;accuracy&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre>
+      </div>
+      <div class="output execute_result" data-execution_count="41">
+        <div id="df-eb435130-bc7a-4a5a-832d-a1d93883ba8b">
+          <div class="colab-df-container">
+            <div>
+              <style scoped>
+                .dataframe tbody tr th:only-of-type {
+                  vertical-align: middle;
+                }
+
+                .dataframe tbody tr th {
+                  vertical-align: top;
+                }
+
+                .dataframe thead th {
+                  text-align: right;
+                }
+              </style>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right">
+                    <th></th>
+                    <th>accuracy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Logistic Regression</th>
+                    <td>93.39%</td>
+                  </tr>
+                  <tr>
+                    <th>Support Vector</th>
+                    <td>93.0%</td>
+                  </tr>
+                  <tr>
+                    <th>Random Forest</th>
+                    <td>92.74%</td>
+                  </tr>
+                  <tr>
+                    <th>KNN</th>
+                    <td>92.73%</td>
+                  </tr>
+                  <tr>
+                    <th>DecisionTree</th>
+                    <td>90.75%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              class="colab-df-convert"
+              onclick="convertToInteractive('df-eb435130-bc7a-4a5a-832d-a1d93883ba8b')"
+              title="Convert this dataframe to an interactive table."
+              style="display: none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+              >
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"
+                />
+                <path
+                  d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"
+                />
+              </svg>
+            </button>
+
+            <style>
+              .colab-df-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+              }
+
+              .colab-df-convert {
+                background-color: #e8f0fe;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                display: none;
+                fill: #1967d2;
+                height: 32px;
+                padding: 0 0 0 0;
+                width: 32px;
+              }
+
+              .colab-df-convert:hover {
+                background-color: #e2ebfa;
+                box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+                  0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+                fill: #174ea6;
+              }
+
+              [theme="dark"] .colab-df-convert {
+                background-color: #3b4455;
+                fill: #d2e3fc;
+              }
+
+              [theme="dark"] .colab-df-convert:hover {
+                background-color: #434b5c;
+                box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+                fill: #ffffff;
+              }
+            </style>
+
+            <script>
+              const buttonEl = document.querySelector(
+                "#df-eb435130-bc7a-4a5a-832d-a1d93883ba8b button.colab-df-convert"
+              );
+              buttonEl.style.display = google.colab.kernel.accessAllowed
+                ? "block"
+                : "none";
+
+              async function convertToInteractive(key) {
+                const element = document.querySelector(
+                  "#df-eb435130-bc7a-4a5a-832d-a1d93883ba8b"
+                );
+                const dataTable = await google.colab.kernel.invokeFunction(
+                  "convertToInteractive",
+                  [key],
+                  {}
+                );
+                if (!dataTable) return;
+
+                const docLinkHtml =
+                  "Like what you see? Visit the " +
+                  '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>' +
+                  " to learn more about interactive tables.";
+                element.innerHTML = "";
+                dataTable["output_type"] = "display_data";
+                await google.colab.output.renderOutput(dataTable, element);
+                const docLink = document.createElement("div");
+                docLink.innerHTML = docLinkHtml;
+                element.appendChild(docLink);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section
+      id="model-terbaik--logistic-regressiob--svm"
+      class="cell markdown"
+      id="O8aUUvDG_nlp"
+    >
+      <h3><strong>Model Terbaik : Logistic Regressiob &amp; SVM</strong></h3>
+    </section>
+  </body>
+</html>
