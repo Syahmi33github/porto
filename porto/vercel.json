@@ -11,5 +11,11 @@
       "src": "/(.*)",
       "dest": "porto/wsgi.py"
     }
+  ],
+  "rewrites": [
+    { 
+      "source": "/(.*)", 
+      "destination": "/" 
+    }
   ]
 }
